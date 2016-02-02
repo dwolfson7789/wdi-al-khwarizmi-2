@@ -23,10 +23,11 @@ e.g.:
 1. Give an example of an `object` (what your prework called 'associative arrays'). Under what circumstances would you choose to use one to store data instead of an array?
 1. What's the keyword for creating a new variable in Javascript?
 
-####Manipulating data
+#### Manipulating data
 ```JavaScript
 var teachers = ["Matt Short", "Syed Salahuddin", "Liza Ramo"];
 ```
+1. What's the value of teachers[1]?
 1. Ethan Friedman has joined the instructional team. How would you add him to the beginning of the array. To the end?
 (If you're stuck, you can find the Javascript documentation on arrays [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array).)
 1. Liza is jetting off to Mexico. How would you remove her from the team? (Temporarily, of course!)
@@ -37,7 +38,26 @@ var nestedArray = [["Matt", "Ethan", "Liza", "Syed"],["raindrops on roses ", "wh
 ```
   * What is the value of nestedArray[0,3]?
   * Write a `for` loop that iterates over Julie Andrews' "favorite things" from the song
-  * I would like a bacon sandwich (none of that veggie nonsense) on wheat. How do I obtain those from nestedArray?  
+  * I would like a bacon sandwich (none of that veggie nonsense!) on wheat. How do I obtain those from nestedArray?  
+1. ```javascript
+var movies = [
+  {
+    title: "A New Hope",
+    year: 1977,
+    protagonist: "Luke Skywalker",
+    inTheaters: false
+  },
+  {
+    title: "The Force Awakens",
+    year: 2015    
+  }
+];
+```
+  * For the first movie, what is the **value** corresponding to the "title" key? What is the **key** that corresponds to the "Luke Skywalker" value?
+  * How would you add a protagonist ("Rey") property to the second movie in the array? Since the movie is still playing in theaters, also add an `inTheaters: true` property for that movie.
+  * Let's assume there's a special limited release of "A New Hope" in theaters; how would you change it so `inTheaters` is `true` for that movie too?
+  * The next movie in the series is tentatively entitled just "Star Wars Episode VIII". It's slated for a 2017 release. Create a new object for the movie that incorporates that info.
+  * Add your new object to the end of the `movies` array.
 
 ### Part 2: Rolling Us Some Dice
 
