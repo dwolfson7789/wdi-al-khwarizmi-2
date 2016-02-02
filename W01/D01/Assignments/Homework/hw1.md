@@ -68,8 +68,7 @@ If you're not clear on any of the concepts presented and/or want to make certain
 
 Let's make a bash cheatsheet (Bash is the language you're using when you interact with the Terminal command line).
 
-First, learn about the Markdown language. Markdown is a quick and convenient way of formatting text for prettier display: HTML-lite, as it were. We made (actually, borrowed from another WDI cohort) a cheatsheat for markdown; you can find it here.  
-######LINK TO MARKDOWN CHEATSHEET GOES HERE
+First, learn about the Markdown language. Markdown is a quick and convenient way of formatting text for prettier display: HTML-lite, as it were. We made (actually, borrowed from another WDI cohort) a cheatsheat for markdown and put it in the 'Guides and Resources' directory in our class repo; you can find it [here](https://github.com/ga-students/wdi-al-Khwarizmi/blob/master/Guides_and_Resources/markdown_cheatsheet.md)
 If you're interested in learning more about markdown, the cheatsheet contains links to the markdown documentation. Feel free to read up on it (if you have time!).
 
 Going forward, please use markdown for all homework submission unless otherwise indicated. Put your code in code blocks as shown on the cheatsheet, e.g.
