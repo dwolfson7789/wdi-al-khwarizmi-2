@@ -6,7 +6,24 @@
 Please try to complete as many of the exercises as you can. Homework should be submitted by midnight. If you haven't finished by then, please don't stay up trying to get it done! The pace of this course is intense -- you have to take care of yourself (i.e., SLEEP).
 
 ######Submitting the homework
-***TODO: CORRECT HOMEWORK SUBMISSION INSTRUCTIONS HERE!!!!!!!***
+This is going to be your process throughout the course. Live it, breathe it.
+By this point you should have:
+1. Forked the class repo (found [here](https://github.com/ga-students/wdi-al-Khwarizmi)) on Github to your personal Github.
+1. Cloned that remote repo from your Github to your local machine.
+If you haven't yet, do this now!
+
+To submit a homework, you must first commit your changes. In the Terminal, in the folder where you're working (generally that day's folder):
+```
+git add -A
+git commit -m "some sort of commit message, i.e., 'working on homework. Ethan sucks'"
+```
+
+This saves the changes to your local repo on your machine. You now need to push those changes out to your remote repo on Github: `git push origin master`
+
+When you've completed the homework (or gotten as far as you're going to), go to **your** Github account and navigate to the folder where the homework (it will look something like (the URL will look something like https://github.com/[your Github username]/wdi-al-Khwarizmi/tree/master/W01/D02/Assignments/Homework). Copy this URL.
+
+Now go to our main class repo (again, [here it is](https://github.com/ga-students/wdi-al-Khwarizmi)). Click on the 'Issues' tab and create a new Issue:
+* Title: HW #XXX
 
 =================
 
@@ -72,7 +89,7 @@ First, learn about the Markdown language. Markdown is a quick and convenient way
 ######LINK TO MARKDOWN CHEATSHEET GOES HERE
 If you're interested in learning more about markdown, the cheatsheet contains links to the markdown documentation. Feel free to read up on it (if you have time!).
 
-Going forward, please use markdown for all homework submission unless otherwise indicated. Put your code in code blocks as shown on the cheatsheet, e.g.
+Going forward, if you use markdown for all homework submission unless otherwise indicated (when you create the file, use the .md extension), it will make it much easier for your instructional team to read. Put your code in code blocks as shown on the cheatsheet, e.g.
 ```javascript
 var isAwesome = function(name) {
   return name + " is awesome!";
@@ -80,7 +97,7 @@ var isAwesome = function(name) {
 console.log(isAwesome("Ethan"));
 ```
 
-Create a new markdown file called bash_cheatsheet.md in your homework directory. This is going to be a great resource for you going forward. In your cheatsheet, using markdown to format it, you should include the bash commands to
+Create a new markdown file called bash_cheatsheet.md in the Guides_and_Resources directory. This is going to be a great resource for you going forward. In your cheatsheet, using markdown to format it, you should include the bash commands to
 
 * create a directory
 * create a file
