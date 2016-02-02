@@ -1,0 +1,86 @@
+# W01D03 Homework
+
+![I have no idea why my code works](http://weknowmemes.com/wp-content/uploads/2012/09/my-code-doesnt-work-i-have-no-idea-why.jpg)
+
+Save your homework as a markdown file. Remember, to include a block of code separate from other text, surround the code with ```` ``` ````.
+If you want the code to be syntax highlighted (you do!), write the language name after the first ```` ``` ````
+
+e.g.:
+
+    ```javascript
+    console.log("This is code.");
+    var code = function () {
+      return "This is even more code!";
+    }
+    ```
+
+=================
+
+### Part 1: JavaScript basics
+#### Datatypes
+1. What are the different ways of storing data in JavaScript?
+1. Give an example of an `array`, and why you might choose to use one to store data (what characteristics of the data make it suitable for using this datatype?)?
+1. Give an example of an `object` (what your prework called 'associative arrays'). Under what circumstances would you choose to use one to store data instead of an array?
+1. What's the keyword for creating a new variable in Javascript?
+
+####Manipulating data
+```JavaScript
+var teachers = ["Matt Short", "Syed Salahuddin", "Liza Ramo"];
+```
+1. Ethan Friedman has joined the instructional team. How would you add him to the beginning of the array. To the end?
+(If you're stuck, you can find the Javascript documentation on arrays [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array).)
+1. Liza is jetting off to Mexico. How would you remove her from the team? (Temporarily, of course!)
+1. Write a `for` loop that iterates over the array and logs each instructor's name to the console.
+1. Instructors with long names are the coolest. Modify your loop from the previous question so if each instructor's name is 10 characters or fewer, "[name] is short and sweet!" gets logged to the console; if it's 11 characters or more, log "[name] is cool and fun to say!"
+1. ```javascript
+var nestedArray = [["Matt", "Ethan", "Liza", "Syed"],["raindrops on roses ", "whiskers on kittens", "bright copper kettles", "warm woolen mittens"],[["bacon","lettuce","tomato"],["rye","wheat","bagel"]]];
+```
+  * What is the value of nestedArray[0,3]?
+  * Write a `for` loop that iterates over Julie Andrews' "favorite things" from the song
+  * I would like a bacon sandwich (none of that veggie nonsense) on wheat. How do I obtain those from nestedArray?  
+
+### Part 2: Rolling Us Some Dice
+
+Let's create a virtual dice simulator. We don't want to be boring and limit ourselves to six-sided dice, so to start you off, here's a function that will generate a random integer between 1 and the number of sides on the die:
+
+```javascript
+function rollDie(sides) {
+  return Math.floor(Math.random() * sides + 1);
+}
+```
+
+E.g., `rollDie(10)` will generate a random integer between 1 and 10 inclusive.
+
+If you're not familiar with [Math.floor()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor) and/or [Math.random](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) check out the documentation at these links.
+
+1. Write a function that prompts the user to enter the number of sides on the dice they want to roll and stores it in a variable.
+1. Once they've done that, the console should let them know they've successfully chosen a number of sides, and that it's about to start rolling. I.e., something like (feel free to use your own phrasing!):
+```javascript
+console.log("Great! I'm digging out my " + sides + "-sided dice from my virtual dice bag.");
+console.log("Let's start rolling");
+```
+
+What we want is for the computer to "roll" two dice until the both come up with the same number. It should log the result of each roll. So the output might look something like this:
+```
+Great! I'm digging out my 16-sided dice from my virtual dice bag.
+Let's start rolling!
+------------------------
+Rolling: Die #1 is 7 and Die #2 is 11.
+Rolling: Die #1 is 8 and Die #2 is 7.
+Rolling: Die #1 is 16 and Die #2 is 3.
+Rolling: Die #1 is 10 and Die #2 is 14.
+Rolling: Die #1 is 5 and Die #2 is 5.
+We have rolled doubles! Stopping here.
+```
+
+We've given you the function to simulate the actual roll of an individual die. Create variables to store the current value of each die.
+
+When you want to keep looping through some code until a condition is satisfied, but you don't know how many times you're going to have to loop, you're often looking at a `while` loop. (`for` loops are great when you have a defined number of times you want to iterate, i.e., for each item in an array.)
+
+While the values of the two dice aren't equal to each other, you want to keep looping. Once the two have the same value, the loop should stop, and some sort of end message be logged.
+
+####EXTRA CREDIT
+1. Check out the documentation for the built-in JavaScript [Math object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math). What is the difference between Math.round(), Math.floor(), Math.trunc(),and Math.ceil()?
+1. Add in error-checking on the user's submission for the number of sides on the dice. (In general, it's best practice in coding to always try to think of every possible way a user can do something OTHER than what you want them to do!). What happens if they enter a number < 4? Or a non-number ("Syed")? Or a non-integer(6.5)? Hint: if you use a `while` loop you can keep the user 'trapped' until they enter a valid number....
+1. Keep track of the number of rolls. Each time the dice are rolled, it should indicate the roll number (Roll 1, Roll 2, etc.).
+1. Instead of ending when **any** double is rolled, keep rolling until "snake eyes" (double 1s) are rolled. Any other double comes up, the computer keeps rolling.

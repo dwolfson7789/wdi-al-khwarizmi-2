@@ -20,10 +20,13 @@ git commit -m "some sort of commit message, i.e., 'working on homework. Ethan su
 
 This saves the changes to your local repo on your machine. You now need to push those changes out to your remote repo on Github: `git push origin master`
 
-When you've completed the homework (or gotten as far as you're going to), go to **your** Github account and navigate to the folder where the homework (it will look something like (the URL will look something like https://github.com/[your Github username]/wdi-al-Khwarizmi/tree/master/W01/D02/Assignments/Homework). Copy this URL.
+When you've completed the homework (or gotten as far as you're going to), go to **your** Github account and navigate to the folder where the homework (it will look something like (the URL will look something like https://github.com/[your Github username]/wdi-al-Khwarizmi/tree/master/W01/D02/Assignments/Homework). **Copy this URL.**
 
 Now go to our main class repo (again, [here it is](https://github.com/ga-students/wdi-al-Khwarizmi)). Click on the 'Issues' tab and create a new Issue:
 * Title: HW #XXX
+* Body: In the body of the issue, paste the link to the homework's location in your fork of the class repo, the one you just copied.
+
+When you're done, submit the issue. Your homework is in! 
 
 =================
 
@@ -109,4 +112,4 @@ Create a new markdown file called bash_cheatsheet.md in the Guides_and_Resources
 * move around within a directory
 * see what files and directories exist
 * check where in the directory structure you are.
-Be as complete as possible and expand on this list; your cheatsheet will be a great resource for you from now on. This is another opportunity to practice markdown, so include a table, a list (ordered or unordered), and a link.
+Be as complete as possible and expand on this list. This is a good opportunity to practice markdown, so include a table, a list (ordered or unordered), and a link.
