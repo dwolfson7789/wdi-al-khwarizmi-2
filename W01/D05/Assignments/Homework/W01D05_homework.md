@@ -35,7 +35,7 @@ function eratosthenes(n) {
 eratosthenes(20) //output is [2, 3, 5, 7, 11, 13, 17, 19]
 ```
 
-Why the crazy name? [Eratosthenes](https://en.wikipedia.org/wiki/Eratosthenes) was an ancient Greek mathematician who developed a nice, simple algorithm for finding prime numbers that we're going to use. Here's how it works:
+[Eratosthenes](https://en.wikipedia.org/wiki/Eratosthenes) was an ancient Greek mathematician who developed an elegant algorithm for finding prime numbers that we're going to use. Here's how it works:
 
 Let's say we want all the primes between 1 and 50. Let's write them out:
 
@@ -65,7 +65,7 @@ The way the Sieve works is by assuming all the numbers are prime, and successive
 
 41 42 43 44 45 46 47 48 49 50
 
-The next number is 2. We know that every multiple of 2 in our list (in our function, it will be an array) can't be prime. So let's strike those from the list too:
+The next number is 2. We know that every multiple of 2 in our list (in our function, it will be an array) can't be prime. (Remember, prime numbers can't be divided by any other numbers other than 1 and themselves. Any multiple of 2 is divisible by 2 as well, so it can't be prime.) So let's strike those from the list too:
 
 ~~1~~  2  3  ~~4~~  5  ~~6~~  7  ~~8~~  9  ~~10~~
 
@@ -130,3 +130,40 @@ The next non-eliminated number is 7; repeat the process.
 41 ~~42~~ 43 ~~44~~ ~~45~~ ~~46~~ 47 ~~48~~ ~~49~~ ~~50~~
 
 The next number left in our list is 11, but all multiples of 11 less than 50 have already been crossed off (check for yourself above). Same thing with 13, the number after 11, and 17, 19, and 23, the numbers after that. The next non-eliminated number after 23 is 29, but we can stop here. Why? Because the first multiple of 29, 29*2, is 58, which is greater than 50. So we can stop, and see what numbers haven't been crossed off yet: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, and 47: voila! all the prime numbers less than 50!
+
+If the above is unclear, the wikipedia page for Eratosthenes (link above), has a nice animation of how the sieve works.
+
+Here's the general outline of how to go about it:
+
+```js
+function eratosthenes(n) {
+  //you're going to start by creating two arrays, one to hold the numbers from 0 to n, and the second array to hold
+  //the prime "status" of each of those numbers. So if n = 8, the first array would look like this:
+  //[0,1,2,3,4,5,6,7,8] and the second one like this:
+  //["P","P","P","P","P","P","P","P"] (because remember, we assume all numbers are prime, "P", until proven otherwise)
+  //Create your arrays and fill them below.
+
+
+
+
+  //let's start by taking care of our special cases, 0 and 1, which aren't prime by definition. change your "status"
+  //array so that the entries corresponding to 0 and 1 in the numbers array (the first two entries), now read "N" for
+  //"non-prime". If you console.log them (a good idea!) after doing this, your arrays should look like this:
+  //[0,1,2,3,4,5,6,7,8]
+  //["N","N","P","P","P","P","P","P"]
+  //Take care of that below
+
+
+  //Now comes the hard part. I'm going to leave this to you. You'll need to iterate over your numbers array. If the
+  //number you reach is still marked as prime, you'll need to then mark all MULTIPLES of that number as non-prime
+  //in your "prime status array". This is tricky! Good luck.
+
+
+
+  //If you did the last part correctly, you should now be able to iterate over your arrays; if the prime status of a
+  //given number is "P", then log that number to the console, else don't log it.
+  console.log("The prime numbers between 0 and " + n + "are .... (drumroll!) ");
+}
+```
+
+Run eratosthenes for different values of n. Make sure the function correctly logs the primes to the console. Congratulations!
