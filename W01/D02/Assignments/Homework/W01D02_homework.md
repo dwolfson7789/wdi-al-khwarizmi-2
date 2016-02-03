@@ -31,36 +31,39 @@ When you're done, submit the issue. Your homework is in!
 =================
 
 ### (Part 0: Fundamentals Prework)
-If you haven't finished the pre-work, please do so! We're going to be moving fast. You will find the rest of Unit 1 of this course MUCH easier if you have completed it. Make sure to follow the instructions for submission at the end. If you already finished it, congratulations! You can go right to Part 1 below.
+If for some reason you haven't finished the pre-work, you *need* to do so! We're going to be moving fast. You will find the rest of Unit 1 of this course MUCH easier if you have completed it. Make sure to follow the instructions for submission at the end. If you already finished it, congratulations! You can go right to Part 1 below.
 
 =================
 
 ### Part 1: The Command Line
-Navigating the command line is an essential part of coding, and you'll need to get skilled at it to successfully complete this course. You can find a bash cheatsheet [here](https://github.com/0nn0/terminal-mac-cheatsheet/wiki/Terminal-Cheatsheet-for-Mac-(-basics-)) for a useful reference.
+Navigating the command line is an essential part of coding, and you'll need to get skilled at it to successfully complete this course.
 
-You might have heard of this new "Star Wars" movie that just got released. I hear it did OK. Let's create the opening of the movie in our file system.
+You might have heard of this new "Star Wars" movie that just got released. I hear it did OK? Let's create the opening of the movie in our file system.
 
 #### Episode 7: The Terminal Awakens ####
 
 It's been decades since a band of plucky Jedi developers defeated the Evil Empire and brought peace and order to software development. But a new menace has arisen ... With the First Order arising on the Empire's ashes, do you have what it takes to bring balance to the Terminal and peace to the WDI course?
 
-  1. Create a directory named "**StarWars**" inside your personal directory for W01D02.
+As you execute the commands below, try doing some of them with absolute paths, some with relative paths. Try running commands to take place in a directory other than the one you're currently located inside. Get so using the command line to manipulate your filesystem is second nature.
+
+  1. Create a directory named "**StarWars**".
   1. Inside "**StarWars**" create directories for the planet "**Jakku**" , a "**Scavenger_Camp**", "**Old_Shipwreck**", "**Orbiting_Star_Destroyer**" and a "**Small_Village**" directory.
-  1. The Scavenger Camp, Old Shipwreck, and Village are actually all locations on Jakku. Move their directories inside the "**Jakku**" directory.
-  1. The "**Orbiting_Star_Destroyer**" has a fleet of TIE fighters. Create directories inside it for
+  1. The Scavenger Camp, Old Shipwreck, and Small Village are actually all locations on Jakku. Move their directories inside the "**Jakku**" directory.
+  1. The "**Orbiting_Star_Destroyer**" has a fleet of TIE fighters. Create directories for
     * "**TIE_fighter_1**"
     * "**TIE_fighter_2**"
     * "**TIE_fighter_3**"
-  1. When our story begins, our main character, Rey, is exploring the "**Old_Shipwreck**". Create a file called "**Rey.txt**" inside that directory. Inside "**Small_Village**", create
+    Move the TIE fighters inside the Star Destroyer.
+  1. When our story begins, our main character, Rey, is exploring the "**Old_Shipwreck**". Create a file called "**Rey.txt**" inside that directory. Two other key characters, Poe Dameron and BB-8, are checking out the Small Village on Jakku: inside "**Small_Village**", create
     * "**Poe_Dameron.txt**"
     * "**BB-8.txt**"
   1. Inside the "**Orbiting_Star_Destroyer**", create "**Finn.txt**" and "**Captain_Phasma.txt**". That completes our initial cast of characters.
-  1. Now our story begins! Finn and Captain Phasma leave the Star Destroyer and head to the "**Small_Village**": move them there. They take Poe Dameron captive, but BB-8 escapes! Move "**BB-8.txt**" to the "**Scavenger_Camp**". Finn, the Captain, and Poe return to the Orbiting Star Destroyer: Move their files there. Then, the First Order destroyed the poor village. Delete the "**Small_Village**" directory.
-  1. Rey is done scavenging at the shipwreck. Move "**Rey.txt**" to "**Scavenger_Camp**"
-  1. Finn and Poe Dameron  escape the Star Destroyer on "**TIE_figher_3**" and crash-land it on Jakku near the Scavenger Camp! Move the TIE fighter there. Poe is presumed dead in the crash. Delete his file. Finn leaves the fighter for the camp -- move "**Finn.txt**" to "**Small_Village**". Delete the wrecked, crashed TIE fighter directory.
-  1. Inside the Scavenger Camp, we have an old junky Corellian freighter. Make a "**junky_old_spaceship**" directory.
-  1. Rey is done scavenging at the shipwreck and returns to the Scavenger Camp; move her there.
-  1. Chaos! The First Order is attacking the Camp! Finn, Rey, and BB-8 all board the old spaceship: move them there.
+  1. Now our story begins! Finn and Captain Phasma leave the Star Destroyer and head to the "**Small_Village**": move their files there from the Star Destroyer. They take Poe Dameron captive, but BB-8 escapes with the secret plans! Move "**BB-8.txt**" to the "**Scavenger_Camp**" directory. Finn, the Captain, and Poe return to the Star Destroyer: Move their files to "**Orbiting_Star_Destroyer**". The evil First Order destroys the poor village: Delete the "**Small_Village**" directory.
+  1. Rey is done scavenging at the shipwreck: Move "**Rey.txt**" to "**Scavenger_Camp**".
+  1. Finn and Poe Dameron escape the Star Destroyer on "**TIE_figher_3**" (move their files inside its directory) and crash-land it on Jakku near the Scavenger Camp! Move the TIE fighter from the Star Destroyer to "**Scavenger_Camp**". Poe is presumed dead in the crash: Delete his file. Finn leaves the TIE fighter and makes for the camp -- move "**Finn.txt**" to "**Small_Village**". The wrecked, crashed TIE fighter can't be flown any more: delete its directory.
+  1. Inside the Scavenger Camp, we have an old junky Corellian freighter. Make a "**junky_old_spaceship**" directory there.
+  1. Rey is done scavenging at the shipwreck and returns to the Scavenger Camp; move her file there.
+  1. Chaos! The First Order is attacking the Scavenger Camp! Finn, Rey, and BB-8 all board the old spaceship: move them there.
   1. The junky old spaceship is actually the legendary Millennium Falcon! Rename it "**Millennium_Falcon**".
   1. The "**Millennium_Falcon**" escapes Jakku! Move the directory to the "**StarWars**" directory.
 
@@ -75,6 +78,7 @@ Already feeling comfortable with these commands and want an extra challenge? Try
 * Try applying one command to **all files that match a pattern**.
 * Find and use command line shortcuts.
 * Try using a mix of absolute and relative paths.
+* BB-8 is carrying secret plans to the First Order's Starkiller Base. Can you add "Secret plans" to "**BB-8.txt**" from the command line?
 
 =================
 

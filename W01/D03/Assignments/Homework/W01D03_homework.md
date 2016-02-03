@@ -191,3 +191,7 @@ if(raptor.hungry && muldoon.rescue_ability < 10){
 // TO BE CONTINUED!!!....
 
 ===================
+
+### Part 4: Reading
+
+Most of the concepts in Chapter 2 of You Don't Know JavaScript should be familiar to you by now, but if you have time try to review Chapter 2 [here](https://github.com/getify/You-Dont-Know-JS/blob/master/up%20&%20going/ch2.md) as far as the section on Conditionals. If you need more time to read it, don't worry: we'll be practicing all these concepts in class. 
