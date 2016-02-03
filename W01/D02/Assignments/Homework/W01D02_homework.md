@@ -26,7 +26,7 @@ Now go to our main class repo (again, [here it is](https://github.com/ga-student
 * Title: HW #XXX
 * Body: In the body of the issue, paste the link to the homework's location in your fork of the class repo, the one you just copied.
 
-When you're done, submit the issue. Your homework is in! 
+When you're done, submit the issue. Your homework is in!
 
 =================
 
@@ -109,7 +109,12 @@ Create a new markdown file called bash_cheatsheet.md in the Guides_and_Resources
 * rename a directory
 * delete a file
 * delete a directory
+* read the help file for a specific command
 * move around within a directory
 * see what files and directories exist
 * check where in the directory structure you are.
 Be as complete as possible and expand on this list. This is a good opportunity to practice markdown, so include a table, a list (ordered or unordered), and a link.
+
+### EXTRA CREDIT
+* Include three other commands beyonds the ones listed above
+* Include some useful keyboard shortcuts. How do you move quickly to the beginning or end of a line? How do you recall the last command entered?
