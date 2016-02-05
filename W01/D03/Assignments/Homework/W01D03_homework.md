@@ -52,7 +52,7 @@ var teachers = ["Matt Short", "Syed Salahuddin", "Liza Ramo"];
 (If you're stuck, you can find the Javascript documentation on arrays [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array).)
 1. Liza is jetting off to Mexico. How would you remove her from the team? (Temporarily, of course!)
 1. Write a `for` loop that iterates over the array and logs each instructor's name to the console.
-1. Instructors with long names are the coolest. Modify your loop from the previous question so if each instructor's name is 10 characters or fewer, "[name] is short and sweet!" gets logged to the console; if it's 11 characters or more, log "[name] is cool and fun to say!"
+1. Modify your loop from the previous question so if each instructor's name is 10 characters or fewer, "[name] is short and sweet!" gets logged to the console; if it's 11 characters or more, log "[name] is cool and fun to say!"
 1. ```javascript
 var nestedArray = [["Matt", "Ethan", "Liza", "Syed"],["raindrops on roses ", "whiskers on kittens", "bright copper kettles", "warm woolen mittens"],[["bacon","lettuce","tomato"],["rye","wheat","bagel"]]];
 ```
