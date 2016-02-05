@@ -187,21 +187,21 @@ if(raptor.hungry && muldoon.rescue_ability < 10){
 
 #### II: Who Turned Off the Lights!?
 
-// 1. Unfortunately for us, a lot more characters now get introducted. Let's create some more people objects. We're going to need people objects for hammond, malcom, grant, sattler, lex, tim, and gennaro. Use the same base people object described above. You can leave out the profession for lex and tim, as they are children. Make gennaro have two additional properties called catchPhrase and relief and set them equal to 'AHHHHHH!' and 'Phewww', respectively. Push everyone into the park's people array.
+ 1. Unfortunately for us, a lot more characters now get introduced. Let's create some more people objects. We're going to need people objects for hammond, malcom, grant, sattler, lex, tim, and gennaro. Use the same base people object described above. You can leave out the profession for lex and tim, as they are children. Make gennaro have two additional properties called catchPhrase and relief and set them equal to 'AHHHHHH!' and 'Phewww', respectively. Push everyone into the park's people array.
 
-// 2. Lex and tim are grandchildren of hammond. Let's reflect that in our code. Create two new properties on hammond called grandaughter and grandson and set them equal to lex and tim.
+ 2. Lex and tim are grandchildren of hammond. Let's reflect that in our code. Create two new properties on hammond called grandaughter and grandson and set them equal to lex and tim.
 
-// 3. Oh no! Who could have known? Add a property to dennis labeled `treachery` and set it equal to `true`.
-// Write a conditional that tests whether or not dennis is treacherous, and if so, set the park's power property to false.
-// 4. Looks like the power is off and the security fences are down.
-// Rex got out of his cage and is heading towards Gennaro! Write a conditional to check whether or not rex is hungry *and* the power is off.
-// If so, push gennaro into rex's stomach, log his catch_phrase, and remove him from park.people. If not, log gennaro's sigh of relief.
+ 3. Oh no! Who could have known? Add a property to dennis labeled `treachery` and set it equal to `true`.
+ Write a conditional that tests whether or not dennis is treacherous, and if so, set the park's power property to false.
+ 4. Looks like the power is off and the security fences are down.
+ Rex got out of his cage and is heading towards Gennaro! Write a conditional to check whether or not rex is hungry *and* the power is off.
+ If so, push gennaro into rex's stomach, log his catch_phrase, and remove him from park.people. If not, log gennaro's sigh of relief.
 
-// Bonus: refactor the conditional above (if you haven't already) to not use any equal signs).
-// Bonus 2: access the rex object from the park's dinosaur array instead of it's variable name.  
+ Bonus: refactor the conditional above (if you haven't already) to not use any equal signs).
+ Bonus 2: access the rex object from the park's dinosaur array instead of it's variable name.  
 
 
-// TO BE CONTINUED!!!....
+ TO BE CONTINUED!!!....
 
 ===================
 
