@@ -53,9 +53,13 @@ var teachers = ["Matt Short", "Syed Salahuddin", "Liza Ramo"];
 1. Liza is jetting off to Mexico. How would you remove her from the team? (Temporarily, of course!)
 1. Write a `for` loop that iterates over the array and logs each instructor's name to the console.
 1. Modify your loop from the previous question so if each instructor's name is 10 characters or fewer, "[name] is short and sweet!" gets logged to the console; if it's 11 characters or more, log "[name] is cool and fun to say!"
-1. ```javascript
-var nestedArray = [["Matt", "Ethan", "Liza", "Syed"],["raindrops on roses ", "whiskers on kittens", "bright copper kettles", "warm woolen mittens"],[["bacon","lettuce","tomato"],["rye","wheat","bagel"]]];
-```
+1.    ```javascript
+var nestedArray = 
+  [["Matt", "Ethan", "Liza", "Syed"],
+   ["raindrops on roses ", "whiskers on kittens", "bright copper kettles", "warm woolen mittens"],
+   [["bacon","lettuce","tomato"],["rye","wheat","bagel"]]
+];```
+
   * What is the value of nestedArray[0,3]?
   * Write a `for` loop that iterates over Julie Andrews' "favorite things" from the song
   * I would like a bacon sandwich (none of that veggie nonsense!) on wheat. How do I obtain those from nestedArray?  
@@ -73,14 +77,23 @@ var movies = [
   }
 ];
 ```
+
   * For the first movie, what is the **value** corresponding to the "title" key? What is the **key** that corresponds to the "Luke Skywalker" value?
-  * How would you add a protagonist ("Rey") property to the second movie in the array? Since the movie is still playing in theaters, also add an `inTheaters: true` property for that movie.
+  * How would you add a `protagonist: "Rey"` property to the second movie in the array? Since the movie is still playing in theaters, also add an `inTheaters: true` property for that movie.
   * Let's assume there's a special limited release of "A New Hope" in theaters; how would you change it so `inTheaters` is `true` for that movie too?
   * The next movie in the series is tentatively entitled just "Star Wars Episode VIII". It's slated for a 2017 release. Create a new object for the movie that incorporates that info.
   * Add your new object to the end of the `movies` array.
 
 #### EXTRA CREDIT
-* Write a `greenlight` function that takes two arguments: first, a (movie) object like the ones above, and second, a year. It should check to see if there's a scheduled release date (i.e., if the object has a 'year' set). If not, it should set the movie's scheduled year of release to the year that was passed into the function. The function should return the original object if it already had a release date scheduled, and the modified object if it didn't.
+* Write a `greenlight` function that creates a movie object like the ones above, with a title, protagonist, and year of release, and returns it.
+* Extra extra credit: make the function reusable. You should be able to pass in title, protagonist and release year, and the function will return the movie object. e.g., `greenlight("WDI: The Developers Strike Back", "WDI-al-Khwarizmi", 2016)` will return 
+```js
+{
+  title: "WDI: The Developers Strike Back",
+  protagonist: "WDI-al-Khwarizmi",
+  year: 2016
+}
+```
 
 ===================
 
@@ -96,7 +109,7 @@ function rollDie(sides) {
 
 E.g., `rollDie(10)` will generate a random integer between 1 and 10 inclusive.
 
-If you're not familiar with [Math.floor()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor) and/or [Math.random](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) check out the documentation at these links.
+If you're not familiar with [Math.floor()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor) and/or [Math.random](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) check out the documentation at these links. For extra credit, think about why it's necessary to use `Math.floor(Math.random())` rather than just `Math.random()`
 
 1. Write a function that prompts the user to enter the number of sides on the dice they want to roll and stores it in a variable.
 1. Once they've done that, the console should let them know they've successfully chosen a number of sides, and that it's about to start rolling. I.e., something like (feel free to use your own phrasing!):
