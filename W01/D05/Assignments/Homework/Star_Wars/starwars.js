@@ -80,6 +80,54 @@ function sceneLocations() {
 sceneLocations();
 
 function castOfCharacters() {
-  //create a div with an id of 'characters'
-  //give it a title of your choice ("Dramatis Personae,")
+  //create a div with an id of 'character-list'
+  //give it a title (make it an h3) of your choice.
+  //create a list of characters (ordered or unordered, your choice) and put it in the div
+  //give each character a class of 'character'
+  //add the div to the DOM before the places
+
+  var div = document.createElement('div');
+  div.setAttribute('id','character-list');
+  var h3 = document.createElement('h3');
+  var t = document.createTextNode('Dramatis Personae');
+  h3.appendChild(t);
+  div.appendChild(h3);
+  var ol = document.createElement('ol');
+
+  for (var i = 0; i < characters.length; i++) {
+    var li = document.createElement('li');
+    var t = document.createTextNode(characters[i]);
+    li.setAttribute('class','character');
+    li.appendChild(t);
+    ol.appendChild(li);
+  }
+  div.appendChild(ol);
+  var sw = document.getElementById('star-wars');
+  var art = document.getElementsByTagName('article')[0];
+  sw.insertBefore(div, art);
+
 }
+castOfCharacters();
+
+function raisingTheCurtain() {
+  //let's put the characters in the right places to start the movie.
+  //Finn and Captain Phasma are on the orbiting star destroyer (But not on any of the TIE fighters)
+  //move them inside the star destroyer
+
+  var arts = document.getElementsByTagName('article');
+  var finn = document.getElementsByClassName('character')[1];
+  finn.parentNode.removeChild(finn);
+
+  var phasma = document.getElementsByClassName('character')[3]
+  phasma.parentNode.removeChild(phasma);
+  arts[1].appendChild(finn);
+  arts[1].appendChild(phasma);
+
+  //Rey is exploring the old shipwreck; move her there
+
+console.log(arts[0])
+
+  //Poe Dameron and BB-8 are visiting the Small Village. Move them there.
+
+}
+raisingTheCurtain();

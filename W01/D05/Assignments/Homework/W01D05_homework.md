@@ -6,7 +6,7 @@ CONGRATULATIONS! One week is in the books. You've come a long way already: you'r
 
 The weekend's homework should feel a little more extensive since you've got, well, the whole weekend to do it. Try not to leave it to Sunday night!
 
-### PART 1: Star Wars (yes, AGAIN)
+### PART 1: Star Wars (yes, again)
 
 In the Homework directory, you'll see a Star_Wars directory, with three files: a basic index.html, starwars.css, and starwars.js
 
@@ -23,6 +23,12 @@ So:
 CSS can be tremendously powerful. A good way to practice CSS is to try creating artwork using it. This is an actual thing: check out [the Simpsons in CSS](https://pattle.github.io/simpsons-in-css/) -- this guy created amazing drawings of all the Simpsons characters just using pure CSS.
 
 We're going to try our hand at a simpler version. Let's try drawing a castle.
+In the 'castle' directory inside 'Homework' you'll see three files:
+* A castle image, drawn using CSS
+* Index.html
+* Styles.css
+
+Do **not** modify index.html: Don't change the structure of the HTML at all (although you'll want to look at it for reference as you go). In styles.css, try to come up with a castle along the lines of the one in the screenshot. It doesn't have to look exactly identical, but should have all the key elements: ground, sky, clouds, sun, castle, battlements, moat, inner gate, and lever.
 
 ### PART 3: The Sieve of Eratosthenes
 
@@ -49,7 +55,7 @@ Let's say we want all the primes between 1 and 50. Let's write them out:
 
 41 42 43 44 45 46 47 48 49 50
 
-The way the Sieve works is by assuming all the numbers are prime, and successively eliminating non-primes. First thing we can do is strike 1 off the list, since 1 is not a prime number by definition:
+The way the Sieve works is by assuming all the numbers are prime, and successively eliminating non-primes. The first thing we can do is strike 1 off the list, since 1 is not a prime number by definition:
 
 ~~1~~  2  3  4  5  6  7  8  9  10
 
@@ -65,7 +71,7 @@ The way the Sieve works is by assuming all the numbers are prime, and successive
 
 41 42 43 44 45 46 47 48 49 50
 
-The next number is 2. We know that every multiple of 2 in our list (in our function, it will be an array) can't be prime. (Remember, prime numbers can't be divided by any other numbers other than 1 and themselves. Any multiple of 2 is divisible by 2 as well, so it can't be prime.) So let's strike those from the list too:
+The next number is 2. We know that every multiple of 2 in our list (in our function, it will be an array) can't be prime. (Remember, prime numbers can't be divided by any other numbers other than 1 and themselves. Any multiple of 2 is divisible by 2 as well, so it can't be prime.) So let's strike those from the list too (but not the number 2 itself!):
 
 ~~1~~  2  3  ~~4~~  5  ~~6~~  7  ~~8~~  9  ~~10~~
 
@@ -81,7 +87,7 @@ The next number is 2. We know that every multiple of 2 in our list (in our funct
 
 41 ~~42~~ 43 ~~44~~ 45 ~~46~~ 47 ~~48~~ 49 ~~50~~
 
-The next non-eliminated number is 3. Again, all multiples of 3 can't be prime. Let's strike all the ones that haven't already been eliminated (e.g., 6 is a multiple of 3 but was eliminated in the prior step).
+The next non-eliminated number is 3. Again, all multiples of 3 can't be prime. Let's strike all the multiples that haven't already been eliminated (e.g., 6 is a multiple of 3 but was eliminated in the prior step).
 
 ~~1~~  2  3  ~~4~~  5  ~~6~~  7  ~~8~~  ~~9~~  ~~10~~
 
@@ -129,7 +135,7 @@ The next non-eliminated number is 7; repeat the process.
 
 41 ~~42~~ 43 ~~44~~ ~~45~~ ~~46~~ 47 ~~48~~ ~~49~~ ~~50~~
 
-The next number left in our list is 11, but all multiples of 11 less than 50 have already been crossed off (check for yourself above). Same thing with 13, the number after 11, and 17, 19, and 23, the numbers after that. The next non-eliminated number after 23 is 29, but we can stop here. Why? Because the first multiple of 29, 29*2, is 58, which is greater than 50. So we can stop, and see what numbers haven't been crossed off yet: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, and 47: voila! all the prime numbers less than 50!
+The next number left in our list is 11, but all multiples of 11 less than 50 have already been crossed off (check for yourself above). Same thing with the number after that, 13 and 17, 19, and 23, the numbers after that. The next non-eliminated number after 23 is 29, but we can stop here. Why? Because the first multiple of 29, 29*2, is 58, which is greater than 50. So we can stop, and see what numbers haven't been crossed off yet: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, and 47: voila! all the prime numbers less than 50!
 
 If the above is unclear, the wikipedia page for Eratosthenes (link above), has a nice animation of how the sieve works.
 
@@ -161,9 +167,13 @@ function eratosthenes(n) {
 
 
   //If you did the last part correctly, you should now be able to iterate over your arrays; if the prime status of a
-  //given number is "P", then log that number to the console, else don't log it.
-  console.log("The prime numbers between 0 and " + n + "are .... (drumroll!) ");
+  //given number is "P", then log that number to the console; otherwise don't log it.
+  console.log("The prime numbers between 0 and " + n + "are ");
 }
 ```
 
 Run eratosthenes for different values of n. Make sure the function correctly logs the primes to the console. Congratulations!
+
+####EXTRA CREDIT
+* If you have time think about how you might optimize your function. You probably tested it using relatively small values of n, which take the computer a fraction of a second to process. But what if n were a million? a billion? 10^15? You'd want to make sure your algorithm is as efficient as possible. What could you do to improve it?
+* We don't actually need two arrays; I just suggested doing it that way to make it easier to see what's going on. How would you do it with a single array?

@@ -70,9 +70,28 @@ var j = 0
 
 ### PART 3: Scope
 
-What will the output to the console look like from the program below? (In order!)
+What will be logged to the console from the program below?
 ```js
-Console.log(foo);
-var foo = 25;
-Console.log(foo);
+var foo = "ice cream";
+console.log(foo); 
+function bar() {
+  if (!foo) {
+    var foo = "bananas";
+  }
+  console.log(foo);
+}
+bar();
+console.log(foo);
+```
+
+```js
+var foo = "ice cream";
+var bar = function() {
+  if (!foo) {
+    var foo = "bananas";
+  }
+  console.log(foo);
+}
+bar();
+console.log(foo);
 ```
