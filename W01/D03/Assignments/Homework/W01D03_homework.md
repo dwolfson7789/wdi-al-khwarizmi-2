@@ -47,7 +47,7 @@ When you're done, submit the issue. Your homework is in!
 ```JavaScript
 var teachers = ["Matt Short", "Syed Salahuddin", "Liza Ramo"];
 ```
-1. What's the value of teachers[1]?
+1. What's the value of `teachers[1]`?
 1. Ethan Friedman has joined the instructional team. How would you add him to the beginning of the array. To the end?
 (If you're stuck, you can find the Javascript documentation on arrays [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array).)
 1. Liza is jetting off to Mexico. How would you remove her from the team? (Temporarily, of course!)
@@ -60,10 +60,12 @@ var nestedArray =
    [["bacon","lettuce","tomato"],["rye","wheat","bagel"]]
 ];```
 
-  * What is the value of nestedArray[0,3]?
+  * What is the value of `nestedArray[0,3]`?
   * Write a `for` loop that iterates over Julie Andrews' "favorite things" from the song
-  * I would like a bacon sandwich (none of that veggie nonsense!) on wheat. How do I obtain those from nestedArray?  
-1. ```javascript
+  * I would like a bacon sandwich (none of that veggie nonsense!) on wheat. How do I obtain those from `nestedArray`?  
+1.
+
+```javascript
 var movies = [
   {
     title: "A New Hope",
@@ -78,15 +80,16 @@ var movies = [
 ];
 ```
 
-  * For the first movie, what is the **value** corresponding to the "title" key? What is the **key** that corresponds to the "Luke Skywalker" value?
-  * How would you add a `protagonist: "Rey"` property to the second movie in the array? Since the movie is still playing in theaters, also add an `inTheaters: true` property for that movie.
-  * Let's assume there's a special limited release of "A New Hope" in theaters; how would you change it so `inTheaters` is `true` for that movie too?
-  * The next movie in the series is tentatively entitled just "Star Wars Episode VIII". It's slated for a 2017 release. Create a new object for the movie that incorporates that info.
-  * Add your new object to the end of the `movies` array.
+* For the first movie, what is the **value** corresponding to the "title" key? What is the **key** that corresponds to the "Luke Skywalker" value?
+* How would you add a `protagonist: "Rey"` property to the second movie in the array? Since the movie is still playing in theaters, also add an `inTheaters: true` property for that movie.
+* Let's assume there's a special limited release of "A New Hope" in theaters; how would you change it so `inTheaters` is `true` for that movie too?
+* The next movie in the series is tentatively entitled just "Star Wars Episode VIII". It's slated for a 2017 release. Create a new object for the movie that incorporates that info.
+* Add your new object to the end of the `movies` array.
 
 #### EXTRA CREDIT
-* Write a `greenlight` function that creates a movie object like the ones above, with a title, protagonist, and year of release, and returns it.
+* Write a `greenlight` function that creates a movie object like the ones above, with a title, protagonist, and year of release of your choice, and returns it.
 * Extra extra credit: make the function reusable. You should be able to pass in title, protagonist and release year, and the function will return the movie object. e.g., `greenlight("WDI: The Developers Strike Back", "WDI-al-Khwarizmi", 2016)` will return
+
 ```js
 {
   title: "WDI: The Developers Strike Back",
