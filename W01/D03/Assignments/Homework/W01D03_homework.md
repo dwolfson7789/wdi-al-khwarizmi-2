@@ -199,7 +199,7 @@ if(raptor.hungry && muldoon.rescue_ability < 10){
  If so, push gennaro into rex's stomach, log his catch_phrase, and remove him from park.people. If not, log gennaro's sigh of relief.
 
  Bonus: refactor the conditional above (if you haven't already) to not use any equal signs).
- Bonus 2: access the rex object from the park's dinosaur array instead of it's variable name.  
+ Bonus 2: access the rex object from the park's dinosaur array instead of its variable name.  
 
 
  TO BE CONTINUED!!!....
