@@ -148,3 +148,64 @@ While the values of the two dice aren't equal to each other, you want to keep lo
 ### Part 3: Reading
 
 Most of the concepts in Chapter 2 of You Don't Know JavaScript should be familiar to you by now, but if you have time try to review Chapter 2 [here](https://github.com/getify/You-Dont-Know-JS/blob/master/up%20&%20going/ch2.md) as far as the section on Conditionals. If you need more time to read it, don't worry: we'll be practicing all these concepts in class.
+
+#### I: Opening Scene
+
+* Create an object called `park`. This object should have 3 properties: people, dinosaurs, and power. People and dinosaurs should be set to empty arrays and power should be set to true.
+
+* Now lets create some dinosaurs. Below is an object named rex with a stomach property and a hungry property. Make another object called raptor that has the same properties, except the raptor already ate a peon's shoe and s/he is not hungry anymore. Push all of the dinosaurs into the park's dinosaur array.
+
+* Now lets create some dinosaurs. Below is an object named rex with a stomach property and a hungry property. Make another object called raptor that has the same properties, except the raptor already ate a peon's shoe and (s)he is not hungry anymore. Push both of the dinosaurs into the park's dinosaur array.
+
+```javascript
+var rex = {
+	stomach: [],
+	hungry: true
+}
+```
+
+* Let's now create some people. The people we will need for the intro are the disposable_peon, hammond, dennis, and muldoon. All will have a name and a profession property. Muldoon will also have a rescueAbility property, which we will set to the number 10. Push everyone into the people array in the park property.
+
+* Now, no matter how much we may love the peon, he's scripted to be eaten as they are bringing the raptor onto the island. Below is an incomplete condition statement.
+//Change the properties of the raptor and muldoon objects in order to meet the conditions so that the code in the `if` statement will run.
+//Then add code to put the disposable_peon object in the raptor's stomach array
+//Finally (as a bonus), remove the disposable peon from the park.people array. (see hint below). Depending on the order in which you pushed the peon into the array, could you use a different method to take him out of park's people array?
+
+```javascript
+//change the objects so that this condition will be satisfied
+if(raptor.hungry && muldoon.rescue_ability < 10){
+	console.log("Raaaar..CHOMP!");
+
+	// add code to put the disposable_peon into the stomach of the raptor
+
+	// add code to remove the disposable_peon from the park's people array. HINT: look up Array.splice()
+
+	// bonus: take the disposable peon out of the people array in the park object. hint: look up the splice method for arrays.
+} else {
+	console.log("CUT! we need to do a retake! The peon is still alive!");
+}
+```
+
+#### II: Who Turned Off the Lights!?
+
+ 1. Unfortunately for us, a lot more characters now get introduced. Let's create some more people objects. We're going to need people objects for hammond, malcom, grant, sattler, lex, tim, and gennaro. Use the same base people object described above. You can leave out the profession for lex and tim, as they are children. Make gennaro have two additional properties called catchPhrase and relief and set them equal to 'AHHHHHH!' and 'Phewww', respectively. Push everyone into the park's people array.
+
+ 2. Lex and tim are grandchildren of hammond. Let's reflect that in our code. Create two new properties on hammond called grandaughter and grandson and set them equal to lex and tim.
+
+ 3. Oh no! Who could have known? Add a property to dennis labeled `treachery` and set it equal to `true`.
+ Write a conditional that tests whether or not dennis is treacherous, and if so, set the park's power property to false.
+ 4. Looks like the power is off and the security fences are down.
+ Rex got out of his cage and is heading towards Gennaro! Write a conditional to check whether or not rex is hungry *and* the power is off.
+ If so, push gennaro into rex's stomach, log his catch_phrase, and remove him from park.people. If not, log gennaro's sigh of relief.
+
+ Bonus: refactor the conditional above (if you haven't already) to not use any equal signs).
+ Bonus 2: access the rex object from the park's dinosaur array instead of it's variable name.  
+
+
+ TO BE CONTINUED!!!....
+
+===================
+
+### Part 4: Reading
+
+Most of the concepts in Chapter 2 of You Don't Know JavaScript should be familiar to you by now, but if you have time try to review Chapter 2 [here](https://github.com/getify/You-Dont-Know-JS/blob/master/up%20&%20going/ch2.md) as far as the section on Conditionals. If you need more time to read it, don't worry: we'll be practicing all these concepts in class.
