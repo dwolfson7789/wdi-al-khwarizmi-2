@@ -8,27 +8,27 @@ The weekend's homework should feel a little more extensive since you've got, wel
 
 ### PART 1: Star Wars (yes, again)
 
-In the Homework directory, you'll see a Star_Wars directory, with three files: a basic index.html, starwars.css, and starwars.js
+In the Homework directory, you'll see a Star_Wars directory, with three files: a basic index.html, starwars.css, and starwars.js.
 
 We want to get really good at DOM manipulation with JavaScript -- it's the core of a lot of what you'll be doing going forward, including on your first project. Check out the files: index.html has an empty body, as you'll see. We're going to fill it and manipulate it solely with JavaScript.
 
 So:
-1. Open up starwars.js and follow the commented instructions. Write your code as instructed below the comments. When you submit your homework, make sure you include a link to the star_wars file so it can be graded.
+1. Open up starwars.js and follow the commented instructions. Write your code as instructed below the comments. When you submit your homework, make sure you include a link to your starwars.js file so it can be graded.
 1. Once you've successfully completed all the steps in starwars.js, style your webpage in starwars.css! You'll need to:
   * Use at least three different kinds of selectors
-  * Use at least 10 different styles. Some of them MUST be ones that we have not yet used in class! Search on the web for possibilities.
+  * Use at least 10 different styles. At least three of them must be ones that we have not yet used in class! Search on the web for possibilities.
 
 ### PART 2: CSS art
 
 CSS can be tremendously powerful. A good way to practice CSS is to try creating artwork using it. This is an actual thing: check out [the Simpsons in CSS](https://pattle.github.io/simpsons-in-css/) -- this guy created amazing drawings of all the Simpsons characters just using pure CSS.
 
-We're going to try our hand at a simpler version. Let's try drawing a castle.
-In the 'castle' directory inside 'Homework' you'll see three files:
+We're going to try our hand at a simpler version: Let's try drawing a castle.
+In the 'Castle' directory inside 'Homework' you'll see three files:
 * A castle image, drawn using CSS
 * Index.html
 * Styles.css
 
-Do **not** modify index.html: Don't change the structure of the HTML at all (although you'll want to look at it for reference as you go). In styles.css, try to come up with a castle along the lines of the one in the screenshot. It doesn't have to look exactly identical, but should have all the key elements: ground, sky, clouds, sun, castle, battlements, moat, inner gate, and lever.
+**Do not modify index.html: Don't change the structure of the HTML at all (although you'll want to look at it for reference as you go).** In styles.css, try to come up with a castle along the lines of the one in the screenshot. It doesn't have to look exactly identical, but should have all the key elements: ground, sky, clouds, sun, castle, battlements, moat, inner gate, and lever.
 
 ### PART 3: The Sieve of Eratosthenes
 
@@ -161,19 +161,20 @@ function eratosthenes(n) {
 
 
   //Now comes the hard part. I'm going to leave this to you. You'll need to iterate over your numbers array. If the
-  //number you reach is still marked as prime, you'll need to then mark all MULTIPLES of that number as non-prime
-  //in your "prime status array". This is tricky! Good luck.
+  //number you reach is still marked as prime, you'll need to then mark all MULTIPLES of that number (but not then
+  //number itself) as non-prime in your "prime status array". This is tricky! A second, different iteration perhaps?
 
 
 
   //If you did the last part correctly, you should now be able to iterate over your arrays; if the prime status of a
   //given number is "P", then log that number to the console; otherwise don't log it.
   console.log("The prime numbers between 0 and " + n + "are ");
+  //put your final loop here
 }
 ```
 
-Run eratosthenes for different values of n. Make sure the function correctly logs the primes to the console. Congratulations!
+Run `eratosthenes()` for different values of n. Make sure the function correctly logs the primes to the console. Congratulations!
 
 ####EXTRA CREDIT
-* If you have time think about how you might optimize your function. You probably tested it using relatively small values of n, which take the computer a fraction of a second to process. But what if n were a million? a billion? 10^15? You'd want to make sure your algorithm is as efficient as possible. What could you do to improve it?
 * We don't actually need two arrays; I just suggested doing it that way to make it easier to see what's going on. How would you do it with a single array?
+* If you have time think about how you might optimize your function. You probably tested it using relatively small values of n, which take the computer a fraction of a second to process. But what if n were a million? a billion? 10^15? You'd want to make sure your algorithm is as efficient as possible. What could you do to improve it?
