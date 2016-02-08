@@ -6,9 +6,19 @@ Group assignments are below. Each numbered group should answer that respective n
 We'll spend 5-10 minutes researching, and then each group will present their topic to the class
 
 #####PARTNERSHIP ASSIGNMENTS TO COME here
-TK
+1.
+1.
+1.
+1.
+1.
+1.
+1.
+1.
+1.
+1.
+1.
 
-
+#####Questions to Answer
 1. What are the different datatypes in JavaScript? Give an example of each. Why might you choose to use one over another?
 1. Truthy and Falsey: discuss, with examples. List the 'falsey' things.
 1. What is a function? Give an example. How do we feed data info a function? What do we use when we want a function to supply us with something when it's done running?

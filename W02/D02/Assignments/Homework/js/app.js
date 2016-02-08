@@ -8,27 +8,26 @@ window.onload = function() {
 
 }
 
-// USE THIS PROVIDED CODE TO SHUFFLE YOUR ARRAY. IT WILL RETURN A SHUFFLED VERSION OF TILES
-// IF YOU'RE INTERESTED, RESEARCH THE 'FISHER-YATES SHUFFLE' TO SEE WHY WE NEED TO USE SOMETHING LIKE THIS TECHNIQUE
 var tiles = ['A', 'A', 'B', 'B', 'C', 'C', 'D', 'D', 'E', 'E'];
+
+// USE THIS PROVIDED CODE TO SHUFFLE YOUR ARRAY. IT WILL RETURN A SHUFFLED VERSION OF TILES
+// IF YOU'RE INTERESTED, RESEARCH THE 'FISHER-YATES SHUFFLE' TO SEE WHY WE NEED TO USE THIS TECHNIQUE
 function shuffle(arr) {
 	var i = arr.length;
 	while (i > 0) {
 		var j = Math.floor(Math.random() * i); //pick a random index between 0 and i
 		i--;
 
-		// put value at current index location in a temp variable
-		// set value at current index location to value at random index
-		// set value at the random index to the value stored in temp
-		var temp = arr[i];
-		arr[i] = arr[j];
-		arr[j] = temp;
+		var temp = arr[i]; // put value at current index location in a temp variable
+		arr[i] = arr[j]; // set value at current index location to value at random index
+		arr[j] = temp; // set value at the random index to the value stored in temp
 	}
 	return arr;
 }
 
 function start(){
 	// this function should call shuffle and then call makeAndDisplayTiles
+
 }
 
 function makeAndDisplayTiles(){
