@@ -8,14 +8,6 @@
 
 ![wizard](http://www.sicpdistilled.com/images/sicp2-07ad7dbe.jpg)
 
-
-# intro
-
-Hi I'm syed and I teach introduction to computer programming at NYU. This is
-a compendium on how to get started with computer programming in javascript. It's
-inspired by books like `Eloquent Javascript`, `Javascript Alonge`, `YDKJS`, and
-`SCIP`.
-
 # computer science
 
 not about ~~computers~~ or ~~science~~
