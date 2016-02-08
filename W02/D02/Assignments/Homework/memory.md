@@ -52,3 +52,10 @@ look at index.html to get your bearings.
 ## START
 
 - add a click event to the start button, so that when it is clicked a new game is triggered.
+
+###BONUSES
+If you have time: think about how you might make the game more flexible and/or fun. Some ideas:
+- have the info message display congratulatory or insulting messages each time the user gets a match right or wrong
+- Change the contents of the tiles to something more fun than mere letters. Maybe there's a font our there with little images you could use?
+- Make the difficulty adjustable. Maybe you have 'Start Easy', 'Start Medium', and 'Start Hard' buttons. The number of tiles to match could vary by difficulty level as could the length of the timeout in checkForMatch() (higher difficulty = shorter timeout).
+- have the game keep track of your won-loss record. add another div to display it.
