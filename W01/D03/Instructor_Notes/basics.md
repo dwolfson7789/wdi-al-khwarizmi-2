@@ -125,6 +125,7 @@ before we can start doing some real work let's quickly look at some operators th
       1 + 1
       10 / 2
       400 - 100
+      10 % 2
 
 See something unlike the others? The expression value of 10/2 is a decimal! It's what we call a `floating point number`. Whole numbers are called `integers`. So numbers are represented as two DIFFERENT data types.
 
