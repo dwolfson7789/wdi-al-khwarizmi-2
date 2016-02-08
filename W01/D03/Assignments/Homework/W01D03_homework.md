@@ -18,7 +18,7 @@ e.g.:
 ### Reminder: How to Submit Your Homework
 This is the last time the instructions will appear in the homework file; after this, it's assumed you know how to submit homeworks. Come back here if you need to refresh your memory.
 
-To submit a homework, you must first commit your changes. In the Terminal, in the folder where you're working (generally that day's folder):
+To submit a homework, you must first commit your changes. In the Terminal, in the directory where you're working (generally that day's directory):
 ```
 git add -A
 git commit -m "some sort of commit message, i.e., 'working on homework. Ethan sucks'"
@@ -26,12 +26,18 @@ git commit -m "some sort of commit message, i.e., 'working on homework. Ethan su
 
 This saves the changes to your local repo on your machine. You now need to push those changes out to your remote repo on Github: `git push origin master`
 
-When you've completed the homework (or gotten as far as you're going to), go to **your** Github account and navigate to the folder where the homework (it will look something like (the URL will look something like https://github.com/[your Github username]/wdi-al-Khwarizmi/tree/master/W01/D02/Assignments/Homework). **Copy this URL.**
+When you've completed the homework (or gotten as far as you're going to), go to **your** Github account and navigate to the folder where the homework (the URL will look something like https://github.com/YOUR-GITHUB-USERNAME/wdi-al-Khwarizmi/tree/master/W01/D02/Assignments/Homework). **Copy this URL to the clipboard.**
 
 Now go to our main class repo (again, [here it is](https://github.com/ga-students/wdi-al-Khwarizmi)). Click on the 'Issues' tab and create a new Issue:
-* Title: HW #XXX
-* Body: In the body of the issue, paste the link to the homework's location in your fork of the class repo, the one you just copied.
-
+* Title: [Your name] Homework Week#Day# (e.g., Ethan Friedman HW W01D04)
+* Body: In the body of the issue, paste the link to the homework's location, the one you just copied.
+   * Include also, on a scale of 1-5:
+      1. How complete you feel your HW submission is
+      1. How comfortable you felt with the HW
+   * Also include:
+      1. Wins: What are you feeling good about in the topics covered in the HW
+      1. Struggles: What are you struggling with?
+      1. Comments: Anything else you'd like to add
 When you're done, submit the issue. Your homework is in!
 
 =================

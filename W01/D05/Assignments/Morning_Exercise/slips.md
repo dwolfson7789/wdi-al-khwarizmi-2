@@ -10,9 +10,9 @@ TK
 
 
 1. What are the different datatypes in JavaScript? Give an example of each. Why might you choose to use one over another?
-1. Truthy and Falsey: discuss, with examples. List all the 'falsey' things.
+1. Truthy and Falsey: discuss, with examples. List the 'falsey' things.
 1. What is a function? Give an example. How do we feed data info a function? What do we use when we want a function to supply us with something when it's done running?
-1. What is "scope" in JavaScript? Give an example and discuss.
+1. What is "scope" in JavaScript? Give an example and discuss. How might using the `var` keyword affect a variable's scope?
 1. What are the different types of Loops in JS? Give an example of each and discuss when you might want to use each type.
 1. Array methods: what do push(), pop(), shift(), unshift(), and length() do when called on an array?
 1. More array methods: what do splice() and slice() do?
