@@ -70,8 +70,8 @@ Now we have names representing those primitive values.
 variables names have a few rules
 - names cannot start with a number
 - and cannot have special characters or spaces.
-- variable declarations are statements. they hold some "state" of a program.
-- state is what let's the interpreter "remember" our value, it saves it to memory.
+- variable declarations are statements. They hold some "state" of a program.
+- state is what lets the interpreter "remember" our value, it saves it to memory.
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Assignment_Operators
 
@@ -113,7 +113,7 @@ alert and prompt are functions with side-effects. meaning they do all the work o
 
 functions take something in and give something back, what is given back is called a "return value". in the case of prompt it "gives back" what the user has typed in but in a dialog box. 
 
-now if we can a user's input then what can we do with it? store it in a variable!
+now if we can get a user's input then what can we do with it? store it in a variable!
 
       var name = alert("hey what's your name?")
       prompt(name)
@@ -129,7 +129,7 @@ before we can start doing some real work let's quickly look at some operators th
 
 See something unlike the others? The expression value of 10/2 is a decimal! It's what we call a `floating point number`. Whole numbers are called `integers`. So numbers are represented as two DIFFERENT data types.
 
-data types come with certain rules on how you can use them. we'll take a look at that in just a moment.
+data types come with certain rules on how you can use them. We'll take a look at that in just a moment.
 
 Before we jump into types let's take a look at how to use the addition operator with strings.
 
@@ -178,18 +178,18 @@ try it out!
 - The first number divided by the second number
  
 
-#### 1c. Write a program that asks the user for a number of pennies, nickels, dimes and quarters. Calculate the total amount of money that the user has and print it out. Use .toFixed() to format your results to the right number decimels.
+#### 1c. Write a program that asks the user for a number of pennies, nickels, dimes and quarters. Calculate the total amount of money that the user has and print it out. Use .toFixed() to format your results to the right number of decimels.
 
-#### 1d. Write a program that asks the user for the value of their current Metro card and Compute how many rides they have left on their card. Only provide whole number results (i.e. you cannot have 3.5 rides left on a card), use the Math.floor().
+#### 1d. Write a program that asks the user for the value of their current Metrocard and compute how many rides they have left on their card. Only provide whole number results (i.e. you cannot have 3.5 rides left on a card); use the Math.floor() function.
 
-##### Note that Math.floor() is a pure function, as a opposed to a function with side-effects. It doesn't produce a produce any kind of input or output it just returns a value! 
+##### Note that Math.floor() is a pure function, as a opposed to a function with side-effects. It doesn't produce any kind of input or output, it just returns a value! 
 
 # Why you bugging. debugging errors
 
 Types of errors:
 
 - Syntax
-  - incomplete quotes or parenthesis
+  - incomplete quotes or parentheses
 - Reference
   - no variable declaration
   - no function definition
