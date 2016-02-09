@@ -17,7 +17,7 @@ So:
 1. Once you've successfully completed all the steps in starwars.js, style your webpage in starwars.css! You'll need to:
   * Use at least three different kinds of selectors
   * Use at least 10 different styles. At least three of them must be ones that we have not yet used in class! Search on the web for possibilities.
-  * Play around with it. For example, Jakku should probably be a `tan` background color (or something in that range), while the Star Destroyer might be `gray`. What happens if you give Jakku a border and `border-radius: 50%;`?
+  * Play around with it. To get rid of the bullets in the `ul li`s, use `list-style-type: none;`; Or, for example, Jakku should probably be a `tan` background color (or something in that range), while the Star Destroyer might be `gray`. What happens if you give Jakku a border and `border-radius: 50%;`?
   * Try restructuring BB-8. Google for images of him, then try making him look a little like himself: two circles, a smaller one on top. Your HTML might look something like this:
   ```
   <div class="bb08">
