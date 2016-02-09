@@ -201,18 +201,18 @@ if(raptor.hungry && muldoon.rescue_ability < 10){
  ### PART 5: HTML/CSS
 
  1. Research HTML tags (there's this website called Google.com....). Make a list of tags, with each tag's intended use in the HTML. Start with these common tags:
-  * <div>
-  * <p>
-  * <a>
-  * <span>
-  * <ul>
-  * <li>
-  * <nav>
-  * <head>
-  * <body>
-  * <html>
-  * <button>
-  * <script>
+  * \<div\>
+  * \<p\>
+  * \<a\>
+  * \<span\>
+  * <\ul\>
+  * <\li\>
+  * <\nav\>
+  * <\head\>
+  * <\body\>
+  * <\html\>
+  * <\button\>
+  * <\script\>
 1. List at least 5 others we haven't covered in class yet, along with their use.
 1. CSS!
   * First, [some reading on CSS layout](http://learnlayout.com/)
