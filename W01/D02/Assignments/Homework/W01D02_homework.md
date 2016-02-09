@@ -30,9 +30,9 @@ Now go to our main class repo (again, [here it is](https://github.com/ga-student
       1. How complete you feel your HW submission is
       1. How comfortable you felt with the HW
    * Also include:
-      1. Wins: What are you feeling good about in the topics covered in the HW
+      1. Wins: What are you feeling good about in the topics covered in the HW?
       1. Struggles: What are you struggling with?
-      1. Comments: Anything else you'd like to add
+      1. Comments: Anything else you'd like to add?
 When you're done, submit the issue. Your homework is in!
 
 =================
