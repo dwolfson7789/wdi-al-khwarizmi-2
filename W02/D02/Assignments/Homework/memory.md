@@ -61,3 +61,4 @@ If you have time: think about how you might make the game more flexible and/or f
 - have the game keep track of your won-loss record. add another div to display it.
 - during each game, keep track of (and display in the info div) the number of correct and incorrect matches so far and your success percentage
 - Play with styling
+- Display the duration of the active game in the info div as "Game time: XXX minutes, YYY seconds"
