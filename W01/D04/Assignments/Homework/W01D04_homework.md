@@ -202,18 +202,18 @@ if(raptor.hungry && muldoon.rescue_ability < 10){
 
  1. Research HTML tags (there's this website called Google.com....). Make a list of tags, with each tag's intended use in the HTML. Start with these common tags:
   * \<div\>
-  * <p>
-  * <a>
-  * <span>
-  * <ul>
-  * <li>
-  * <nav>
-  * <head>
-  * <body>
-  * <html>
-  * <button>
-  * <script>
-1. List at least 5 others we haven't covered in class yet, along with their use.
+  * \<p\>
+  * \<a\>
+  * \<span\>
+  * \<ul\>
+  * \<li\>
+  * \<nav\>
+  * \<head\>
+  * \<body\>
+  * \<html\>
+  * \<button\>
+  * \<script\>
+1. List at least 5 others we haven't covered in class yet, along with their use. (To display an HTML tag in markdown you'll need to use the "escape" character, a backslash, \\, before the 'greater than' and 'less than' symbols that make up the tag.) i.e., \\\<div\\\>
 1. CSS!
   * First, [some reading on CSS layout](http://learnlayout.com/)  -- we will cover this in class tomorrow so consider this a preview and a good way . You can stop once you hit the section on 'media queries'
-  * Next, go [here](http://flukeout.github.io/) and practice using CSS selectors. There are 26 exercises to help get the selectors engrained. Can you successfully complete them all. 
+  * Next, go [here](http://flukeout.github.io/) and practice using CSS selectors. There are 26 exercises to help get the selectors engrained. Can you successfully complete them all.
