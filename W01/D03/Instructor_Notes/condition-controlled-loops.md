@@ -37,7 +37,7 @@ One way to solve this problem is to ask your programming language to select a â€
 
 Write a program to ask the user to select one of three options - Rock (r), Paper (p) or Scissors (s)
 
-Use the random.randint() function to select an option for the computer
+Use the Math.random() function to select an option for the computer
 Determine the winner and print the result.
 
 - Rock beats Scissor    
@@ -52,9 +52,9 @@ Determine the winner and print the result.
 
 # the while loop!
 
-The way a while loops are condition controlled loops. Meaning that there is a predicate (just like an if statement) but the block of code will repeat forever until that predicate is untrue. 
+While loops are condition-controlled loops. Meaning that there is a predicate (just like an if statement) but the block of code will repeat forever until that predicate is untrue. 
 
-Of course we don't want our program to loop for ever so we need either create a condition where the predicate is false or use the `break` statement.
+Of course we don't want our program to loop forever so we need to either create a condition where the predicate is false or use the `break` statement.
 
 
 [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)
