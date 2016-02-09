@@ -62,3 +62,6 @@ If you have time: think about how you might make the game more flexible and/or f
 - during each game, keep track of (and display in the info div) the number of correct and incorrect matches so far and your success percentage
 - Play with styling
 - Display the duration of the active game in the info div as "Game time: XXX minutes, YYY seconds"
+
+# CSS!
+Go to the Brook_and_Lyn directory and follow the instructions in README.md to recreate the web page shown.

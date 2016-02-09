@@ -15,4 +15,34 @@ BONUS: After you construct your deck, randomly pull two cards from your deck arr
 
 ANOTHER BONUS: The [Fibonnaci sequence](https://en.wikipedia.org/wiki/Fibonacci_number) is an important infinite sequence where each number in the sequence is the sum of the prior two. The first two numbers, by definition, are 0 and 1. From that we can get the whole sequence. E.g., the first 7 Fibonnaci numbers are 0, 1, 1, 2, 3, 5, 8.
 
-Write a program that prints out the first 20 numbers of the sequence. 
+Write a program that prints out the first 20 numbers of the sequence.
+
+1. Given the array below, write a `youngest` function that will return the name of the youngest person in the array. Then write an `oldest` function for the oldest.
+```js
+var candidates = [
+  {
+    name: "Bernie Sanders",
+    age: 74
+  },
+  {
+    name: "Hillary Clinton",
+    age: 68
+  },
+  {
+    name: "Jeb Bush",
+    age: 62
+  },
+  {
+    name: "Donald Trump",
+    age: 69
+  },
+  {
+    name: "Ted Cruz",
+    age: 45
+  },
+  {
+    name: "Marco Rubio",
+    age: 44
+  }
+]
+```
