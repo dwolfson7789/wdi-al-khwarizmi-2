@@ -4,20 +4,14 @@ Headers:
 Preface the words you want to be made into headers by 1 - 6 # symbols. The fewer the #, the bigger the font.
 
 e.g:
-
+Typing \# Biggest possible header yields
 # Biggest possible header
-Biggest possible header
 ## Smaller header
-Smaller header
-
 ###### Smallest header
-Smallest header
 
 Lists:
 
-To make an unordered list, preface words with an -.
-
-e.g.:
+To make an unordered list, preface words with an -. e.g.:
 
 Shopping list:
 - eggs
@@ -89,6 +83,9 @@ To include images, preface the image link with ![alt text] and immediately follo
 e.g.:
 
 ![dog developer](http://i1.kym-cdn.com/photos/images/original/000/234/765/b7e.jpg)
+
+Escape:
+The backslash character (\\) is the 'escape' character. If you want to the markdown to show any of the special symbols referenced above (e.g., \#), just preface it with a backslash to display it.
 
 Resources
 
