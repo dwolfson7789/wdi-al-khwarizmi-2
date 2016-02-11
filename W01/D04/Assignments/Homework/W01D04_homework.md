@@ -215,5 +215,5 @@ if(raptor.hungry && muldoon.rescue_ability < 10){
   * \<script\>
 1. List at least 5 others we haven't covered in class yet, along with their use. (To display an HTML tag in markdown you'll need to use the "escape" character, a backslash, \\, before the 'greater than' and 'less than' symbols that make up the tag.) i.e., \\\<div\\\>
 1. CSS!
-  * First, [some reading on CSS layout](http://learnlayout.com/)  -- we will cover this in class tomorrow so consider this a preview and a good way . You can stop once you hit the section on 'media queries'
+  * First, [some reading on CSS layout](http://learnlayout.com/)  -- we will cover this in class tomorrow so consider this a preview. You can stop once you hit the section on 'media queries'
   * Next, go [here](http://flukeout.github.io/) and practice using CSS selectors. There are 26 exercises to help get the selectors engrained. Can you successfully complete them all.

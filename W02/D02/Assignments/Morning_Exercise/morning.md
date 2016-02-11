@@ -28,6 +28,6 @@ var addSixAndMultByTwo = function(num) {
   return (num + 6) * 2;
 }
 
-console.log(arrayMapper([5,7,2], addSixAndMultByTwo)); //returns [22, 26, 16]
+console.log(arrayMapper([5, 7, 2], addSixAndMultByTwo)); //returns [22, 26, 16]
 ```
-1. Rewrite your `arrayMapper` function in the last step so that you don't have to have previously created and named the function you're applying to each element of the array. Hint: it rhymes with "schmanonymous schmallback function"
+1. Redo the previous exercise but without creating in advance the function to be applied to each element of the array ('`addSixAndMultByTwo`' in my silly example). Hint: what you need rhymes with "schmanonymous schmallback function"
