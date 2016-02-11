@@ -126,6 +126,7 @@ before we can start doing some real work let's quickly look at some operators th
       10 / 2
       400 - 100
       10 % 2
+      100 * 2
 
 See something unlike the others? The expression value of 10/2 is a decimal! It's what we call a `floating point number`. Whole numbers are called `integers`. So numbers are represented as two DIFFERENT data types.
 
@@ -137,6 +138,9 @@ Before we jump into types let's take a look at how to use the addition operator 
       alert("hello "+name)
 
 Cool so now that we can get input, give output and do some simple calculations, let's create a calculator!
+
+[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators)
+
 
 # our first program with input and output
 
@@ -151,7 +155,7 @@ whoa whoa what happened?
 
 we need to look at the return value of prompt function to make sure that we are getting numbers back not strings! one way to do that is with typeof operator
 
-      var some_num = prompt("enter a number please")
+      let some_num = prompt("enter a number please")
       typeof some_num
 
 Now what!? Well we need convert our string to a number, thankfully there are built-in functions to help us do that:
@@ -189,11 +193,100 @@ try it out!
 Types of errors:
 
 - Syntax
-  - incomplete quotes or parentheses
+  - incomplete quotes or parentheses (see what happens when you have a missing quote0)
 - Reference
-  - no variable declaration
-  - no function definition
+  - no variable declaration (try using a var w/o declaring it!)
+  - no function definition (samething but with a function name)
 - Semantic
   - no error but wrong output (ie 1 + 1 is 11)
 
- 
+# Advanced Math Operators
+
+We've used the basic operators like `+`,`-`,`*`,`/` but let's take a look at `reamainder` operator and Math.pow
+
+		3/2
+		3%2
+			
+The first expression evaluates to 1.5 and the the second evaluates to 1. When using the remainder operator the value we get back is the the remainder of that division. 
+
+Try you some calculations that evenly divide into each other and others that don't. Use both operators.
+
+# Math 
+
+The math object in JS gives us some neat tools to tackle complicated calculations. Let's take a look at one of them. 
+
+		Math.pow(2, 4)
+		
+The syntax looks a bit odd but what we have here is a function that takes two number like 2 and 4 and returns the value of 2 to the power of 4. 
+
+You can take a look at all the math objects avaiable to us here:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
+
+###problem 1e.
+
+Ask the user to input a number of seconds as a whole number.  Then express the time value inputted as a combination of minutes and seconds.
+
+Enter seconds: 110
+
+That’s 1 minute and 50 seconds
+
+# Line Continuation
+
+Sometimes you'll be writting code that doesn't fit inside the width of your window we can use the `\` to let our code flow the next line.
+
+	'some string of text \
+	that can be on two lines!'
+
+
+# Escape Characters 
+
+There are times where we would like to use ' character in a string literal. Like so:
+
+	'hey how's it going?' // this will break
+	'hey how\'s it going?' // this will not
+	
+if you try to type this into your console you'll notice an error. If we add a `backlash` to our string we'll be able to `escape` our character and make our string valid. 
+
+We can also add tabs and newlines to our strings too. remember computers encode spaces, tabs, and enter key strokes into characters.
+
+	'\tjim'
+	'jim\nbob'
+
+For all the ascii character encodings check this out!
+
+[http://www.computerhope.com/jargon/a/ascii.htm](http://www.computerhope.com/jargon/a/ascii.htm)
+
+# String Concatenation
+
+We can take multiple strings and add them together. We do this by the using the `+` operator. So we can have variables that reference strings and combine them or just a couple of plain old strings as well
+
+	"hey" + "hi"
+	
+# Formatting Strings
+
+One of the nice features of javascript is that it gives us a bunch of default functions or methods on the String object to do stuff to our strings. 
+
+And example of one could be when we want to chop off some digits from our floats 
+
+	var some_div = 10/3 //remember to assign it to a variable.
+	some_div
+	some_div.toFixed(2)
+	
+
+For a complete list: 
+
+[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+
+# String Templates
+
+A new neat feature in ES2015, instead of worrying about concatenating mixed typed expression from numbers to strings when we're trying to display things. we can just evaluate them inside the strings themselvs.
+
+	"1+1"
+	`${1+1}`
+	
+	
+[https://developers.google.com/web/updates/2015/01/ES6-Template-Strings?hl=en](https://developers.google.com/web/updates/2015/01/ES6-Template-Strings?hl=en)
+
+
+ 
+
