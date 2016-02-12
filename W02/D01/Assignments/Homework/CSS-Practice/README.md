@@ -1,5 +1,7 @@
 # CSS: IT'S FUN AND HEALTHY, TOO!
 
+Do the following instructions on index.html and style.css in this folder
+
 1. Navigation
 - Inside the nav element, delete the heading and replace it with 3 <li> tags in an unordered list.
 - Within each list element, place an <a> and make the text inside of each <a> "Portfolio", "Bio", and "Contact", respectively. Set the href property on the <a> tag equal to "#". This will simply direct the link back to the same page.   
