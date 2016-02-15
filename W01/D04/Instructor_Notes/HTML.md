@@ -120,6 +120,8 @@ When an outer tag contains an inner tag, we call the outer tag the *parent*, and
 
 For this reason, we can think of a document as a family tree, with the `<html>` tag as being the ultimate ancestor.  Since we think of it as a tree, we often call the `<html>` tag the *root* element.
 
+At this point you have an idea of what the word `document` refers to in what will become the **Document Object Model**, or DOM for short.
+
 ##### Exercise 2 (5 minutes)
 
 For the code example above, draw a tree for all tags contained in the example.  You don't need to include the text content, or any attributes for the tags when drawing the tree.  
