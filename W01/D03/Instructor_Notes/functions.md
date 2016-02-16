@@ -32,7 +32,7 @@ Just like a variable a function can be named. The naming structure follows the s
 
 Here we've got a function definition with two `parameters`. Javascript does the work of assigning values to those variables (operandOne and operandTwo) and then we log the sum of those values.
 
-How does Javascript know those values? Well when we `call` our fucntion
+How does Javascript know those values? Well when we `call` our function
 we give the arguments that function needs needs and it'll assign them to the parameters we defined.
 
 Arguments can be primitive values or other functions. So something like this is totally valid `console.log(Math.random())`
