@@ -8,7 +8,7 @@ We'll spend 5-10 minutes researching, and then each group will present their top
 #####PARTNERSHIP ASSIGNMENTS TO COME here
 1. Julio Montas, Carrie Streed, Drew Wolfson
 1. Travis Shields, Ryan Othman, Jake Zappin
-1. Sumit Bhasin, Alexandra Arguimbau, Akilah Scharff
+1. Sumit Bhasin, Alexandra Arguimbau, Sung Jin Lee
 1. Omarwali Jones, Giles Taylor, Asad Richardson
 1. Amanjeet Nagpal, Tyler Gates, Anup Segu
 1. Andrew Fry, Ariel Mendoza, Andrew Gibson
@@ -16,7 +16,7 @@ We'll spend 5-10 minutes researching, and then each group will present their top
 1. Michael Machiah, Daniel Eversen, Jonathan Schupak
 1. Pooja Tandan, Tanya Newell, Kaushal Patel
 1. Kristyn Lyncheski, Matthew Jaikaran, Malcolm Sackler
-1. Sean Keegan, Matthew Woop, Sung Jin Lee
+1. Sean Keegan, Matthew Woop
 
 #####Questions to Answer
 1. What are the different datatypes in JavaScript? Give an example of each. Why might you choose to use one over another?
