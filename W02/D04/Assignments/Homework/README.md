@@ -30,17 +30,17 @@ var rey = createCharacter("Rey", "female", "maybe?", true);
 Some of the other characters you should create (push all your characters, including Rey, into a `characters` array):
 
   Finn: male, not a Jedi, is a good guy
-  
+
   Poe: male, not a Jedi, is a good guy
-  
+
   BB-8: no gender, not a Jedi, is good
-  
+
   Kylo Ren: male, is a Jedi, is baaaaaaaaaaaaaaaad
-  
+
   Leia: female, not a Jedi, good
-  
+
   Darth Vader: male, Jedi, bad, is dead. *How would you handle the fact that there's an extra property here for these last two?*
-  
+
   Jar-Jar Binks: male? I think so. Goodness knows. Not a Jedi (although [this](https://www.reddit.com/comments/3qvj6w) insane fan theory   argues otherwise), and he is very bad. In a different sense of the word 'bad' than we've been using so far, but undeniably bad.
 
 
@@ -98,7 +98,7 @@ Some of the other characters you should create (push all your characters, includ
 Write a `makePeace` function that takes a character name and if that character is found in the object's `enemies` array, it removes it and returns the modified object. (Otherwise it returns "Can't make peace with someone who doesn't exist."). Darth came over to the good side before he died; he and Leia aren't enemies anymore. Use it to remove them from each other's enemies lists.
 ###BONUS: have your `makePeace` function be reciprocal. If Leia.makePeace (passing in Darth Vader) is valid (i.e., Darth exists in Leia's enemies array), then it should check to see if Leia herself exists in Darth's enemies array and remove her from there if so. It should then return an array with the two modified objects.
 
-============ 
+============
 
 ##SPLITTING UP!
 
@@ -109,9 +109,11 @@ var splitterFactory = function(char) {
   }  
 }
 
-var splitOnA = splitterFactorY("a");
+var splitOnA = splitterFactory("a");
 splitOnA("Ethan Friedman"); //returns ["Eth", "n Friedm", "n"]
 ```
 
 ###BONUS
 * make your splitter factory case-insensitive
+
+==================
