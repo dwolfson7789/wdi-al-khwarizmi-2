@@ -6,6 +6,7 @@
 Please try to complete as many of the exercises as you can. Homework should be submitted by midnight. If you haven't finished by then, please don't stay up trying to get it done! The pace of this course is intense -- you have to take care of yourself (i.e., SLEEP).
 
 ###Submitting the homework
+
 This is going to be your process throughout the course. Live it, breathe it.
 By this point you should have:
 
@@ -13,13 +14,21 @@ By this point you should have:
 1. Cloned that remote repo from your Github to your local machine.
 If you haven't yet, do this now!
 
+Before you even think about STARTING the homework: make sure you've *pulled* the latest version of the students repo so that you know you're working with the correct files:
+
+`git pull upstream master`
+
+Now you can start the homework.
+
 To submit a homework, you must first commit your changes. In the Terminal, in the directory where you're working (generally that day's directory):
 ```
 git add -A
 git commit -m "some sort of commit message, i.e., 'working on homework. Ethan sucks'"
 ```
 
-This saves the changes to your local repo on your machine. You now need to push those changes out to your remote repo on Github: `git push origin master`
+This saves the changes to your local repo on your machine. You now need to push those changes out to your remote repo on Github: 
+
+`git push origin master`
 
 When you've completed the homework (or gotten as far as you're going to), go to **your** Github account and navigate to the folder where the homework (the URL will look something like https://github.com/YOUR-GITHUB-USERNAME/wdi-al-Khwarizmi/tree/master/W01/D02/Assignments/Homework). **Copy this URL to the clipboard.**
 
