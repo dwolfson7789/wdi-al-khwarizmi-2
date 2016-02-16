@@ -26,7 +26,7 @@ git add -A
 git commit -m "some sort of commit message, i.e., 'working on homework. Ethan sucks'"
 ```
 
-This saves the changes to your local repo on your machine. You now need to push those changes out to your remote repo on Github: 
+This saves the changes to your local repo on your machine. You now need to push those changes out to your remote repo on Github:
 
 `git push origin master`
 
@@ -71,7 +71,7 @@ As you execute the commands below, try doing some of them with absolute paths, s
     * "**TIE_fighter_1**"
     * "**TIE_fighter_2**"
     * "**TIE_fighter_3**"
-    Move the TIE fighters inside the Star Destroyer.
+  1. Move the TIE fighters inside the Star Destroyer.
   1. When our story begins, our main character, Rey, is exploring the "**Old_Shipwreck**". Create a file called "**Rey.txt**" inside that directory. Two other key characters, Poe Dameron and BB-8, are checking out the Small Village on Jakku: inside "**Small_Village**", create
     * "**Poe_Dameron.txt**"
     * "**BB-8.txt**"
