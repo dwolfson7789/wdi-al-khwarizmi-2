@@ -1,15 +1,15 @@
 # objectives
 
 
-- store associative data indside an object
+- store associative data inside an object
 - retrieve data from object literals
 
 
 # intro
 
-Let's take a look at a new we can organize our data. We've seen that `arrays` give us a powerful data structure that let us update, delete, append a squence of objects called `elements`. Those elements can be strings, numbers, even other functions or `arrays`. 
+Let's take a look at a new we can organize our data. We've seen that `arrays` give us a powerful data structure that let us update, delete, append a squence of objects called `elements`. Those elements can be strings, numbers, even other functions or `arrays`.
 
-Let's take a look another type of datastructure that allows us to store data in pairs. 
+Let's take a look another type of datastructure that allows us to store data in pairs.
 
 # Object literals
 
@@ -19,7 +19,7 @@ Javascript does not do a good job at defining exactly what all an object does. I
 
 creating an object is real easy. So just like you define an array literal with `[]` an object uses `{}` .
 
-		var contactList = { 
+		var contactList = {
 			drake: "1-201-555-3332",
 			beyonce: "1-201-134-0934",
 			kendrick: ["1-201-555-5555", "1-201-123-1234"]
@@ -27,7 +27,7 @@ creating an object is real easy. So just like you define an array literal with `
 
 Now if we wanted to access a value from our our contact list all we have to do is use the `.` operator and the name of the `key` or `property`. So if we wanted drake's number we would do this: `contactList.drake`.
 
-We also have the ability to access the value associated with the `key` drake by using the `[]` like an array but inside the square brackets we name the key. `contactList.drake["drake"]`. 
+We also have the ability to access the value associated with the `key` drake by using the `[]` like an array but inside the square brackets we name the key. `contactList.drake["drake"]`.
 
 This can be pretty powerful way to get values from an object. It let's you use a variable or a function as your key to retrieve a value.
 
@@ -36,25 +36,24 @@ You might have noticed that you can also have arrays as values inside of objects
 
 # Looping
 
-This brings us to the part of the lesson where we figure out how to loop through a set of values in an object.	
-	
+This brings us to the part of the lesson where we figure out how to loop through a set of values in an object.
+
 	for (var prop in contactList) {
 		console.log("obj." + prop + " = " + obj[prop]);
 	}
 
-# Problem 
+# Problem
 
+Subway time!
 
-Subways! Create objects for the the blue line, yellow line, and the green line for all the stops below central park in manhattan. The object should have a property that is the line and the station. 
+Create objects for the the blue line, yellow line, and the green line for all stops below central park in Manhattan. The object should have a property name that is the station and an array that associates the lines for that stop and is respective of that line. Like:
+
+blue = {
+	'42nd' : ['a', 'c', 'e']
+}
+
+Create a menu object that allows a user to select a stop and look-up all the trains that are available at that stop.
+
+Loop through these objects and find any stops where you would be able to transfer.
 
 [http://web.mta.info/maps/submap.html](http://web.mta.info/maps/submap.html)
-
-
-	
-
-
-
-
-
-
-
