@@ -26,7 +26,7 @@ git add -A
 git commit -m "some sort of commit message, i.e., 'working on homework. Ethan sucks'"
 ```
 
-This saves the changes to your local repo on your machine. You now need to push those changes out to your remote repo on Github: 
+This saves the changes to your local repo on your machine. You now need to push those changes out to your remote repo on Github:
 
 `git push origin master`
 
@@ -71,17 +71,22 @@ As you execute the commands below, try doing some of them with absolute paths, s
     * "**TIE_fighter_1**"
     * "**TIE_fighter_2**"
     * "**TIE_fighter_3**"
-    Move the TIE fighters inside the Star Destroyer.
-  1. When our story begins, our main character, Rey, is exploring the "**Old_Shipwreck**". Create a file called "**Rey.txt**" inside that directory. Two other key characters, Poe Dameron and BB-8, are checking out the Small Village on Jakku: inside "**Small_Village**", create
+  1. Move the TIE fighters inside the Star Destroyer.
+  1. When our story begins, our main character, Rey, is exploring the "**Old_Shipwreck**". Create a file called "**Rey.txt**" inside that directory.
+  1. Two other key characters, Poe Dameron and BB-8, are checking out the Small Village on Jakku: inside "**Small_Village**", create
     * "**Poe_Dameron.txt**"
     * "**BB-8.txt**"
   1. Inside the "**Orbiting_Star_Destroyer**", create "**Finn.txt**" and "**Captain_Phasma.txt**". That completes our initial cast of characters.
-  1. Now our story begins! Finn and Captain Phasma leave the Star Destroyer and head to the "**Small_Village**": move their files there from the Star Destroyer. They take Poe Dameron captive, but BB-8 escapes with the secret plans! Move "**BB-8.txt**" to the "**Scavenger_Camp**" directory.
-  1. Finn, the Captain, and Poe return to the Star Destroyer: Move their files to "**Orbiting_Star_Destroyer**". The evil First Order destroys the poor village: Delete the "**Small_Village**" directory.
+  1. Now our story begins! Finn and Captain Phasma leave the Star Destroyer and head to the "**Small_Village**": move their files there from the Star Destroyer.
+  1. They take Poe Dameron captive, but BB-8 escapes with the secret plans! Move "**BB-8.txt**" to the "**Scavenger_Camp**" directory.
+  1. Finn, the Captain, and Poe return to the Star Destroyer: Move their files to "**Orbiting_Star_Destroyer**".
+  1. The evil First Order destroys the poor village: Delete the "**Small_Village**" directory.
   1. Rey is done scavenging at the shipwreck: Move "**Rey.txt**" to "**Scavenger_Camp**".
-  1. Finn and Poe Dameron escape the Star Destroyer on "**TIE_figher_3**" (move their files inside its directory) and crash-land it on Jakku near the Scavenger Camp! Move the TIE fighter from the Star Destroyer to "**Scavenger_Camp**".
+  1. Finn and Poe Dameron escape the Star Destroyer on "**TIE_figher_3**" (move their files inside its directory)
+  1. They crash-land it on Jakku near the Scavenger Camp! Move the TIE fighter from the Star Destroyer to "**Scavenger_Camp**".
   1. Poe is presumed dead in the crash: Delete his file.
-  1. Finn leaves the TIE fighter and makes for the camp -- move "**Finn.txt**" to "**Scavenger_Camp**". The wrecked, crashed TIE fighter can't be flown any more: delete its directory.
+  1. Finn leaves the TIE fighter and makes for the camp -- move "**Finn.txt**" to "**Scavenger_Camp**".
+  1. The wrecked, crashed TIE fighter can't be flown any more: delete its directory.
   1. Inside the Scavenger Camp, we have an old junky Corellian freighter. Make a "**junky_old_spaceship**" directory there.
   1. Rey is done scavenging at the shipwreck and returns to the Scavenger Camp; move her file there.
   1. Chaos! The First Order is attacking the Scavenger Camp! Finn, Rey, and BB-8 all board the old spaceship: move them there.
