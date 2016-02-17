@@ -82,7 +82,8 @@ As you execute the commands below, try doing some of them with absolute paths, s
   1. Finn, the Captain, and Poe return to the Star Destroyer: Move their files to "**Orbiting_Star_Destroyer**".
   1. The evil First Order destroys the poor village: Delete the "**Small_Village**" directory.
   1. Rey is done scavenging at the shipwreck: Move "**Rey.txt**" to "**Scavenger_Camp**".
-  1. Finn and Poe Dameron escape the Star Destroyer on "**TIE_figher_3**" (move their files inside its directory) and crash-land it on Jakku near the Scavenger Camp! Move the TIE fighter from the Star Destroyer to "**Scavenger_Camp**".
+  1. Finn and Poe Dameron escape the Star Destroyer on "**TIE_figher_3**" (move their files inside its directory)
+  1. They crash-land it on Jakku near the Scavenger Camp! Move the TIE fighter from the Star Destroyer to "**Scavenger_Camp**".
   1. Poe is presumed dead in the crash: Delete his file.
   1. Finn leaves the TIE fighter and makes for the camp -- move "**Finn.txt**" to "**Scavenger_Camp**". The wrecked, crashed TIE fighter can't be flown any more: delete its directory.
   1. Inside the Scavenger Camp, we have an old junky Corellian freighter. Make a "**junky_old_spaceship**" directory there.
