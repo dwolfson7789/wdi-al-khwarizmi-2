@@ -96,10 +96,24 @@ Once you have a node, you can access information about the classes the node has.
 
 ##### Exploration (10 minutes)
 
-For the title, as above, what happens when you execute each of the following commands?
+For `title`, as above, what happens when you execute each of the following commands?
 
 - `title.classList;`
 - `title.classList.add('highlight');`
 - `title.classList.toggle('boxed');`
 - `title.classList.remove('highlight', 'boxed');`
 - `title.classList.add('floating');`
+
+#### `someNode.style`
+
+If you've grabbed a node, it has a property called `style`, which is *itself* a collection of properties.  You can change these properties, and the styling of your page will reflect it.
+
+##### Exploration (5 mins)
+
+For `title`, as above, what happens when you execute each of the following commands?
+
+- `title.style;`
+- `title.style.color = "blue";`
+- `title.style.float = "right";`
+- `title.style.border = "3px dotted green";`
+- `title.style.boxShadow = "3px 2px 5px orange";`
