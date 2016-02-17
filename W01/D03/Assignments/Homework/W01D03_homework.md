@@ -16,14 +16,14 @@ e.g.:
 
 ## BEFORE DOING ANYTHING ELSE
 
-Remember to first `git push origin master` to push any changes you've made today out to your remote repo. (While the 'origin master' are optional here but it's not a bad idea to use them at first to remember exactly what you're doing.)
+Remember to first add all changes you've made on your local rep to be staged for commit with `git add -A`. Then commit them with `git commit -m "your commit message goes here"`. Finally run `git push origin master` to push any changes you've made today out to your remote repo. (While the 'origin master' part of that last command is optional here it's not a bad idea to use them at first to remember exactly what you're doing.)
 
-Then run `git pull upstream master` to get the latest version of the class repo!
+Then run `git pull upstream master` to get the latest version of the class repo! (Note that 'upstream master' is NOT optional and must be included every time.)
 
 ===================
 
 ### Reminder: How to Submit Your Homework
-This is the last time the instructions will appear in the homework file; after this, it's assumed you know how to submit homeworks. Come back here if you need to refresh your memory.
+This is the last time the instructions will appear in the homework file; after this, it's assumed you know how to submit homeworks. Come back here if you need to refresh your memory, check the repo's wiki, or you can also look in the README.md file in the repo's home directory. Lots of places!
 
 To submit a homework, you must first commit your changes. In the Terminal, in the directory where you're working (generally that day's directory):
 ```
@@ -35,7 +35,7 @@ This saves the changes to your local repo on your machine. You now need to push 
 
 When you've completed the homework (or gotten as far as you're going to), go to **your** Github account and navigate to the folder where the homework (the URL will look something like https://github.com/YOUR-GITHUB-USERNAME/wdi-al-Khwarizmi/tree/master/W01/D02/Assignments/Homework). **Copy this URL to the clipboard.**
 
-Now go to our main class repo (again, [here it is](https://github.com/ga-students/wdi-al-Khwarizmi)). Click on the 'Issues' tab and create a new Issue:
+Now go to our main class repo ([here it is](https://github.com/ga-students/wdi-al-Khwarizmi)). Click on the 'Issues' tab and create a new Issue:
 * Title: [Your name] Homework Week#Day# (e.g., Ethan Friedman HW W01D04)
 * Body: In the body of the issue, paste the link to the homework's location, the one you just copied.
    * Include also, on a scale of 1-5:
@@ -50,11 +50,23 @@ When you're done, submit the issue. Your homework is in!
 =================
 
 ### Part 1: JavaScript basics
-#### Datatypes
-1. What are the different ways of storing data in JavaScript?
+
+Answer all the questions in a (new) markdown file. Something to keep in mind as you do this (and all) homeworks: Googling "[some Javascript thing]" will often bring up a link from a website called 'W3Schools.com' as the top result(s). Get in the habit of NOT clicking on those links. Although it can be fine for simple things, you really *really* **really** want to get in the habit of reviewing the actual documentation at the [Mozilla Developer Network ](https://developer.mozilla.org/en-US/docs/Web/JavaScript) instead.
+
+#### Datatypes, Conditionals, and Loops
+1. What are the different datatypes in JavaScript?
+1. What's the keyword for creating a new variable in Javascript?
 1. Give an example of an `array`, and why you might choose to use one to store data (what characteristics of the data make it suitable for using this datatype?)?
 1. Give an example of an `object` (what your prework called 'associative arrays'). Under what circumstances would you choose to use one to store data instead of an array?
-1. What's the keyword for creating a new variable in Javascript?
+1. Why would you choose to use a `while` loop instead of a `for` loop, or vice versa? (Think about what characteristics of the nature of your iteration make one more suitable than the other.)
+1. What's wrong with the `for` loop in the code below? Fix it so the code runs properly:
+```js
+var awesomePeople = ["Ethan", "Liza", "Syed", "Shorty"]
+
+for (var i = 0, i < awesomePeople.length, i++) {
+  console.log(awesomePeople[i] + " is AWEEEEESOME");
+}
+```
 
 #### Manipulating data
 ```JavaScript
@@ -67,11 +79,12 @@ var teachers = ["Matt Short", "Syed Salahuddin", "Liza Ramo"];
 1. Write a `for` loop that iterates over the array and logs each instructor's name to the console.
 1. Modify your loop from the previous question so if each instructor's name is 10 characters or fewer, "[name] is short and sweet!" gets logged to the console; if it's 11 characters or more, log "[name] is cool and fun to say!"
 1. Check out the documentation for the built-in JavaScript [Math object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math). What is the difference between Math.round(), Math.floor(), Math.trunc(),and Math.ceil()?
+1. Pick a Math method that we haven't covered yet in class, and in your own words briefly describe what it does.
 1. Fun with nested arrays:    
 ```javascript
 var nestedArray =
   [
-    [ "Matt", "Ethan", "Liza", "Syed" ],
+    [ "Clinton", "Sanders", "Trump", "Cruz" ],
     [ "raindrops on roses ", "whiskers on kittens", "bright copper kettles", "warm woolen mittens" ],
     [
       [ "bacon","lettuce","tomato"],["rye","wheat","bagel" ]
@@ -80,7 +93,7 @@ var nestedArray =
 
   * What is the value of `nestedArray[0,3]`?
   * Write a `for` loop that iterates over Julie Andrews' "favorite things" from the song
-  * I would like a bacon sandwich (none of that veggie nonsense!) on wheat. How do I obtain those from `nestedArray`? Paste nestedArray into the console and see.
+  * I would like a bacon sandwich (none of that veggie nonsense!) on wheat. How do I obtain those from `nestedArray`? Paste nestedArray into the console and see if your answer works.
 1. Star Wars redux:
 
 ```js
@@ -98,15 +111,15 @@ var movies = [
 ];
 ```
 
-* For the first movie, what is the **value** corresponding to the "title" **key**? What is the **key** that corresponds to the "Luke Skywalker" **value**?
+* For the first movie, what is the *value* corresponding to the "title" *key*? What is the *key* that corresponds to the "Luke Skywalker" *value*?
 * How would you add a `protagonist: "Rey"` key:value pair to the second movie in the array? Since the movie is still playing in theaters, also add an `inTheaters: true` property for that movie.
 * Let's assume there's a special limited release of "A New Hope" in theaters; change it so its `inTheaters` property is `true`.
 * The next movie in the series is tentatively entitled just "Star Wars Episode VIII". It's slated for a 2017 release. Create a new object for the movie that incorporates that info.
 * Add your new object to the end of the `movies` array.
 
-#### EXTRA CREDIT
-* Write a `greenlight` function that creates a movie object like the ones above, with a title, protagonist, and year of release of your choice, and returns that object. This is a stretch goal, so to speak!
-* Extra extra credit: make the function reusable. You should be able to pass in title, protagonist and release year, and the function will return the movie object. e.g., `greenlight("WDI: The Developers Strike Back", "WDI-al-Khwarizmi", 2016)` will `return`
+#### EXTRA CREDIT (Do Part 2 below before attempting this!)
+* Write a `greenlight` function that creates a movie object like the ones above, with a title, protagonist, and year of release of your choice, and returns that object. This is a stretch goal! It should be hard for most of you.
+* Extra *extra* credit: make the function reusable. You should be able to pass in title, protagonist and release year, and the function will return the movie object. Please don't freak out if you're struggling with this! e.g., `greenlight("WDI: The Developers Strike Back", "WDI-al-Khwarizmi", 2016)` will return
 
 ```js
 {
@@ -115,7 +128,7 @@ var movies = [
   year: 2016
 }
 ```
-while `greenlight("Ethan Friedman: The Man, The Myth, The Legend", "Ethan himself", 2025)` will returns
+while `greenlight("Ethan Friedman: The Man, The Myth, The Legend", "Ethan himself", 2025)` will return
 
 ```js
 {
