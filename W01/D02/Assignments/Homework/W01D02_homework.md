@@ -79,7 +79,8 @@ As you execute the commands below, try doing some of them with absolute paths, s
   1. Inside the "**Orbiting_Star_Destroyer**", create "**Finn.txt**" and "**Captain_Phasma.txt**". That completes our initial cast of characters.
   1. Now our story begins! Finn and Captain Phasma leave the Star Destroyer and head to the "**Small_Village**": move their files there from the Star Destroyer.
   1. They take Poe Dameron captive, but BB-8 escapes with the secret plans! Move "**BB-8.txt**" to the "**Scavenger_Camp**" directory.
-  1. Finn, the Captain, and Poe return to the Star Destroyer: Move their files to "**Orbiting_Star_Destroyer**". The evil First Order destroys the poor village: Delete the "**Small_Village**" directory.
+  1. Finn, the Captain, and Poe return to the Star Destroyer: Move their files to "**Orbiting_Star_Destroyer**".
+  1. The evil First Order destroys the poor village: Delete the "**Small_Village**" directory.
   1. Rey is done scavenging at the shipwreck: Move "**Rey.txt**" to "**Scavenger_Camp**".
   1. Finn and Poe Dameron escape the Star Destroyer on "**TIE_figher_3**" (move their files inside its directory) and crash-land it on Jakku near the Scavenger Camp! Move the TIE fighter from the Star Destroyer to "**Scavenger_Camp**".
   1. Poe is presumed dead in the crash: Delete his file.
