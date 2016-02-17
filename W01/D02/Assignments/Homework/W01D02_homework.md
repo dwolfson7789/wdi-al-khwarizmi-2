@@ -72,7 +72,8 @@ As you execute the commands below, try doing some of them with absolute paths, s
     * "**TIE_fighter_2**"
     * "**TIE_fighter_3**"
   1. Move the TIE fighters inside the Star Destroyer.
-  1. When our story begins, our main character, Rey, is exploring the "**Old_Shipwreck**". Create a file called "**Rey.txt**" inside that directory. Two other key characters, Poe Dameron and BB-8, are checking out the Small Village on Jakku: inside "**Small_Village**", create
+  1. When our story begins, our main character, Rey, is exploring the "**Old_Shipwreck**". Create a file called "**Rey.txt**" inside that directory.
+  1. Two other key characters, Poe Dameron and BB-8, are checking out the Small Village on Jakku: inside "**Small_Village**", create
     * "**Poe_Dameron.txt**"
     * "**BB-8.txt**"
   1. Inside the "**Orbiting_Star_Destroyer**", create "**Finn.txt**" and "**Captain_Phasma.txt**". That completes our initial cast of characters.
