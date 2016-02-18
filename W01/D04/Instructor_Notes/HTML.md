@@ -20,6 +20,9 @@ When we look at some HTML:
     <p>
       Specializing in bespoke sweaters and boots for your fussy feline friends.
     </p>
+    <img src="./images/cat-in-sweater.jpg">
+    <input type="password"
+      placeholder="what's your password?">
   </body>
 </html>
 ```
@@ -68,11 +71,13 @@ When you see an element like this link tag below:
 
 ```html
 <a class="link external-link" href="https://google.com" target="_blank">
+  Yahoo
+</a>
 ```
 
 You should notice several pairs of the form `attribute="value"`.  We call those *name-value pairs*, and there are many common ones, such as:
 
-* id
+* id (note, ALWAYS UNIQUE within the same page)
 * class
 * href
 * src

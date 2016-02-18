@@ -37,7 +37,7 @@ If you were to give me instructions to find that element you might tell me to lo
 Neighbor 1: Pick an element, and explain to your neighbor how to find it.  
 Neighbor 2: Be difficult!  If there are multiple elements which match it based on the description, ask for more information.
 
-Switch back and forth to complete this exercise twice each.
+Switch back and forth.
 
 ### Selectors
 
@@ -51,7 +51,7 @@ div {}    /* tag name */
 
 A selector will look for all elements in the document that it matches, and will apply the styling directives to all of them.
 
-##### Exercise (10 minutes)
+##### Exercise (5 minutes)
 
 Given the following selectors, list all elements from our previous exercise which will get something other than the default styling.  Ultimately what will each of them look like?
 

@@ -61,7 +61,7 @@ Here's our example: `<a href='http://www.google.com'>link</a>`
 	- `a[href="http://www.google.com"]`
 1. [attr^='foo']
 	- test the start of the attribute
-	- `a[href^="http"]`
+	- `a[href^="http"]` vs `a[href^="https"]`
 1. [attr$='foo']
 	- test the end of the attribute
 	- `a[href$="com"]`
