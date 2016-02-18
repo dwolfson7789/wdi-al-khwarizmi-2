@@ -58,7 +58,7 @@ Answer all the questions in a (new) markdown file. Something to keep in mind as 
 1. What's the keyword for creating a new variable in Javascript?
 1. Give an example of an `array`, and why you might choose to use one to store data (what characteristics of the data make it suitable for using this datatype?)?
 1. Give an example of an `object` (what your prework called 'associative arrays'). Under what circumstances would you choose to use one to store data instead of an array?
-1. Why would you choose to use a `while` loop instead of a `for` loop, or vice versa? (Think about what characteristics of the nature of your iteration make one more suitable than the other.)
+1. Why would you choose to use a `while` loop instead of a `for` loop, or vice versa? (Think about what characteristics of the nature of your iteration make one more suitable than the other.) Review [I Don't Know JavaScript](https://github.com/getify/You-Dont-Know-JS/blob/master/up%20&%20going/ch1.md), Chapter 1 if you want a loop-y refresher.
 1. What's wrong with the `for` loop in the code below? Fix it so the code runs properly:
 ```js
 var awesomePeople = ["Ethan", "Liza", "Syed", "Shorty"]
