@@ -65,5 +65,3 @@ contentContainer.appendChild(brandNewH1);
 ```
 contentContainer.removeChild(brandNewH1);
 ```
-
-##### Exercise

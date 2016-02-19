@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    body {
+      background: #ddd;
+      border: 1px solid black;
+    }
+    .box {
+      box-sizing: border-box;
+      color: white;
+      width: 200px;
+      height: 200px;
+      padding: 20px;
+      text-align: center;
+      line-height: 160px;
+    }
+    .relative {
+      background: blue;
+      position: relative;
+      top: 20px;
+      left: 20px;
+    }
+    .absolute {
+      background: red;
+      opacity: 0.5;
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+    }
+    .fixed {
+      top: 20px;
+      right: 20px;
+      left: 20px;
+      bottom: 20px;
+      opacity: 0.2;
+      position: fixed;
+      background: green;
+      filter: blur(5px);
+      -webkit-filter: blur(5px);
+    }
+  </style>
+</head>
+<body>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <div class="box relative">I'm relative!</div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus possimus fugiat aperiam dolore officia rerum, eum quisquam. Reiciendis eum qui quisquam et rem ab labore, reprehenderit eos, nostrum natus sit.</p>
+  <div class="box absolute">I'm absolute!</div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque omnis eius delectus unde expedita, dolorem. Exercitationem, perferendis, similique! Dignissimos nihil distinctio expedita tenetur praesentium, hic odit, nostrum vel commodi adipisci.</p>
+  <div class="fixed">I'm fixed!</div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, id minima odit! Eos provident, quaerat debitis, enim praesentium quos officiis accusamus necessitatibus labore, eligendi deserunt asperiores qui quae commodi fugit.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus commodi numquam pariatur. Ad libero ipsam quam eius fugiat distinctio numquam cumque impedit nisi illo nam consectetur voluptas suscipit, nostrum architecto!</p>
+</body>
+</html>

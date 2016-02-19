@@ -1,0 +1,51 @@
+body {
+  background: #999;
+}
+
+* {
+  font-weight: bold;
+}
+
+div > ul {
+  border: 1px solid magenta;
+}
+
+div > ul > li > ul {
+  border: 3px dashed steelblue;
+}
+
+div > ul ul {
+  background: limegreen;
+}
+
+div ul {
+  box-shadow: 2px 2px 2px black;
+}
+
+ul + div {
+  font-family: cursive;
+}
+
+li ~ li {
+  border-top: 4px dashed white;
+}
+
+button {
+  border: none;
+  padding: 12px;
+  background: limegreen;
+  font-family: sans-serif;
+}
+
+button[type="xyxyx"] {
+  cursor: crosshair;
+}
+
+button[type="submit"] {
+  cursor: pointer;
+}
+
+button:hover {
+  background: white;
+  color: red;
+}

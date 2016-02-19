@@ -5,7 +5,6 @@
 1. Diagram the box model
 1. List and define the different ways to display an element
 1. Differentiate between units of measure in layout
-1. Describe some common techniques used in layout
 1. List the different ways an element can be positioned
 
 ## Define elements of standard layout and why they don't work on the web
@@ -32,8 +31,8 @@
 
 ## Differentiate between units of measure in layout
 1. px
-1. em
-1. rem
+1. em <~ 'm'
+1. rem <~ root element
 1. %
 	- height: % of parent's height
 	- width: % of parent's width

@@ -25,22 +25,22 @@
 <body>
 	<div id="header-container">
 		<h1>WELCOME FRIENDS!</h1>
-		<ul>
-			<li>
+		<ul class="outer-list">
+			<li class="welcome">
 				<h4>Welcome</h4>
 				<ul>
 					<li>Hi</li>
 					<li>Hello</li>
 				</ul>
 			</li>
-			<li>
+			<li class="feelings">
 				<h4>How's it Going?</h4>
 				<ul>
 					<li>Good</li>
 					<li>Great</li>
 				</ul>
 			</li>
-			<li>
+			<li class="greeting">
 				Nice to see you
 			</li>
 		</ul>
@@ -56,7 +56,7 @@
 			Vestibulum hendrerit lectus libero, at malesuada ex blandit eu. Morbi nec magna ligula. In arcu tellus, faucibus ut metus ut, eleifend finibus tellus. Curabitur fringilla lectus ut viverra ultricies. Sed malesuada dictum pharetra. Suspendisse hendrerit tempor erat, sit amet vulputate tortor vulputate eu. In elementum urna a dolor sagittis ultricies. Fusce placerat ex dui, lobortis tristique libero semper vitae.
 		</p>
 	</div>
-	<div id="footer-container">
+	<div id="follow-up-content-container">
 		<p class="paragraph-container">
 			Vestibulum hendrerit lectus libero, at malesuada ex blandit eu. Morbi nec magna ligula. In arcu tellus, faucibus ut metus ut, eleifend finibus tellus. Curabitur fringilla lectus ut viverra ultricies. Sed malesuada dictum pharetra. Suspendisse hendrerit tempor erat, sit amet vulputate tortor vulputate eu. In elementum urna a dolor sagittis ultricies. Fusce placerat ex dui, lobortis tristique libero semper vitae.
 		</p>
@@ -64,5 +64,34 @@
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, ut incidunt ullam illum, voluptates consequuntur quia adipisci, nemo officiis aliquid necessitatibus autem natus dolor ducimus. Autem eveniet nesciunt consequuntur ex.
 		</p>
 	</div>
+	<div class="footer-container">
+	</div>
+	<script>
+	var copyrightMessage = "Website last updated January 8th, 2016";
+	/* 	For the footer-container, set the inner text equal to the
+		 	copyrightMessage string above 	*/
+
+  var imageSrc = "https://my.vetmatrixbase.com/clients/12679/images/cats-animals-grass-kittens--800x960.jpg";
+	/*	Create a new image tag.  Set the src attribute equal to the
+			imageSrc.  Finally, use node.insertBefore (see https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore)
+			to put the image between WELCOME FRIENDS! and the list with class
+			name outer-list 	*/
+
+	var welcomeSayings = [
+		"How are you?", "What's new?", "Long time, no see!"
+	];
+	/*	To the unordered list inside the li with class welcome,
+			add each of the strings from welcomeSayings, inside their
+			own brand new list item 	*/
+
+	/* 	Create a new footer tag.  Create three anchor tags:
+			- one with href "/home" with inner text 'Home'
+			- one with href "/about" with inner text 'About Us'
+			- one with href "/inventory" with inner text 'Our Products'
+			Then, insert each link into the new footer tag using the
+			appendChild method.
+			Lastly insert the footer into the body tag using the
+			appendChild method.		*/
+	</script>
 </body>
 </html>

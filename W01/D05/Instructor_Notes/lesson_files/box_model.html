@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .sample {
+      width: 200px;
+      height: 200px;
+
+      margin: 20px;
+
+      border: 10px dashed orange;
+
+      padding: 15px;
+    }
+
+    .content-box {
+      box-sizing: content-box;
+    }
+
+    .padding-box {
+      box-sizing: padding-box; /* POOR SUPPORT :( */
+    }
+
+    .border-box {
+      box-sizing: border-box;
+      /* border box takes border AWAY FROM content size */
+    }
+
+    .four-up {
+      width: 20%;
+      height: 100px;
+      background: #777;
+
+      border: 4px outset green;
+      padding: 1rem;
+      box-sizing: border-box;
+
+      float: left;
+      margin: 2.5%;
+    }
+
+    html {
+      font-size: 24px;
+    }
+
+    .rem-study h3 {
+      font-size: 2rem;
+    }
+
+    .rem-study p {
+      font-size: 1rem;
+    }
+
+    .rem-study span {
+      font-size: 0.5rem;
+    }
+
+    .em-study h3 {
+      font-size: 2em;
+    }
+
+    .em-study p {
+      font-size: 2em;
+      border: 1em dashed green;
+      outline: 1em solid darkblue;
+      padding: 3rem;
+    }
+
+    .em-study span {
+      font-size: 3em;
+    }
+
+    body {
+      font-size: 16px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="rem-study">
+    <h2>I'm the REM Study</h2>
+    <h3>Hello</h3>
+    <p>What's <span>going on?</span></p>
+  </div>
+  <div class="em-study">
+    <h2>I'm the EM Study</h2>
+    <h3>Hello</h3>
+    <p>What's <span>going on?</span></p>
+  </div>
+  <hr>
+  <div class="sample content-box">
+    This is a content-box.
+  </div>
+  <div class="sample padding-box">
+    This is a padding-box.
+  </div>
+  <div class="sample border-box">
+    This is a border box.
+  </div>
+  <hr>
+  <div style="overflow: hidden;">
+    <div class="four-up">1</div>
+    <div class="four-up">2</div>
+    <div class="four-up">3</div>
+    <div class="four-up">4</div>
+  </div>
+</body>
+</html>
