@@ -35,7 +35,7 @@ This can be pretty powerful way to get values from an object. It let's you use a
 
 You might have noticed that you can also have arrays as values inside of objects. These arrays act just like you would imagine them to, you can loop through them, mutate them, etc.
 
-You can also delete properties from objects by using the the `delete` operator. 
+You can also delete properties from objects by using the the `delete` operator.
 
 ```JS
 delete contactList.drake
@@ -70,7 +70,7 @@ Loop through these objects and find any stops where you would be able to transfe
 
 Objects start to get really interesting when combined with functions. Remember when we said functions are just values? Since objects can "store" key-value pairs, we can have properties that are made-up of functions. We call them `Object Methods`.
 
-Now we have a way to `name space` our functions. Think of an object as a container for our functions, which may contain variables that are containers for our values as well. 
+Now we have a way to `name space` our functions. Think of an object as a container for our functions, which may contain variables that are containers for our values as well.
 
 ```
 var person = {
@@ -83,7 +83,7 @@ var person = {
 person.sayName();
 ```
 
-There's a slight problem with our code though. If we change the name of our variable we'll need to change the reference to `person.name` too. That makes our code inefficient and rigid. Javascript has a way around `this` 
+There's a slight problem with our code though. If we change the name of our variable we'll need to change the reference to `person.name` too. That makes our code inefficient and rigid. Javascript has a way around `this`
 
 # this
 
@@ -95,7 +95,5 @@ var person = {
 	}
 };
 
-perso.sayName();
+person.sayName();
 ```
-
-
