@@ -5,13 +5,13 @@
 - retrieve data from object literals
 - define object methods
 - define this
--
+
 
 # intro
 
-Let's take a look at a new we can organize our data. We've seen that `arrays` give us a powerful data structure that let us update, delete, append a squence of objects called `elements`. Those elements can be strings, numbers, even other functions or `arrays`.
+Let's take a look at a new we can organize our data. We've seen that `arrays` give us a powerful data structure that let us update, delete, append a sequence of objects called `elements`. Those elements can be strings, numbers, even other functions or `arrays`.
 
-Let's take a look another type of datastructure that allows us to store data in pairs.
+Let's take a look another type of data structure that allows us to store data in pairs.
 
 # Object literals
 
@@ -35,10 +35,16 @@ This can be pretty powerful way to get values from an object. It let's you use a
 
 You might have noticed that you can also have arrays as values inside of objects. These arrays act just like you would imagine them to, you can loop through them, mutate them, etc.
 
-You can also delete properties from objects by using the the `delete` operator. 
+You can also delete properties from objects by using the the `delete` operator.
 
 ```JS
 delete contactList.drake
+```
+
+You can also use the `in` operator to check if something is inside of an object.
+
+```js
+"drake" in contactList
 ```
 
 # Looping
@@ -48,6 +54,15 @@ This brings us to the part of the lesson where we figure out how to loop through
 	for (var prop in contactList) {
 		console.log("obj." + prop + " = " + obj[prop]);
 	}
+
+
+# Objects are everywhere!
+
+We have String Objects, Number Objects, Array Objects, Function Objects. Everything is an object.
+
+Explore:
+Partner up, and find a method you haven't used before and present it!
+
 
 # Problem
 
@@ -70,7 +85,7 @@ Loop through these objects and find any stops where you would be able to transfe
 
 Objects start to get really interesting when combined with functions. Remember when we said functions are just values? Since objects can "store" key-value pairs, we can have properties that are made-up of functions. We call them `Object Methods`.
 
-Now we have a way to `name space` our functions. Think of an object as a container for our functions, which may contain variables that are containers for our values as well. 
+Now we have a way to `name space` our functions. Think of an object as a container for our functions, which may contain variables that are containers for our values as well.
 
 ```
 var person = {
@@ -83,7 +98,7 @@ var person = {
 person.sayName();
 ```
 
-There's a slight problem with our code though. If we change the name of our variable we'll need to change the reference to `person.name` too. That makes our code inefficient and rigid. Javascript has a way around `this` 
+There's a slight problem with our code though. If we change the name of our variable we'll need to change the reference to `person.name` too. That makes our code inefficient and rigid. Javascript has a way around `this`
 
 # this
 
@@ -95,7 +110,5 @@ var person = {
 	}
 };
 
-perso.sayName();
+person.sayName();
 ```
-
-
