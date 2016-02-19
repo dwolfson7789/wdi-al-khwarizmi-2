@@ -41,6 +41,12 @@ You can also delete properties from objects by using the the `delete` operator.
 delete contactList.drake
 ```
 
+You can also use the `in` operator to check if something is inside of an object.
+
+```js
+"drake" in contactList
+```
+
 # Looping
 
 This brings us to the part of the lesson where we figure out how to loop through a set of values in an object.
@@ -48,6 +54,15 @@ This brings us to the part of the lesson where we figure out how to loop through
 	for (var prop in contactList) {
 		console.log("obj." + prop + " = " + obj[prop]);
 	}
+
+
+# Objects are everywhere!
+
+We have String Objects, Number Objects, Array Objects, Function Objects. Everything is an object.
+
+Explore:
+Partner up, and find a method you haven't used before and present it!
+
 
 # Problem
 
