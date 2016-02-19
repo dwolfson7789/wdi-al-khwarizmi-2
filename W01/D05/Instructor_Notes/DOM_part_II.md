@@ -6,6 +6,22 @@
 - Move elements in the DOM from one place to another
 - Traverse the DOM from a starting node
 
+#### More Node Editing
+- node.id: sets or returns an id to an HTML node
+```
+var header = document.getElementById('header-container');
+header.id = "new-header-container";
+console.log(header.id);
+```
+
+- node.setAttribute: sets attributes to a node
+```
+var header = document.querySelector('#header-container');
+header.nodeType;
+
+header.setAttribute("style", "background-color: green;");
+```
+
 #### Creating within the document
 - document.createElement (benchmarking shows this is the fastest...)
 ```
@@ -50,36 +66,4 @@ contentContainer.appendChild(brandNewH1);
 contentContainer.removeChild(brandNewH1);
 ```
 
-#### Node Editing
-- node.innerHTML: sets or returns the elements descendants
-```
-contentContainer.innerHTML;
-
-var header = document.getElementById('header-container');
-var newGreeting = "Hello, this greeting is so much better";
-header.innerHTML = newGreeting;
-console.log(header);
-```
-
-- node.id: sets or returns an id to an HTML node
-```
-var header = document.getElementById('header-container');
-header.id = "new-header-container";
-console.log(header.id);
-```
-
-- node.classList: returns a list of class(es) for that element
-```
-var contentContainer = document.getElementById('content-container');
-var firstParagraph = contentContainer.children[0];
-console.log(firstParagraph.classList);
-firstParagraph[0];
-```
-
-- node.setAttribute: sets attributes to a node
-```
-var header = document.querySelector('#header-container');
-header.nodeType;
-
-header.setAttribute("style", "background-color: green;");
-```
+##### Exercise

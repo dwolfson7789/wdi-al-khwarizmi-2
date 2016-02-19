@@ -1,19 +1,68 @@
 <html>
 <head>
 	<title>DOM DOM DOM!</title>
+	<style>
+	/*
+		1. Style the body so
+			- the background color is black
+			- it takes up 50% of the overall page width
+			- it is centered
+		2. Style all paragraphs so
+			- the background color is grey
+			- the font color is pink
+		3. Style paragraphs inside #content-container so
+			- the font-family is 'sans-serif'
+		4. Style unordered lists so
+			- the list-style is square
+			- they have a border of 3px solid green
+		5. Style any list item that's not a top level list item so that the font-size is 0.8em
+		6. Remove the border on unordered lists which are inside unordered lists
+		7. Make it so all but the first paragraph in a sibling-block have a gold border
+	 */
+	</style>
 </head>
 
 <body>
-	<div id="header-container">WELCOME FRIENDS!</div>
+	<div id="header-container">
+		<h1>WELCOME FRIENDS!</h1>
+		<ul>
+			<li>
+				<h4>Welcome</h4>
+				<ul>
+					<li>Hi</li>
+					<li>Hello</li>
+				</ul>
+			</li>
+			<li>
+				<h4>How's it Going?</h4>
+				<ul>
+					<li>Good</li>
+					<li>Great</li>
+				</ul>
+			</li>
+			<li>
+				Nice to see you
+			</li>
+		</ul>
+	</div>
 	<div id="content-container">
-		<p class="paragraph-container another-class">
+		<p class="paragraph-container">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at augue tempus arcu sodales tincidunt ut non mi. Quisque condimentum orci eu quam accumsan hendrerit. Vestibulum in ex in ipsum porta luctus. Curabitur id sollicitudin nunc. Etiam sodales porta metus. Curabitur at commodo massa, eu finibus eros. Vestibulum aliquam facilisis suscipit. Nullam lobortis eros orci, eget consectetur augue dapibus ut. Cras sit amet tortor sem. Curabitur cursus pharetra sagittis.
 		</p>
 		<p class="paragraph-container">
 			Morbi finibus tortor hendrerit lacus luctus dignissim. Nunc in bibendum lectus. Sed laoreet a neque tempor gravida. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc ornare, ex ut pellentesque pulvinar, lorem erat efficitur ex, a convallis ex nulla tempus orci. Phasellus eu nisi a mi tincidunt sollicitudin quis non lorem. Integer ac accumsan erat. Duis nec ullamcorper leo. Sed varius odio lectus, ac accumsan nulla volutpat eu.
 		</p>
-		<p class="paragraph-container">Vestibulum hendrerit lectus libero, at malesuada ex blandit eu. Morbi nec magna ligula. In arcu tellus, faucibus ut metus ut, eleifend finibus tellus. Curabitur fringilla lectus ut viverra ultricies. Sed malesuada dictum pharetra. Suspendisse hendrerit tempor erat, sit amet vulputate tortor vulputate eu. In elementum urna a dolor sagittis ultricies. Fusce placerat ex dui, lobortis tristique libero semper vitae.</p>
+		<p class="paragraph-container">
+			Vestibulum hendrerit lectus libero, at malesuada ex blandit eu. Morbi nec magna ligula. In arcu tellus, faucibus ut metus ut, eleifend finibus tellus. Curabitur fringilla lectus ut viverra ultricies. Sed malesuada dictum pharetra. Suspendisse hendrerit tempor erat, sit amet vulputate tortor vulputate eu. In elementum urna a dolor sagittis ultricies. Fusce placerat ex dui, lobortis tristique libero semper vitae.
+		</p>
 	</div>
-	<div id="footer-container"></div>
+	<div id="footer-container">
+		<p class="paragraph-container">
+			Vestibulum hendrerit lectus libero, at malesuada ex blandit eu. Morbi nec magna ligula. In arcu tellus, faucibus ut metus ut, eleifend finibus tellus. Curabitur fringilla lectus ut viverra ultricies. Sed malesuada dictum pharetra. Suspendisse hendrerit tempor erat, sit amet vulputate tortor vulputate eu. In elementum urna a dolor sagittis ultricies. Fusce placerat ex dui, lobortis tristique libero semper vitae.
+		</p>
+		<p class="paragraph-container">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, ut incidunt ullam illum, voluptates consequuntur quia adipisci, nemo officiis aliquid necessitatibus autem natus dolor ducimus. Autem eveniet nesciunt consequuntur ex.
+		</p>
+	</div>
 </body>
 </html>

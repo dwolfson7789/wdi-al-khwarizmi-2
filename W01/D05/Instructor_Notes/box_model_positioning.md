@@ -42,13 +42,6 @@
 	- margin: like padding
 	- position: works as expected
 
-## Describe some common techniques used in layout
-1. fluid layout
-1. using spacing in rems
-1. using spacing in ems
-1. using ems and rems
-1. use rems/ems for vertical spacing. use % for horizontal spacing
-
 ## List the different ways an element can be positioned
 1. static
 1. relative
