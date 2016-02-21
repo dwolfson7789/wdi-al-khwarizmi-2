@@ -41,11 +41,15 @@ var sum = function(numArray){
 
 # Problem
 
-Create a calculator that takes an array of numbers and has a function to add, subtract, multiply, and divide by a given number.
+Create a calculator that takes an array of numbers and has a function to add,
+subtract, multiply, and divide by a given number and return a new array. Please
+use function expressions.
 
 for example:
 
 ```js
+// create divide array by, subtract array by, etc.
+
 sumArrayBy([1,2,3], 2);
 ```
 
@@ -53,4 +57,21 @@ And the output should be:
 
 ```js
 [2,4,6]
+```
+
+# Problem
+
+Now let's create a set of functions that takes an array and another number.
+It will look to see if a number given isBigger or isSmaller than the number in the array.
+The function should also return an array with **only** the numbers that are bigger or smaller
+than what we provide. Please declare these as function expressions.
+
+```js
+isBiggerThan([1,2,3,4], 2);
+```
+
+should output:
+
+```js
+[3,4];
 ```
