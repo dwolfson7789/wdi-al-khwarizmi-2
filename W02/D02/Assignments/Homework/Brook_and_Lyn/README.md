@@ -4,9 +4,9 @@ The website of fashion brand Brook & Lyn has a simple layout. The visual element
 
 #### Exercise Objectives
 
-- gain meaningful experience using html & css skills to build a complete layout
-- gain meaningful experience centering a container div
-- gain meaningful repetitions using `inline-block` to lay out a list of elements in a row
+- use html & css skills to build a complete layout
+- gain experience in centering a container div
+- gain experience in using `inline-block` to lay out a list of elements in a row
 
 #### Directions
 

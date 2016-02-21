@@ -1,14 +1,17 @@
-# Memory!
+# Part 1: Brook_and_Lyn
 
-Today we are going to build the game Memory. Write all your code in app.js, but
-look at index.html to get your bearings.
+	Go to the Brook_and_Lyn directory and follow the instructions -- you're going to attempt to recreate the webpage shown in mockup.png. All needed assets (image files) are in the Brook_and_Lyn/assets folder.
+
+# Part 2: Memory!
+
+Today we are going to build the game Memory--remember this from childhood? There's an array of cards with symbols on them. Your goal is to turn over matching pairs of cards to remove them from the board, and eventually to match up all the pairs of cards. Write all your code in app.js, but look at index.html to get your bearings. I've created the scaffold of the game in app.js -- your job is to write the necessary code to make each function perform its proper task.
 
 ### You will need
 
 #### Data
 
 - an array of ten tiles
-	- your ten 'tiles' will represent the letter values that will be displayed on each DOM tile. eg. ['A', 'A', 'B', 'B', etc.]
+	- your ten 'tiles' will represent the letter values that will be displayed on each DOM tile. eg. ['A', 'A', 'B', 'B', etc.] (See)
 
 #### Functions
 
