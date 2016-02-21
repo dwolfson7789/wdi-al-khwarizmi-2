@@ -1,55 +1,56 @@
-#Objectives 
+#Objectives
 
-- describe the difference between referencing vs invoking functions.
+- describe the difference between named and anonymous functions.
 - define call backs and anonymous functions
 
 
 # functions functions functions
 
-As we barrel towards adding more interactivitiy to our apps we well need to look at a few more features that ES2015 offer to us. 
+As we barrel towards adding more interactivity to our programs we will need to look deeper into how functions work in Javascript.
 
-# referencing functions vs invoking
+# Review: anonymous functions
 
-
-There are certain cases where we need to reference function instead of just invoking it. Why? Because if we are creating functions to react to user behaviour when we want a function to called when something like a click event or mouse hover happens, but not right away.
-
-
-regular old function call: 
-
-```js 
-function hello(msg){
-	console.log(msg);
-}
-
-hello("sup bro");
-```
-
-regular old function refernce:
-
-function hello(msg){
-	console.log(msg());
-}
-
-function message(){
-	return "hey there";
-}
-
-hello(message);
-
-
-
-a regular old anonymous function reference:
+So we've see this function declaration everywhere. Let's look at what this piece of code does?
 
 ```js
-
-function hello(msg){
-	console.log(msg());
+function sum(numArray){
+	var sum = 0;
+	for(var num of numArray){
+		sum += num;
+	}
+	return sum;
 }
+```
 
-hello(function(){
-	return "whoa";
-});
-``` 
+function declarations are great but there is one little problem with them. Once we've declared a function we can't rename it! Unlike a variable functions will live in the global name-space. Remember we only have limited amount of space for naming things. Once a name is taken up by something then we are forced to find a new name.
 
+# The function with no name.
 
-	
+One way to get around the problem of "global name-space pollution" is through anonymous functions. How do we use functions without names?  One way is to assign it to a variabl.
+
+```js
+// kind of like a reduction.
+var sum = function(numArray){
+	var sum = 0;
+	for(var num of numArray){
+		sum += num;
+	}
+	return sum;
+}
+```
+
+# Problem
+
+Create a calculator that takes an array of numbers and has a function to add, subtract, multiply, and divide by a given number.
+
+for example:
+
+```js
+sumArrayBy([1,2,3], 2);
+```
+
+And the output should be:
+
+```js
+[2,4,6]
+```
