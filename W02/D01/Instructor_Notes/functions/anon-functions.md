@@ -22,11 +22,14 @@ function sum(numArray){
 }
 ```
 
-function declarations are great but there is one little problem with them. Once we've declared a function we can't rename it! Unlike a variable functions will live in the global name-space. Remember we only have limited amount of space for naming things. Once a name is taken up by something then we are forced to find a new name.
+function declarations are great but there is one little problem with them.
+Once we've declared a function we can't rename it! Unlike a variable functions will live in the global name-space.
+Remember we only have limited amount of space for naming things. Once a name is taken up by something then we are forced to find a new name.
 
 # The function with no name.
 
-One way to get around the problem of "global name-space pollution" is through anonymous functions. How do we use functions without names?  One way is to assign it to a variabl.
+One way to get around the problem of "global name-space pollution" is through anonymous functions.
+How do we use functions without names?  One way is to assign it to a variable.
 
 ```js
 // kind of like a reduction.
@@ -49,6 +52,7 @@ for example:
 
 ```js
 // create divide array by, subtract array by, etc.
+// kind of like a map
 
 sumArrayBy([1,2,3], 2);
 ```
@@ -67,6 +71,8 @@ The function should also return an array with **only** the numbers that are bigg
 than what we provide. Please declare these as function expressions.
 
 ```js
+
+//kind of like a filter
 isBiggerThan([1,2,3,4], 2);
 ```
 
