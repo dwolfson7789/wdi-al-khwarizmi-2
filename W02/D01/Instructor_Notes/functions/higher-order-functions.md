@@ -1,6 +1,6 @@
 # Objectives
 
-- write functions that act on other functions
+- write functions that act on other functions. also known as callbacks.
 - difference between referencing and invoking a function
 
 # higher order functions
@@ -55,19 +55,41 @@ HOW AWESOME IS THAT
 # i'm counting on you
 
 Let's take a look at a simple countdown clock.
-var count
 
 ```js
-var count = 1;
+
+// variable in the global space
+var count = 10;
 
 function countDown(){
-  console.log("hey");
-  count += 1
 
-  if(count === 10){
+  console.log(count);
+  count -= 1
+
+  // stop counter
+  if(count === 0){
     clearInterval(interval);
   }
 };
 
-var interval  = setInterval(countDown, 1000);
+// interval variable in global space
+var interval  = setInterval(countDown(), 1000);
 ```
+
+# think pair share.
+
+Why is this code not working. Describe the mechanics of what is happening
+here.
+
+# Problem: count down component
+
+Let's make another count down clock. But this time let's make a version
+that will be displayed via the DOM. Please use createElement and appendChild
+instead of query selector.
+
+
+# creating map, filter, reduce with our own functions and how it all composes
+
+# using map, reduce filter from ES2015.
+
+# anonymous functions the ES2015 way
