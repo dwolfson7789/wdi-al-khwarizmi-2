@@ -51,6 +51,13 @@ time someone clicks on your button a new random cat gif should be selected. The
 cat gif should be swapped out as you change gifs instead of adding new ones to
 the page.
 
+# Adding event listeners to other nodes
+
+We can also add event listeners to other nodes like "p" tags or "a" tags.
+Though sometimes we need manage the default behaviors of these tags.  
+
 # More events (keyboard, scroll, focus)
+
+
 
 # Event Propagation
