@@ -1,33 +1,33 @@
-# MORNING WARMUPS
+##Problem 1: Find a value in a given array  
 
-1. Write a function that will take in an array of numbers and a multiplier and return a new array, with each number multiplied by the multiplier. E.g.,
+Write a function 'searchArray' that takes an array and value as parameters and searches the array for the given value. If the value is in the array, return 'true', otherwise return '-1'.
+
 ```js
-var multiplier = function(arr, mult) {
-  // stuffs go here
-}
-
-console.log(multiplier([2, 5, 4], 3)); //output is [6, 15, 12]
-
+var nums = [1,2,3,4,5]
+searchArray(nums, 3) // returns true
+searchArray(nums, 6) // returns -1
 ```
-1. Write a function that will take in array of numbers and return a new array with those same numbers, sorted smallest to largest. e.g.,
+
+Here is some starter code:
+
 ```js
-var sorter = function(arr) {
-  //code goes here
-}
+var searchArray = function(array,value) {
 
-console.log(sorter([10, 5, 20, 15])); //output is [5, 10, 15, 20]
-
+};
 ```
-1. Write a function that will take in an array of numbers *and* a function and then run that function on each of the entries in the array. It should return a new array. E.g.,
+
+##Problem 2: Determine whether a given string is a [palindrome](http://en.wikipedia.org/wiki/Palindrome)
+
+Write a function `isPalindrome` that takes in a single parameter, `str`, a string, and returns `true` if the string is a palindrome, and false otherwise. For example
+
 ```js
-var arrayMapper = function(arr, myFunc) {
-  //magic happens here
-}
-
-var addSixAndMultByTwo = function(num) {
-  return (num + 6) * 2;
-}
-
-console.log(arrayMapper([5, 7, 2], addSixAndMultByTwo)); //returns [22, 26, 16]
+isPalindrome('hello')  // false
+isPalindrome('hannah') // true
 ```
-1. Redo the previous exercise but without creating in advance the function to be applied to each element of the array ('`addSixAndMultByTwo`' in my silly example). Hint: what you need rhymes with "schmanonymous schmallback function"
+
+Here is some starter code:
+
+```js
+var isPalindrome = function(str) {
+
+};
