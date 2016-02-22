@@ -20,10 +20,10 @@ function sum(numArray){
 	}
 	return sum;
 }
+sum([1,2,3]);
 ```
 
-function declarations are great but there is one little problem with them.
-Once we've declared a function we can't rename it! Unlike a variable functions will live in the global name-space.
+function declarations are great but there is one little problem with them. Once we've declared a function we can't rename it! Unlike a variable functions will live in the global name-space.
 Remember we only have limited amount of space for naming things. Once a name is taken up by something then we are forced to find a new name.
 
 # The function with no name.
@@ -44,9 +44,7 @@ var sum = function(numArray){
 
 # Problem
 
-Create a calculator that takes an array of numbers and has a function to add,
-subtract, multiply, and divide by a given number and return a new array. Please
-use function expressions.
+Create a calculator that takes an array of numbers and has a function to add, subtract, multiply, and divide by a given number and return a new array. Please use function expressions.
 
 for example:
 
@@ -54,7 +52,7 @@ for example:
 // create divide array by, subtract array by, etc.
 // kind of like a map
 
-sumArrayBy([1,2,3], 2);
+multiplyArrayBy([1,2,3], 2);
 ```
 
 And the output should be:
