@@ -1,0 +1,225 @@
+
+#sky {
+  background-color: lightblue;
+  position: fixed;
+  height: 400px;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 100%;
+}
+#sun {
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  position: absolute;
+  left: 50px;
+  top: 15px;
+  border-radius: 50px;
+}
+.earth {
+  position: fixed;
+  top: 400px;
+  width: 100%;
+  left: 0;
+  height: 500px;
+  background-color: green;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.cloud:first-of-type {
+  position: fixed;
+  left: 400px;
+  top: 15px;
+}
+
+.cloud:nth-of-type(2) {
+  position: fixed;
+  left: 600px;
+  top: 15px;
+}
+
+.cloud:last-of-type {
+  position: fixed;
+  left: 800px;
+  top: 15px;
+}
+
+.fluff {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  left: 100px;
+  list-style-type: none;
+}
+
+.fluff:nth-of-type(2) {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.fluff:nth-of-type(3) {
+  position: absolute;
+  left: 0px;
+  top: 30px;
+}
+
+.fluff:nth-of-type(4) {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+}
+
+.castle {
+  position: absolute;
+  background-color: tan;
+  left: 700px;
+  top: -150px;
+  height: 300px;
+  width: 300px;
+  z-index: 1;
+  border-left: 2px;
+  border-right: 2px;
+  border-bottom: 2px;
+  border-color: black;
+  border-style: solid;
+}
+
+.battlements li {
+  list-style-type: none;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.battlements li:first-of-type {
+  background-color: tan;
+  position: absolute;
+  left: -2px;
+  top: -52px;
+  height: 50px;
+  width: 50px;
+}
+
+.battlements li:nth-of-type(2) {
+  background-color: tan;
+  position: absolute;
+  left: 125px;
+  top: -52px;
+  height: 50px;
+  width: 50px;
+}
+
+.battlements li:nth-of-type(3) {
+  background-color: tan;
+  position: absolute;
+  left: 248px;
+  top: -52px;
+  height: 50px;
+  width: 50px;
+}
+
+.lever {
+  background-color: red;
+  position: absolute;
+  left: 60px;
+  top: 160px;
+  width: 5px;
+  height: 5px;
+  border-top: 30px solid black
+}
+
+.gate {
+  position: fixed;
+  top: 370px;
+  left: 810px;
+  width: 80px;
+  height: 170px;
+}
+
+.gate li {
+  background-color: saddlebrown;
+  list-style-type: none;
+  border: 1px solid black;
+}
+.gate li:first-of-type {
+  position: absolute;
+  list-style-type: none;
+  height: 150px;
+  width: 10px;
+  left: 0px;
+  border-top-left-radius: 20px;
+}
+
+.gate li:nth-of-type(2) {
+  position: absolute;
+  list-style-type: none;
+  height: 150px;
+  width: 10px;
+  left: 10px;
+}
+
+.gate li:nth-of-type(3) {
+  position: absolute;
+  list-style-type: none;
+  height: 150px;
+  width: 10px;
+  left: 20px;
+}
+
+.gate li:nth-of-type(4) {
+  position: absolute;
+  list-style-type: none;
+  height: 150px;
+  width: 10px;
+  left: 30px;
+}
+
+.gate li:nth-of-type(5) {
+  position: absolute;
+  list-style-type: none;
+  height: 150px;
+  width: 10px;
+  left: 40px;
+}
+
+.gate li:nth-of-type(6) {
+  position: absolute;
+  list-style-type: none;
+  height: 150px;
+  width: 10px;
+  left: 50px;
+}
+
+.gate li:nth-of-type(7) {
+  position: absolute;
+  list-style-type: none;
+  height: 150px;
+  width: 10px;
+  left: 60px;
+}
+
+.gate li:last-of-type {
+  position: absolute;
+  list-style-type: none;
+  height: 150px;
+  width: 10px;
+  left: 70px;
+  border-top-right-radius: 20px;
+}
+
+.moat {
+  position: fixed;
+  background-color: blue;
+  left: 670px;
+  top: 530px;
+  height: 50px;
+  width: 360px;
+  border-radius: 10px;
+}
