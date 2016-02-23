@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+table.mult {
+  background: #eee;
+  border-collapse: collapse;
+
+  margin: 1rem 2rem;
+
+  border: 2px dashed red;
+}
+
+td {
+  text-align: center;
+
+  width: 2.4em;
+  height: 2.4em;
+}
+
+td + td {
+  border-left: 1px solid black;
+}
+
+tr + tr {
+  border-top: 1px solid black;
+}
+
+tr:nth-of-type(odd) > td:nth-of-type(odd) {
+  background: #dbd;
+}
+
+tr:nth-of-type(odd) > td:nth-of-type(even) {
+  background: #bdd;
+}
+
+tr:nth-of-type(even) > td:nth-of-type(odd) {
+  background: #cac;
+}
+
+tr:nth-of-type(even) > td:nth-of-type(even) {
+  background: #acc;
+}
+
+td:nth-of-type(even) {
+  background: #acc;
+}
+
+tr:first-of-type > td:nth-of-type(n) {
+  background: black;
+  color: white;
+}
+
+tr:nth-of-type(n) > td:first-of-type {
+  background: black;
+  color: white;
+}
+
+tr:not(:first-of-type):hover {
+  transform: scale(1.02);
+}

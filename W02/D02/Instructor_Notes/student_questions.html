@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    .sky {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 35%;
+      background: lightblue;
+    }
+
+    .cloud {
+      width: 20%;
+      height: 15%;
+      background: white;
+
+      border-radius: 50%;
+
+      position: relative;
+      left: 20%;
+      top: 10vh;
+
+      z-index: 1000;
+    }
+
+    .cloud-strife {
+      width: 20%;
+      height: 15%;
+      background: grey;
+
+      border-radius: 50%;
+
+      position: relative;
+      left: 30%;
+      top: 5vh;
+
+      z-index: 1000000;
+    }
+
+    .earth {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 35%;
+      bottom: 0;
+      background: green;
+    }
+
+    .castle {
+      background: beige;
+      width: 30%;
+      height: 60vh;
+
+      position: relative;
+      left: 35%;
+      bottom: 20vh;
+    }
+  </style>
+</head>
+<body>
+  <div class="sky">
+    <div class="sun"></div>
+    <div class="cloud"></div>
+    <div class="cloud-strife"></div>
+  </div>
+  <div class="earth">
+    <div class="castle"></div>
+  </div>
+</body>
+</html>
