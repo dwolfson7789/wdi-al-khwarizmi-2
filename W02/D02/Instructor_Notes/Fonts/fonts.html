@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link href='https://fonts.googleapis.com/css?family=Orbitron:900|Bangers|Satisfy' rel='stylesheet' type='text/css'>
+  <style>
+    h1 {
+      font-family: 'Orbitron', 'Bangers', sans-serif;
+      font-weight: 900;
+    }
+    p {
+      font-family: 'Bangers', serif;
+    }
+    span {
+      font-family: 'Satisfy', cursive;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to my homepage</h1>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio odio temporibus <span>odit perspiciatis aperiam</span>, animi blanditiis error reprehenderit eveniet architecto iusto magnam nemo ipsum nihil ullam nam necessitatibus non atque?
+  </p>
+  <script>
+    var makeBox = function (evt) {
+      console.log(this);
+
+      var newDiv = document.createElement('div')
+
+      newDiv.style.position     = "absolute";
+      newDiv.style.left         = evt.pageX - 25 + "px";
+      newDiv.style.top          = evt.pageY - 25 + "px";
+      newDiv.style.width        = "50px";
+      newDiv.style.height       = "50px";
+      newDiv.style.background   = "red";
+      newDiv.style.opacity      = 0.2;
+      newDiv.style.borderRadius = "50%";
+
+      this.appendChild(newDiv);
+    }
+
+    document.body.addEventListener("click", makeBox);
+  </script>
+</body>
+</html>
