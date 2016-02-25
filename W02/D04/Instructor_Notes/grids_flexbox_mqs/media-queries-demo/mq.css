@@ -1,0 +1,36 @@
+/* Mobile first boilerplate: */
+
+/* These styles apply to everything */
+body {
+  padding: 20px;
+}
+h1 {
+  color: yellow;
+}
+/* Media Queries: these override the above styles */
+
+/* Larger than mobile */
+@media (min-width: 400px){
+  body {
+    background-color: blue;
+    color: pink;
+  }
+}
+@media (min-width: 550px) {
+  body {
+    background-color: green;
+    color: lightblue;
+  }
+}
+@media (min-width: 750px) {
+  body {
+    background-color: turquoise;
+    color: white;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    background-color: purple;
+    color: turquoise;
+  }
+}
