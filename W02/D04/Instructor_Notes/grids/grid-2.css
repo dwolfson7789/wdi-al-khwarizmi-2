@@ -1,0 +1,62 @@
+* {
+  width: 100%;
+  box-sizing: border-box;
+}
+.site-wrapper {
+  border: 1px dotted blue;
+  width: 90%;
+  margin: 0 5%;
+  padding: 20px;
+  min-height: 500px;
+}
+
+.row {
+  /*border: 1px solid red;*/
+}
+/* Parent elements (rows) collapse to zero height when only have floated children.
+    Fix that by clearing it. */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col {
+  border: 1px solid green;
+  float: left;
+}
+
+.nav-col,
+.ad-col {
+  min-height: 100px;
+}
+.jumbotron-col {
+  min-height: 200px;
+}
+.content-col {
+  width: 33.33%;
+  min-height: 500px;
+}
+
+/* Part II: */
+/*************/
+.card-col {
+  border: 5px dotted pink;
+  min-height: 100px;
+  padding: 5px;
+  margin: 25px 0;
+}
+
+/* Part III: */
+/*************/
+.inside-card-col {
+  min-height: 70px;
+  border: 1px solid orange;
+}
+
+.inside-card-col-1 {
+  width: 30%;
+}
+.inside-card-col-2 {
+  width: 70%;
+}
