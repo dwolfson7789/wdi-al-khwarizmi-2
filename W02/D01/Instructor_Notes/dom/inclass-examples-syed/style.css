@@ -1,0 +1,10 @@
+p {
+  background: #FF4C4C;
+  border-radius: 6px;
+  display: block;
+  padding: 24px 15px;
+  text-align: center;
+  color: #fff;
+}
+section{ float: left; width: 30%; margin: 0 1.5% 24px 1.5%; }
+footer{ clear: both; }
