@@ -1,7 +1,21 @@
 //grab the cat from the DOM
 var cat = document.querySelector('#cat');
-var left = 0;
-var dir = 1;
+var left = 1;
+var dirs = ["right","up"]
+var bottom = -20
+
+var slope = Math.floor(Math.random() * 30);
+
+window.setInterval(function() {
+
+});
+
+function hitWalls(l, b) {
+  if (l <= 0 || l >= window.innerWidth - 300 || b < -20 || b >= window.innerHeight - 300) {
+    return true;
+  }
+  return false;
+}
 
 //this bounces snuggles back and forth
 // window.setInterval(function() {
