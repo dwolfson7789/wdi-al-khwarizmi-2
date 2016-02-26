@@ -1,0 +1,49 @@
+.wrap {
+  margin: 50px;
+}
+
+.container {
+  display: inline-block;
+  width: 300px;
+}
+
+h1 {
+  color: lightgray;
+  font-family: lato;
+  font-size: 20px;
+  font-weight: 200;
+  padding:20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.box {
+  border-radius: 5px;
+  height: 40px;
+  margin: 50px auto;
+  width: 80px;
+}
+
+.wrap:hover .box{
+  transform: rotate(90deg) scale(2) translateY(-50%) translateX(50%);
+}
+
+.box1 {
+  background: mediumturquoise;
+  transition: all 1s ease;
+}
+
+.box2 {
+  background: gold;
+  transition: all 1s ease-in;
+}
+
+.box3 {
+  background: magenta;
+  transition: all 1s ease-out;
+}
+
+.box4 {
+  background: magenta;
+  transition: all 1s ease-in-out;
+}
