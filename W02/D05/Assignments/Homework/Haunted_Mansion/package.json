@@ -1,0 +1,11 @@
+{
+  "name": "haunted_mansion",
+  "version": "1.0.0",
+  "description": "Haunted Mansion speech-recognition text adventure game",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ethan Friedman",
+  "license": "ISC"
+}
