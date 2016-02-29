@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+#spinner {
+  width: 200px;
+  height: 200px;
+
+  border-radius: 100%;
+  overflow: hidden;
+
+  transition: transform 2s ease;
+}
+
+#spinner .segment {
+  width: 200px;
+  height: 100px;
+}
+
+#pointer {
+  font-size: 2rem;
+  font-family: monospace;
+  width: 200px;
+  text-align: center;
+}
+
+.segment.red, .choice.red {
+  background: red;
+}
+.segment.yellow, .choice.yellow {
+  background: yellow;
+}
+
+#interface {
+  width: 200px;
+  background: #ddd;
+  overflow: hidden;
+}
+/*
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}*/
+
+.choice {
+  float: left;
+
+  margin: 10px;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+
+/*Stay here*/
