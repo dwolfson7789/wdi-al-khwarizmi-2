@@ -1,0 +1,8 @@
+.todo h3 {
+  color: goldenrod;
+}
+
+.todo h3.completed {
+  color: red;
+  text-decoration: line-through;
+}
