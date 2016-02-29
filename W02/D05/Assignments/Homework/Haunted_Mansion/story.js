@@ -10,7 +10,7 @@
 // other choice, 'WALK around to the back', corresponds to the 'backDoor scene'.
 var story = {
   opening: {
-    narrative: "<p>I<span>t</span> was a dark and stormy night. OK, that&#8217;s a terrible clich&eacute;: " +
+    narrative: "<p>It was a dark and stormy night. OK, that&#8217;s a terrible clich&eacute;: " +
       "Actually, it was a sunny, lovely day. Even so, you still had a feeling of foreboding as you approached your late, " +
       "not so dearly departed Great-Aunt Prudence&#8217;s sprawling mansion. Built in the height of the Victorian era, " +
       "it is a veritable warren of gables, stained glass, porticos, and annexes, all in an intimidating state of tumbling disrepair. " +
