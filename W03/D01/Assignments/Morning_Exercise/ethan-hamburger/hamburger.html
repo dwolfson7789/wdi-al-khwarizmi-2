@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Animated Hamburger Button</title>
+    <link rel="stylesheet" href="hamburger.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <div class="navbar">
+      <ul>
+        <li><a href="#">Item One</a></li>
+        <li><a href="#">Item Two</a></li>
+        <li><a href="#">Item Three</a></li>
+      </ul>
+    </div>
+
+  <div id="hamburger-button">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <main>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </main>
+    <script>
+      var hamButton = document.querySelector('#hamburger-button');
+
+      function animateHamburger() {
+        hamButton.classList.toggle('open');
+      }
+
+      function slideMenu() {
+        var navBar = document.querySelector('.navbar');
+        navBar.classList.toggle('open');
+      }
+
+      hamButton.addEventListener('click', function() {
+        animateHamburger();
+        slideMenu();
+      });
+    </script>
+  </body>
+</html>
