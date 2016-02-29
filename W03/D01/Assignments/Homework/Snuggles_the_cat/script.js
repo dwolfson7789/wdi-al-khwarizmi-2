@@ -1,60 +1,20 @@
-//grab the cat from the DOM
-var cat = document.querySelector('#cat');
-var left = 1;
-var dirs = ["right","up"]
-var bottom = -20
-
-var slope = Math.floor(Math.random() * 30);
-
-window.setInterval(function() {
-
-});
-
-function hitWalls(l, b) {
-  if (l <= 0 || l >= window.innerWidth - 300 || b < -20 || b >= window.innerHeight - 300) {
-    return true;
-  }
-  return false;
-}
-
-//this bounces snuggles back and forth
-// window.setInterval(function() {
-//   cat.style.left = left + "px";
-//   if (dir) {
-//     if (left <= window.innerWidth - 300) {
-//       left += 10;
-//     } else {
-//       dir = 0;
-//       cat.classList.toggle('right')
-//     }
-//   } else {
-//     if (left >= 0) {
-//       left -= 10;
-//     } else {
-//       dir = 1;
-//       cat.classList.toggle('right');
-//     }
-//   }
-// }, 10);
+// grab the cat from the DOM
+// make her move around!
+// use a transform to make sure she's facing in the appropriate direction
+// try making her jump: she should move both horizontally and vertically, then descend to her
+// original horizontal line of movement.
+// you could use a transform to make her stretch out while she's jumping, perhaps?
+// try making her bounce off all four walls: she should move diagonally until she hits a wall, then
+// "bounce" off that wall until she hits another and so on.
+// depending on time you could do lots of things! Be creative! If you like what your Snuggles does,
+// slack or email a link to me (Ethan) so I can check it out!
 
 window.onload = function() {
-var foo = setInterval(function() {
-  cat.style.left = left + "px";
-  if (dir) {
-    if (left <= window.innerWidth - 300) {
-      left += 10;
-    } else {
-      dir = 0;
-      cat.classList.toggle('right')
-    }
-  } else {
-    if (left >= 0) {
-      left -= 10;
-    } else {
-      dir = 1;
-      cat.classList.toggle('right');
-    }
-  }
-}, 10);
+  // your code goes here
+
+
+
+
+
 
 }

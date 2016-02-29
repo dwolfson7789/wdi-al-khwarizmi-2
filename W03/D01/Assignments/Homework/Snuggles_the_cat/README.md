@@ -1,37 +1,10 @@
-# DolphinCat!
+# Snuggles the Cat!
 
-## Learning Objectives
+See the script.js file -- that's where you'll write your code.
 
-* Practice using setInterval to repeatedly perform an action
-* Use JS to manipulate absolute positioning to 'animate' objects.
-* Play (a little) with CSS transforms
-
-## Walk like an egyptian (cat)
-
-Oh no! Snuggles the cat is frozen in the bottom left corner. Help him out by writing
-some JavaScript to make him walk across the screen.
-
-Don't let Snuggles walk off the right of the screen! Find a way to reset his
-position if he walks too far...
-
-Tips:
-* Look at the CSS positioning on the cat. How might this help you move him?
-  * Maybe start by writing some JS to just move him a few pixels to the right?
-* setInterval might be useful here for doing the same action indefinitely every
-  few milliseconds...
-
-## Bouncey Cat!
-- Get Snuggles to bounce off the sides of the screen. So he'll move from left to right, hit the right edge of the screen, and then move back until he hits the left edge, then back, ad infinitum.
-- Make Snuggles face the appropriate direction each time. HINT look into css transform: scaleX for this.
-
-## Bonus - Help Snuggles the Cat and Dewey the Dolphin become BFFs!
-
-Give Snuggles special powers, so that he walks up and over, meeting Dewey the Dolphin
-near the middle of the screen.
-
-Make sure he's facing the direction that he's walking.
-
-When Snuggles reaches Dewey, have him celebrate by doing a dance!
-
-Tips:
-  * You may want to look into css transform properties for rotation...
+1. Grab the cat from the DOM
+1. Make her move around -- we made her move left to right together in class, if you remember. Then we made her bounce off the far wall, bounce off both walls, used a transform so she flipped right-to-left when she was moving back left, and finally made her move up and down instead. Whew!
+1. You should extend that. First, recreate what we did on Wednesday. You should have the code from our review session.
+1. Then try making her do different things. Make her jump: She should start moving right then at some point, she should move upwards as well to a max height, then return downwards to her original position (so she describes an arc in the air, like a real running jump). Try adding in a transform if you like so that she stretches out mid-air as she jumps.
+1. Finally, if you have time, make her bounce off of all four "walls". Start her moving on a diagonal instead of straight up or down. When she hits one of the edges of the window (remember window.innerWidth and window.innerHeight?), she should bounce off it like, say, a ping-pong ball would and move diagonally again.
+1. If you've got the above working, for a super bonus try adding in a little randomness to the diagonal movement so that she occasionally changes the slope of her movement -- you've created a Snuggles screensaver!
