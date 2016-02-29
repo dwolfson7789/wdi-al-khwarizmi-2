@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  width: 60vw;
+  margin: auto;
+}
+
+.clicker {
+  width: 100%;
+  padding: 2vw;
+  background: pink;
+  margin: 1rem 0;
+}
+
+.clicker h3 {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid white;
+  padding-bottom: 0.25rem;
+}
+
+.clicker h3, .clicker p {
+  text-align: center;
+}
+
+.clicker button {
+  background: lightblue;
+
+  width: 100%;
+
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.clicker button:hover {
+  background: white;
+  transform: scaleX(0.94);
+}
+
+.new-click-interface {
+  padding: 0 0.5rem;
+  background: lightblue;
+}
+
+.new-click-interface * {
+  background: white;
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  outline: none;
+}
+
+.new-click-interface button {
+  cursor: pointer;
+}
