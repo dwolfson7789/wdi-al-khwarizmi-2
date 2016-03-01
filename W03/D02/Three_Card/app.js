@@ -15,6 +15,10 @@ window.onload = function () {
   }
   showValues(); // then update cards to show values
 
+  cards.forEach(function (card, i) {
+    card.element.addEventListener('click', whenCardIsClicked.bind(card));
+  });
+
   // set up functionality
   var button = document.querySelector('.play');
   button.addEventListener('click', function () {
@@ -25,7 +29,7 @@ window.onload = function () {
       });
 
       gameHasStarted = true;
-      
+
       hideValues();
       shuffleCards();
     }
@@ -54,7 +58,7 @@ window.onload = function () {
   }
 
   function shuffleCards () {
-    var shuffleCount = 5 + ~~(8 * Math.random());
+    var shuffleCount = 5 + Math.floor(8 * Math.random());
     var intervalID = setInterval(function () {
       if (shuffleCount > 0) {
         shuffleCardsOnce();
@@ -69,10 +73,6 @@ window.onload = function () {
   function letUserChoose () {
     var cardsEl = document.querySelector('.cards');
     cardsEl.classList.add('active');
-
-    cards.forEach(function (card, i) {
-      card.element.addEventListener('click', whenCardIsClicked.bind(card));
-    });
   }
 
   function whenCardIsClicked () {
@@ -106,7 +106,7 @@ window.onload = function () {
 */
 Array.prototype.shuffle = function () {
   for (var i = 0; i < this.length; i++) {
-    var targetIndex = ~~(Math.random() * (this.length - i));
+    var targetIndex = i + Math.floor(Math.random() * (this.length - i));
     var temp = this[i];
     this[i] = this[targetIndex];
     this[targetIndex] = temp;
