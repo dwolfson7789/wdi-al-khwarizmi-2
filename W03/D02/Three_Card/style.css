@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 2vw;
+}
+
+body {
+  width: 60vw;
+  margin: 0 auto;
+  background: #222;
+  color: white;
+}
+
+.status {
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 4px;
+  border-bottom: 2px solid white;
+}
+
+.cards {
+  position: relative;
+
+  width: 60vw;
+  height: 25vw;
+
+  background: #060;
+
+  margin-bottom: 3vw;
+
+  transition: background 0.5s ease;
+}
+
+.card {
+  position: absolute;
+
+  width: 14vw;
+  height: 21vw;
+
+  background: #a00;
+  color: black;
+
+  border: 1vw solid white;
+
+  top: 2vw;
+
+  font-size: 2rem;
+  text-align: center;
+  line-height: 19vw;
+
+  transition: left 0.5s ease;
+}
+.card:nth-child(1) {
+  left: 3vw;
+}
+.card:nth-child(2) {
+  left: 23vw;
+}
+.card:nth-child(3) {
+  left: 43vw;
+}
+.card.chosen {
+  border: 1vw solid blue;
+  background: white;
+  color: black;
+}
+
+.cards.active {
+  background: gold;
+}
+.cards.active .card {
+  transition: background 0.5s ease;
+}
+.cards.active .card:hover {
+  cursor: pointer;
+  background: white;
+}
+
+.interface {
+  width: 60vw;
+  background: #ccc;
+  padding: 1rem;
+}
+.interface button {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.6rem;
+  background: #e00;
+  outline: none;
+}
