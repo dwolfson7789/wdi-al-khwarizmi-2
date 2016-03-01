@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+  var Game = {};
+  </script>
+</head>
+<body>
+
+
+
+  <script>
+    function clickForValue (j) {
+      return function () {
+        alert("My favorite number is " + j);
+      }
+    }
+
+    for (var i = 0; i < 3; i++) {
+      var newButton = document.createElement('button');
+      newButton.innerText = "Button " + i;
+
+      newButton.addEventListener('click', clickForValue(i));
+
+      // (function (j) {
+      //   newButton.addEventListener('click', function () {
+      //     alert("My favorite number is " + j);
+      //   });
+      // })(i);
+      // IIFE Immediately Invoked Function Expression
+
+
+      document.body.appendChild(newButton);
+    }
+  </script>
+  <script src="script_one.js"></script>
+  <script src="script_two.js"></script>
+</body>
+</html>
