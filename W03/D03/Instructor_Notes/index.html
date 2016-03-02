@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <button class="show-text">Show Text</button>
+  <p class="lead"></p>
+
+
+  <script>
+  var myObj = {
+    content: "Now is the dark and stormy night of our disconent...",
+    element: document.querySelector('.lead'),
+    update: function () {
+      this.element.innerText = this.content;
+    },
+    initialize: function () {
+      console.log(this); // myObj
+
+      var that = this; // that === myObj;
+
+      var showText = document.querySelector('.show-text');
+
+      showText.addEventListener('click', function (e) {
+        /* normal behavior is to pass in the showText node
+           as keyword this */
+        console.log(this, that); // showText, myObj
+        that.update();
+      });
+    }
+  }
+  </script>
+</body>
+</html>
