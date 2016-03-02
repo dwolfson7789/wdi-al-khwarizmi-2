@@ -1,0 +1,24 @@
+.container {
+  display:flex;
+  background-color: limegreen;
+  width: 90vw;
+  height: 90vh;
+  flex-direction:row;
+  justify-content: space-around;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+}
+.box:first-of-type {
+  background-color: khaki;
+}
+
+.box:nth-of-type(2) {
+  background-color: black;
+}
+
+.box:last-of-type {
+  background-color: lightgray;
+}
