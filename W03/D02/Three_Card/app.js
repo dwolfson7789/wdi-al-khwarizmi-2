@@ -12,6 +12,7 @@ window.onload = function () {
   var cardEls = document.querySelectorAll('.card');
   for (var i = 0; i < 3; i++) {
     cards[i].element = cardEls[i];
+    debugger;
   }
   showValues(); // then update cards to show values
 
