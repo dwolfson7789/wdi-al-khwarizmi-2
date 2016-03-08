@@ -66,8 +66,7 @@ function isEven(n) {
   } else if (n === 1) {
     return "Odd";
   } else {
-    // do a third thing
-
+    return isEven(n-2);
   }
 }
 ```
@@ -79,12 +78,6 @@ Here's the type of problem you might see on an interview. The Fibonnaci sequence
 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, ...
 
 You can do this with a `for` loop. Start by doing it that way. Using a for loop and NO recursion, write a function to calculate the value of the nth Fibonnaci number.
-```js
-function fibonnaciLoop(n) {
-  //code goes here
-
-}
-```
 
 You can also do it recursively! Write a recursive function that calculates the nth Fibonnaci number. So `fibonnaci(5)` would return 3 and `fibonnaci(8)` would return 21.
 
