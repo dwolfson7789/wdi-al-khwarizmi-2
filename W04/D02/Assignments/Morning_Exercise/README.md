@@ -83,10 +83,13 @@ You can also do it recursively! Write a recursive function that calculates the n
 
 ```js
 function fibonnaci(n) {
-  // brilliant code goes here
-
-
-
+    if (n <= 1) {
+        return 0;
+    } else if (n <= 3) {
+        return 1;
+    } else {
+        return fibonnaci(n - 1) + fibonnaci(n-2);
+    }
 }
 ```
 
