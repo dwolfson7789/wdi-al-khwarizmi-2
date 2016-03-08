@@ -197,6 +197,8 @@ Part II: Make API calls from your website
 - Identify the `conditions` endpoint URL & the formula for WU's API call
 - Repeat exercise above:
 - Part I: Construct 5 basic queries for different cities & states & **make them in the browser** first
-- Part II: Then make API calls from your website (create new HTML & JS files)
-  - In the input box, let the user type in a city
+- Part II: Then make API calls **from your website** (create new HTML & JS files)
+  - First log the response from a hard-coded AJAX request in the console
+  - Then create an input box where the user will type in a city
   - Append the city name, state, zip code, `weather`, `temperature_string`, `relative_humidity`, wind direction, wind mph and `feelslike_f` values to the DOM
+  - Don't forget to add the jQuery CDN in your HTML like we did in the demo from earlier

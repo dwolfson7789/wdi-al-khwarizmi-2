@@ -7,10 +7,12 @@ window.onload = function() {
 
     var apiInputBox = document.getElementById('api-input');
     var userChosenMovie = apiInputBox.value;
-    var query = 'http://omdbapi.com/?tomatoes=true&t=' + userChosenMovie;
+    // var query = 'http://omdbapi.com/?tomatoes=true&t=' + userChosenMovie;
+    var query = 'http://api.wunderground.com/api/cc7b398f0f1266c4/conditions/q/CA/San_Francisco.json';
 
     $.ajax({
       url: query,
+      dataType: "jsonp"
     }).done(function(response){
       console.log(response);
       var titleEl = document.getElementById('title');
@@ -18,7 +20,7 @@ window.onload = function() {
       var yearEl = document.getElementById('year');
       yearEl.innerHTML = response.Year;
       var posterEl = document.getElementById('poster');
-      posterEl.innerHTML = '<img class="picture" src="' + response.Poster + '"/>'; 
+      posterEl.innerHTML = '<img class="picture" src="' + response.Poster + '"/>';
 
     }).fail(function(response){
       console.log("uh oh, fail");
