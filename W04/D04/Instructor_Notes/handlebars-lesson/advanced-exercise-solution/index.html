@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>HBS in class demo</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+</head>
+<body>
+	<h1>Hello.</h1>
+
+	<div id="favorites">This is where my info will go.</div>
+
+  <script type="text/x-handlebars-template" id="favorites-template">
+  {{#each people}}
+    <div class="row">
+      <div class="four wide column">
+        <h3> {{ firstName }} </h3>
+      </div>
+      <div class="four wide column">
+        <h3> {{ lastName }} </h3>
+      </div>
+      <div class="four wide column">
+        <h3> Likes: {{ like }} </h3>
+      </div>
+    </div>
+  {{/each}}
+  </script>
+
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

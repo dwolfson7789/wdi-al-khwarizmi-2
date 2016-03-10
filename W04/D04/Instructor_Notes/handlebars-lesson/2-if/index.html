@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>HBS Demo 2: Ifs</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+</head>
+<body>
+	<h1>Here is my information</h1>
+
+	<div id="info-container"></div>
+
+	<script id="info-template" type="text/x-handlebars-template">
+      <h2>{{name}}</h2>
+      <p>{{age}}</p>
+      {{#if happy}}
+        <p>I'm doing swell.</p>
+      {{else}}
+        <p>I'm not doing too swell.</p>
+      {{/if}}
+      <img src="{{profileSrc}}">
+	</script>
+
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
