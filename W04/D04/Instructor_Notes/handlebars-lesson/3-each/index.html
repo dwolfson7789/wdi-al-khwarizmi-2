@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>HBS Demo 3: each</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+</head>
+<body>
+	<h1>Here is my information</h1>
+
+	<div id="info-container"></div>
+
+	<script id="info-template" type="text/x-handlebars-template">
+      <h2>{{name}}</h2>
+      <p>{{age}}</p>
+      <img src="{{profileSrc}}" />
+      <p>Hobbies:</p>
+      <ul>
+	      {{#each hobbies}}
+	      	<li><strong>{{name}}</strong> : Been doin it for {{experience}} years.</li>
+	      {{/each}}
+      </ul>
+	</script>
+
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
