@@ -125,13 +125,13 @@ So remember before we had a whole list of people? We want to use a template over
 {{#each people}}
   <div class="row">
     <div class="four wide column">
-      <h3> {{ this.firstName }} </h3>
+      <h3> {{ firstName }} </h3>
     </div>
     <div class="four wide column">
-      <h3>  {{ this.lastName }}   </h3>
+      <h3>  {{ lastName }}   </h3>
     </div>
     <div class="four wide column">
-      <h3>  Likes: {{ this.like }}   </h3>
+      <h3>  Likes: {{ like }}   </h3>
     </div>
   </div>
 {{/each}}

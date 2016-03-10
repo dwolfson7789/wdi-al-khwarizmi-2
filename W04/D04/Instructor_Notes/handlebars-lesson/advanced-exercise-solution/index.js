@@ -1,9 +1,10 @@
-var data = { people:
-  [
-    {firstName: "Syed", lastName: "Salahuddin", like: "Ramen noodles"},
-    {firstName: "Ethan", lastName: "Friedman", like: "taking videos of his adorable baby"},
-    {firstName: "Liza", lastName: "Ramo", like: "Nachos"}
-  ]
+var data = {
+  people:
+    [
+      {firstName: "Syed", lastName: "Salahuddin", like: "Ramen noodles"},
+      {firstName: "Ethan", lastName: "Friedman", like: "taking videos of his adorable baby"},
+      {firstName: "Liza", lastName: "Ramo", like: "Nachos"}
+    ]
 };
 // `source` is a string representation of the HTML template found in name-template:
 var source = document.getElementById('favorites-template').innerHTML;
