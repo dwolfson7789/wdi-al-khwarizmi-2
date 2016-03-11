@@ -52,7 +52,7 @@ You can also use the `in` operator to check if something is inside of an object.
 This brings us to the part of the lesson where we figure out how to loop through a set of values in an object.
 
 	for (var prop in contactList) {
-		console.log("obj." + prop + " = " + obj[prop]);
+		console.log("obj." + prop + " = " + contactList[prop]);
 	}
 
 
