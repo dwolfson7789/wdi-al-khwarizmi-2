@@ -17,8 +17,9 @@ I am keeping this deliberately open-ended: you guys have used a bunch of APIs no
 1. You'll need to read the API docs. There are a *lot* of possible endpoints for you to consider. You'll need to decide which ones you want. I suspect many of you might want the Pokemon endpoint, which returns a bunch of Pokemon(Pokemen?). You can find the full docs [here](http://pokeapi.co/docsv2/) and the section on the Pokemon endpoint [here](http://pokeapi.co/docsv2/#pokemon). (Note that passing in a resource or name is OPTIONAL -- if you don't do so, the API will send you an array of Pokemen in return--20 items is the default, but you can change that as outlined in the docs).
 1. Do something cool with the data. This is up to you! But you *must* do the following at a minimum:
     * Build a form that takes some kind of user input and
-    * Use that input to build an API call, which it then makes
+    * Use that input to build an API call, which it then makes successfully and gets data back
     * Take the data that the API returns and use handlebars to display it using templating.
+    * Try to use at least on one filter function on the data before displaying it.
     * Apply at least some minimal styling via CSS so that the page looks decent.
 
 Think of this as a dry run for Project 2! Have fun! Poke around!
