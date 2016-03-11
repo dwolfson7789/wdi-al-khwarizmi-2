@@ -1,12 +1,12 @@
-isGameOver = false
+var isGameOver = false;
 while(!isGameOver){
   var move = parseInt(prompt("rock! paper! scissors! choose! enter 1 for rock, 2 for paper, 3 for scissors"))
   var min = 1
-  var max = 4
+  var max = 3
   // we're going to represent: rock, paper or scissors as 1, 2, 3
   var computer = Math.floor(Math.random() * (max - min)) + min;
   //game logic
-  if( move === computer ){
+  if( move == computer ){
 
     console.log("it's a tie!")
 
