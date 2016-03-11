@@ -6,7 +6,6 @@
 /*
 STUFF TO DO 2/23/16:
   * END GAME FUNCTION
-  * WRITE STORY
   * ADD SPOOKY SOUNDS (---OPTIONAL---)
 */
 console.log ('JavaScript is loaded ...');
@@ -187,5 +186,5 @@ function endGame() {
   inProgress = false;
 
   console.log('ending game');
-  // stuff goes here
+  // TODO stuff goes here?
 }
