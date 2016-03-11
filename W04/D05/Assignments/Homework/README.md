@@ -26,9 +26,9 @@ Think of this as a dry run for Project 2! Have fun! Poke around!
 
 ## PART 2: JavaScript refresher on Factory Functions
 
-To be completed once you've done Part 1.
+To be completed once you've done Part 1 -- finishing Part 1 is more important!
 
-Write a factory function that takes one argument, the name of an HTML tag (e.g., "div" or "img"), and returns a *function* that in turn will return a string with that tag, giving it a class that's passed in, and giving it any content that's passed in. An example may make this clearer (read closely -- this is not as complex as it may sound!):
+Write a factory function that takes one argument, the name of an HTML tag (e.g., "div" or "img"), and returns a *function* that in turn will return a string with that tag, giving it any content that's passed in. An example may make this clearer (read closely -- this is not as complex as it may sound!):
 ```js
 function HTMLFactory(tagName) {
   //your factory code goes here
@@ -36,16 +36,16 @@ function HTMLFactory(tagName) {
 
 }
 
-var divMaker = HTMLFactory('div');
+var divMaker = HTMLFactory('div');  //divMaker is now a function.
 
-divMaker('user-div', "this is test text")
-// returns "<div class='user-div'>this is test text</div>" <--NOTE THAT'S A STRING
+divMaker("this is test text")
+// returns "<div>this is test text</div>" <--NOTE THAT'S A STRING
 
-var linkMaker = HTMLFactory('a');
+var linkMaker = HTMLFactory('a'); //linkMaker is now a function
 
-divMaker('navigation-div',linkMaker('nav-link',"I'm a really cool link"));
+divMaker(linkMaker("I'm a really cool link"));
 // returns:
-// "<div class='navigation-div'><a class='nav-link'>I'm a really cool link</a></div>"
+// "<div><a>I'm a really cool link</a></div>"
 ```
 
 Note that '*class*' is a reserved keyword in JavaScript and you can't use it as the name of any arguments or variables.
