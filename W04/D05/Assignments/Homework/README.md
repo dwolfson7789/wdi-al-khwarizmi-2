@@ -19,7 +19,7 @@ I am keeping this deliberately open-ended: you guys have used a bunch of APIs no
     * Build a form that takes some kind of user input and
     * Use that input to build an API call, which it then makes successfully and gets data back
     * Take the data that the API returns and use handlebars to display it using templating.
-    * Try to use at least on one filter function on the data before displaying it.
+    * *Try* to use at least on one filter function on the data before displaying it.
     * Apply at least some minimal styling via CSS so that the page looks decent.
 
 Think of this as a dry run for Project 2! Have fun! Poke around!
