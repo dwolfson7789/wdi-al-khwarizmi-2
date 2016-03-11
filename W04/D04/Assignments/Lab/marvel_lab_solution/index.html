@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Marvel API</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<h1>Marvel API</h1>
+
+<!-- simple form: what does the user want to search for? -->
+<form>
+
+  <!-- endpoint -->
+  <label> Choose an endpoint:
+    <select id="search-endpoint">
+      <option value="none" selected></option>
+      <option value="characters">Characters</option>
+      <option value="comics">Comics</option>
+    </select>
+  </label>
+  <br>
+  <br>
+
+  <!-- character name -->
+  <label>Search for Character Name:
+    <input id="search-character" type="text" placeholder=" Character name" />
+  </label>
+  <br>
+  <br>
+
+  <!-- comic title -->
+  <label>Search for Comic Title:
+    <input id="search-title" type="text" placeholder=" Comic title" />
+  </label>
+  <br>
+  <br>
+
+  <!-- submit button -->
+  <button id="submit-btn-first-api-call">Submit</button>
+
+  <!--  -->
+
+</form>
+
+
+<br>
+<br>
+<!-- ******************************************************************** -->
+<hr>
+<br>
+
+
+<!-- This is where the return data will appear for Characters: -->
+<div id="info-container-characters">
+  <h3>Character Name:
+    <span class="appended-response" id="char-name">Character name goes here</span>
+  </h3>
+
+  <b><p>ID: </b><span class="appended-response" id="char-id">Character ID goes here</span></p>
+
+  <b><p>Description: </p></b>
+  <p class="appended-response" id="char-description">Description goes here</p>
+
+  <b><span>Thumbnail: </span></b><span class="appended-response" id="char-thumb">Thumbnail goes here</span>
+  <br>
+</div>
+
+<!-- This is where the return data will appear for Comics: -->
+<div id="info-container-comics">
+  <p>This is where info will be appended! </p>
+</div>
+<!-- template for `comics` -->
+<script id="comics-info-template" type="text/x-handlebars-template">
+    <h2>ID: {{comicsID}}</h2>
+    <p>Title: {{comicsTitle}}</p>
+    <p>Page Count: {{comicsPgCount}}</p>
+    <p>Description: {{comicsDescrip}}</p>
+    <img src="{{comicsThumb}}" />
+    <p>Price: {{comicsPrice}}</p>
+</script>
+
+<!-- CDNs -->
+<script src="https://code.jquery.com/jquery-2.2.1.min.js" charset="utf-8"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js" charset="utf-8"></script>
+<script src="apiKey.js" charset="utf-8"></script>
+<script src="index.js" charset="utf-8"></script>
+</body>
+</html>
