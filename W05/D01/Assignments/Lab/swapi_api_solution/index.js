@@ -42,6 +42,7 @@ window.onload = function() {
     $.ajax({
       url: query
     }).done(function(response){
+      console.log(response);
       // give character HBS the object to stuff into the template
       var html = charTemplate(response);
       charInfoContainer.innerHTML = html;
