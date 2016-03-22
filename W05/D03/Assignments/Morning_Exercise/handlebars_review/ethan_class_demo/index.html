@@ -11,7 +11,8 @@
 
     <script id="story-template" type="text/x-handlebars-template">
       {{#each this}}
-        <h3 id="{{@key}}">Scene: {{@key}}</h3>
+      <div class="scene-div" id="{{@key}}">
+        <h3>Scene: {{@key}}</h3>
         <p>
           <h4>Narrative:</h4>
           {{this.narrative}}
@@ -20,6 +21,7 @@
           <h4>Choices: </h4>
           <ul>
             {{#each this.fullChoices}}
+            {{@index}}
             <li>{{this}}</li>
             {{/each}}
           </ul>
@@ -36,6 +38,7 @@
             {{/each}}
         </p>
         <hr>
+      </div>
       {{/each}}
     </script>
 

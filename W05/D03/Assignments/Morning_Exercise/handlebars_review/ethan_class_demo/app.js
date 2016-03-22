@@ -5,3 +5,11 @@ var storyTemplate = Handlebars.compile(storyEl);
 var storyHTML = storyTemplate(story);
 
 document.querySelector('#story-div').innerHTML = storyHTML;
+// 
+// $('.scene-div').hide();
+// $('#opening').show();
+//
+// $('.frontDoor').on('click',function() {
+//   $('#opening').hide();
+//   $('#frontDoor').show();
+// });
