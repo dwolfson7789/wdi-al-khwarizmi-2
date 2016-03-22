@@ -1,6 +1,7 @@
 var fs = require('fs');
 var prompt = require('prompt');
-var file = "./etc/contact-list.JSON";
+var colors = require('colors');
+var file = "./etc/contact-list.json";
 
 console.log("please press");
 console.log("1 to save a new contact");
@@ -21,7 +22,7 @@ prompt.get(['choice'], function(err, result){
         //now write our results
         fs.writeFile(file, JSON.stringify(contacts), function(err){
           if (err) return console.log(err);
-          console.log("object saved!");
+          console.log(colors.rainbow("object saved!"));
         });
       });
     });
@@ -39,7 +40,7 @@ prompt.get(['choice'], function(err, result){
           }
         });
         for (contact of filterd){
-          console.log("found: " + contact.email);
+          console.log("found: " + colors.rainbow(contact.email));
         }
       });
     });
@@ -49,7 +50,7 @@ prompt.get(['choice'], function(err, result){
       if (err) return err;
       var contacts = JSON.parse(data);
       for (contact of contacts){
-        console.log(contact.name + " - " + contact.email);
+        console.log(colors.rainbow(contact.name + " - " + contact.email));
       }
     })
   }
