@@ -1,0 +1,14 @@
+{
+  "name": "contact-module",
+  "version": "0.1.0",
+  "description": "experiment",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prompt": "^1.0.0"
+  }
+}
