@@ -8,6 +8,7 @@ window.onload = function() {
   $.ajax({
     url: peopleQuery
   }).done(function(peopleQueryResponse){
+    console.log(peopleQueryResponse);
     var charDropdown = document.getElementById('char-dropdown');
     for (var i = 0; i < peopleQueryResponse.results.length; i++) {
       var val = i + 1;
