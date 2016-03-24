@@ -44,7 +44,9 @@ var express = require('express'),
     cors    = require('cors'),
     fs      = require('fs'),
     app     = express();
-``` (Note you could use four separate lines of code and `var` declarations to do this; the above is just my personal way of writing it. Go with whatever floats your boat.)
+``` 
+
+(Note you could use four separate lines of code and `var` declarations to do this; the above is just my personal way of writing it. Go with whatever floats your boat.)
 1. We need to add in the ability to send ajax requests to our server from anywhere! That means we'll need to add some middleware to ensure that on every request, the server is using `cors` to handle that.  You'll need to add in a line of code: `app.use(cors());` to ensure that. Remember that the .use function in express is a piece of middleware that will run on every request, no matter what type of HTTP request it is or to what path it's going. You can read more about middleware [here](http://expressjs.com/en/guide/using-middleware.html) if you're curious.
 1. We're going to need two routes in our router. One to handle GET requests to root ('/') and one to handle POST requests to root ('/'). Here's the starting framework for the GET('/') route; I'll leave you to write the similar framework for the POST('/') route entirely by yourself.
 `app.get('/', function(request, response) {//stuff goes here});`
