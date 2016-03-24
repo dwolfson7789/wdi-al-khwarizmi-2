@@ -47,7 +47,7 @@ window.onload = function() {
 
     // build the AJAX request:
     $.ajax({
-      url: fullQuery,
+      url: fullQuery
     }).done(function(response){
       console.log("fullQuery: ",  fullQuery);
       console.log("Success response: ", response);
