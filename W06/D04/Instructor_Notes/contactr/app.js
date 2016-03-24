@@ -64,7 +64,7 @@ app.get('/contact', function(request, response){
       }
     });
 
-    // check if the filter has any name(s).
+    // check the filter
     name.length >= 1 ? response.json(name) : response.status(404).send('Not found!');
 
   });
