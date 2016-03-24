@@ -28,7 +28,6 @@ babblr/data
 babblr/public
 babblr/public/stylesheets
 babblr/public/scripts
-
 If you had, e.g., image and music files to display on your page, those would go in an assets directory in appropriate subfolders. E.g.
 babblr/public/assets/images etc.
 You should also copy and paste the babbls.json file I've given you here to your babblr/data directory. It has a little starter data in it to get you going.
