@@ -29,7 +29,6 @@ window.onload = function() {
       console.log("this code runs no matter what.");
     })
 
-
   }) // end click fxn
 
 

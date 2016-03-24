@@ -202,3 +202,8 @@ Part II: Make API calls from your website
   - Then create an input box where the user will type in a city
   - Append the city name, state, zip code, `weather`, `temperature_string`, `relative_humidity`, wind direction, wind mph and `feelslike_f` values to the DOM
   - Don't forget to add the jQuery CDN in your HTML like we did in the demo from earlier
+
+Bonuses:
+- \#1 Depending on what the `weather` property evaluates to (ie: partly cloudy, sunny, etc.) change the background to an appropriate image
+- \#2
+There is also a `wind_string` variable (calm, super windy, etc.). Make the h1 move proportionate to the strength of the windyness. CSS animations! 
