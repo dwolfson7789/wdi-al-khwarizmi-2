@@ -1,25 +1,21 @@
-# Let's build Babblr!
+# Let's build our first full-stack app!
+## It shall be called .... BABBLR
 
-NOTE: Babblr is not at all like that other website, you know, the one that's named after
-the sounds that little birds make. No relationship at all. None. In fact, for legal protection, you should never ever refer to that other website again. Ever. Or their lawyers will kill you.
+**NOTE:** Babblr is not at all like that other website, you know, the one that's named after the sounds that little birds make. No relationship at all. None. In fact, for legal protection, you should never ever refer to that other website again. Ever. Or their lawyers will kill you.
 
-NOTE FOR ETHAN REMOVE LATER!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-need: this README and babbls.json
 ## App structure
 
-**Babblr/**
-this is where the API server will live (app.js)
+*Babblr/* this is where the API server will live (app.js)
 
-babblr/public (this is where our frontend will live)
+*babblr/public* (this is where our frontend will live)
 
-babblr/public/scripts (front-end JavaScript here)
+*babblr/public/scripts* (front-end JavaScript here)
 
-babblr/public/stylesheets (CSS goes here)
+*babblr/public/stylesheets* (CSS goes here)
 
-babblr/data (our "database" goes here)
+*babblr/data* (our "database" goes here)
 
-This is a simplified version of how a typical express app might be structured. All the files for the frontend live in the /public directory, and front-end JavaScript and CSS files are further segregated into /public/scripts and /public/stylesheets respectively.
+This is a simplified version of how a typical Express app might be structured. All the files for the frontend live in the /public directory, and front-end JavaScript and CSS files are further segregated into /public/scripts and /public/stylesheets respectively.
 
 Normally, there would be a database (we're going to use MongoDB starting next week) to store our backend data, but here we're simulating with a JSON file in a /data directory.
 
@@ -89,7 +85,7 @@ We're going to use the built-in filesystem module (fs) to read the babbls.json f
   * vanilla JS
 
 It doesn't have to look pretty -- we're not worrying about styling tonight! But it should display a list of babbls, each one with an author and the content of the babbl. Here's what mine looked like:
-![screenshot2](Screenshot2.png)
+![screenshot2](screenshot2.png)
 1. If you've got to this step and everything's working you should be so proud. If you haven't added and committed your code since you built the initial backend code way up above, do so now. Try to remember -- ~15 minutes of work = commit. Or another way of thinking about it, you've gotten a single function working properly? Then add and commit. Then keep coding.
 1. Now let's build our second route so we can actually create a new babbl. Start on the frontend. In main.js you'll need a click event listener on the submit new babbl button. You should have set this up already, but do so now, and confirm it triggers a console.log on a click. Inside the callback for the event listener we will need to do the following
   * grab the values of the author input and the babbl input.
@@ -123,6 +119,14 @@ WHEW! If you got all this working sucessfully then you should be able to
 1. On the frontend, add in a .success or a .done function that console.logs what comes back from the API if you didn't already. Submit a new babbl and you should see `{"success":"true"}` in your browser's console!
 **CONGRATULATIONS! HAVE A DRINK! HAVE THREE!**
 
-**BONUSES**
-1. Instead of just sending {"success":"true"} back, send the client the full list of babbls (including the newest one), and on the front end make it so that it displays all those babbls right away. I.e., when you click 'submit new babbl', your web page should automatically update with the full list of babbls including the one just created.
-2. Read up on the JavaScript global Date object [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date). When you make a new babbl object in app.js, also add in a 'Created' property. It should be the date and time; you might want to check out the Date.toLocaleString() method. Add in to your babbl display, the date/time of the babbl's creation along with the author and content.
+### **BONUSES**
+(I don't expect you to have time to get to these!)
+1. Make sure your babbls are displaying so that the newest babbl appears at the top, and then downward in descending chronological order.
+1. Instead of just sending {"success":"true"} back on the successful creation of a new babbl, send the client the full list of babbls (including the newest one), and on the front end make it so that it displays all those babbls right away. I.e., when you click 'submit new babbl', your web page should automatically update with the full list of babbls including the one just created.
+1. Read up on the JavaScript global Date object [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date). When you make a new babbl object in app.js, also add in a 'Created' property. It should be the date and time; you might want to check out the Date.toLocaleString() method. Add in to your babbl display, the date/time of the babbl's creation along with the author and content.
+1. Add in the ability to search the babbls for all those by a specific user and only display those.
+1. Add in some additional validation to prevent users from trying to get around the 140-character limit. Ideally, you should be validating the user input in three places:
+  1. In the HTML (where possible) with validators such as the `maxlength` attribute
+  1. In the frontend JavaScript. You could only create the new babbl if the length of the babbl <= 140 characters. If it's more, display a 'babbl is too long'-type message and refuse to post the new babbl.
+  1. In the backend JavaScript, the server should refuse to write the new babbl to the database if the babbl body is too long as well.
+  1. In addition to validating maxlength you could validate minlength as well. Make sure that you can't submit an empty babbl. Also, you could make sure the author field  can't be blank.
