@@ -37,7 +37,7 @@ app.get('/names', function(request, response){
   });
 });
 
-/* get emails*/
+/* get emails */
 app.get('/emails', function(request, response){
   fs.readFile('./contacts.json', function(err, data){
     var contacts = JSON.parse(data);
@@ -64,7 +64,7 @@ app.get('/contact', function(request, response){
       }
     });
 
-    // check if the filter has any names.
+    // check if the filter has any name(s).
     name.length >= 1 ? response.json(name) : response.status(404).send('Not found!');
 
   });
