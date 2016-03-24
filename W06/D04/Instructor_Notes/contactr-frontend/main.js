@@ -19,6 +19,15 @@ document.addEventListener('DOMContentLoaded', function(event) {
     consle.log(response);
   });
 
-
+  /*
+  $.ajax({
+    type: 'POST',
+    url: 'http://localhost:3000/',
+    data: JSON.stringify, // your form object goes here.
+    success: function(data) { alert(data); },
+    contentType: "application/json",
+    dataType: 'json'
+  });
+  */
 
 });
