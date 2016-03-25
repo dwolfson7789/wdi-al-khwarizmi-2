@@ -1,4 +1,10 @@
+
 document.addEventListener('DOMContentLoaded', function(event) {
+
+  document.getElementById('submit-button').addEventListener('click', function(ev){
+    // prevent the default of the submit button
+    ev.preventDefault();
+
 
   var theTemplateScript = $("#address-template").html();
   var theTemplate = Handlebars.compile(theTemplateScript);
@@ -9,17 +15,18 @@ document.addEventListener('DOMContentLoaded', function(event) {
   })
   .done(function(response) {
     // we already know we're getting an array back, let's just pass it in.
-    contacts = {}
+    contacts = {},
     contacts["contacts"] = response
     var theCompiledHtml = theTemplate(response);
     $('.content-placeholder').html(theCompiledHtml);
 
   })
   .fail(function(response) {
-    consle.log(response);
+    console.log(response);
   });
+});
 
-  /*
+  if(userInput === this.name)
   $.ajax({
     type: 'POST',
     url: 'http://localhost:3000/',
@@ -28,6 +35,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
     contentType: "application/json",
     dataType: 'json'
   });
-  */
+
 
 });
