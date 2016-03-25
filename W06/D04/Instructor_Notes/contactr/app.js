@@ -52,7 +52,7 @@ app.get('/emails', function(request, response){
 });
 
 /* query for a specific contact */
-app.get('/contact', function(request, response){
+app.get('/findContact', function(request, response){
   console.log(request.query);
   fs.readFile('./contacts.json', function(err, data){
     var parsed = JSON.parse(data);
