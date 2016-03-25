@@ -52,7 +52,7 @@ app.get('/emails', function(request, response){
 });
 
 /* query for a specific contact */
-app.get('/contact', function(request, response){
+app.get('/findContact', function(request, response){
   console.log(request.query);
   fs.readFile('./contacts.json', function(err, data){
     var parsed = JSON.parse(data);
@@ -67,6 +67,23 @@ app.get('/contact', function(request, response){
     // check the filter
     name.length >= 1 ? response.json(name) : response.status(404).send('Not found!');
 
+  });
+});
+
+app.get('/findContact/:name', function(request, response){
+  console.log(request.params);
+  fs.readFile('./contacts.json', function(err, data){
+    var parsed = JSON.parse(data);
+    var name = parsed.filter(function(obj){
+      if(obj["name"] == request.params.name){
+        return true;
+      } else{
+        return false;
+      }
+    });
+
+    // check the filter
+    name.length >= 1 ? response.json(name) : response.status(404).send('Not found!');
   });
 });
 
