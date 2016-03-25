@@ -15,10 +15,10 @@
 
 
       <div id="inputAndButtons">
-        <input type="text" id="nameText" placeholder="Enter your name">
+        <input type="text" id="nameText" placeholder="What's up? eh?">
         <br>
 
-        <input type="text" id="inputText" maxlength="140" placeholder="Slide a Babble my way">
+        <input type="text" id="inputText" maxlength="150">
         <br>
         <input type="button" id="submit-btn" value="Submit">
         <br>
@@ -31,27 +31,19 @@
             <div id="name-container"></div>
             <script id="name-template" type="text/x-handlebars-template">
               <br>
-                <h2>BABBS:</h2>
+                <h1>BABBS:</h1>
                 <br>
+                <h1>ARE YOU BABBS ENOUGH?</h1>
                   {{#each this}}
                   <p id='author'>Author:{{author}}</p>
                   <br>
                   <p id="babblrText">Babbl:{{babbl}}</p>
                   <br>
                 {{/each}}
-
             </script>
-            <!-- end content placeholder -->
           </div>
-
-
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
-<!-- End Wrapper -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
     </div>
-
-
-
-
 
     <script src="./scripts/main.js" charset="utf-8"></script>
   </body>
