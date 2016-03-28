@@ -1,7 +1,7 @@
 ### health lab
 
-Please import the json file given with this command:
-`mongoimport -d health -c violations -t json --jsonArray ./health.json`
+Please import the json file given with this command (in bash connsole!):
+`mongoimport -d health -c violations --type json --jsonArray ./health.json`
 
 
 - find locations by their grade level
