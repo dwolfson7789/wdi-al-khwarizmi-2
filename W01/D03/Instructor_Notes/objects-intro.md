@@ -7,9 +7,9 @@
 
 # intro
 
-Let's take a look at a new we can organize our data. We've seen that `arrays` give us a powerful data structure that let us update, delete, append a squence of objects called `elements`. Those elements can be strings, numbers, even other functions or `arrays`.
+Let's take a look at a new we can organize our data. We've seen that `arrays` give us a powerful data structure that let us update, delete, append a sequence of objects called `elements`. Those elements can be strings, numbers, even other functions or `arrays`.
 
-Let's take a look another type of datastructure that allows us to store data in pairs.
+Let's take a look another type of data structure that allows us to store data in pairs.
 
 # Object literals
 
