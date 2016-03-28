@@ -3,7 +3,7 @@
 Please import the json file given with this command (in bash connsole!):
 `mongoimport -d health -c violations --type json --jsonArray ./health.json`
 
-
+- switch to database health
 - find locations by their grade level
 - find locations with "critical" flag
 - find locations with the cuisine description "Hamburgers"
