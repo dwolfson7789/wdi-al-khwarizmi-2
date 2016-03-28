@@ -18,7 +18,7 @@ To be able to program we need to talk to our machine. Our code is human readable
 The interpreter in our case will be `v8` the javascript/`es2015` `virtual machine` that
 will interpret and run our code.
 
-Cchrome will let us interact with v8 and evaluate code. Most browswers have some sort of JS interpreter. Hence Javascript's popularity.
+Chrome will let us interact with v8 and evaluate code. Most browsers have some sort of JS interpreter. Hence Javascript's popularity.
 
 
 
@@ -44,7 +44,7 @@ First thing to note is that we have numbers, but not only that but two kinds of 
 Another thing to note is that that you can see that the third value is textual. It is actually a pretty special in sense that it's a sequence of characters. all the letters including any spaces or tabs make up that value called a `string`. Like a string of characters. Strings need to be surrounded by quotes or double quotes to be evaluated by the interpreter.
 
 ![](http://web.alfredstate.edu/weimandn/miscellaneous/ascii/ASCII%20Conversion%20Chart.gif)
- All characters need to be represented as binary somehow. Some folks got together and decided what numbers represent what charcters.
+ All characters need to be represented as binary somehow. Some folks got together and decided what numbers represent what characters.
 
 
 I won't get into the last two values just yet, booleans. Just know that know predicates (in the math sense) are a big part of programming.
@@ -159,7 +159,7 @@ Now what!? Well we need convert our string to a number, thankfully there are bui
       // we can compose functions!
       parseInt(prompt("enter a number"))
 
-Now remember we have two types of numerbers there is also a `parseFloat()` function for parsing floating point numbers.
+Now remember we have two types of numbers there is also a `parseFloat()` function for parsing floating point numbers.
 
 as well as rounding them when they get too big:
 
@@ -178,7 +178,7 @@ try it out!
 - The first number divided by the second number
  
 
-#### 1c. Write a program that asks the user for a number of pennies, nickels, dimes and quarters. Calculate the total amount of money that the user has and print it out. Use .toFixed() to format your results to the right number of decimels.
+#### 1c. Write a program that asks the user for a number of pennies, nickels, dimes and quarters. Calculate the total amount of money that the user has and print it out. Use .toFixed() to format your results to the right number of decimals.
 
 #### 1d. Write a program that asks the user for the value of their current Metrocard and compute how many rides they have left on their card. Only provide whole number results (i.e. you cannot have 3.5 rides left on a card); use the Math.floor() function.
 
