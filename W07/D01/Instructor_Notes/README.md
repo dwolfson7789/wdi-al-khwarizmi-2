@@ -51,8 +51,6 @@ operator and the value being the relational operand. for example:
 ### you do
 - find a contact by email
 
-
-
 ### remove()
 - remove({}) removes EVERYTHING from the database
 - remove filters work the same way find does but removes the document found.
