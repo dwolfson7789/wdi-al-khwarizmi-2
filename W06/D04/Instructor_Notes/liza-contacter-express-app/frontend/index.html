@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacter Front End</title>
+</head>
+<body>
+  <h1>Contactr</h1>
+  <form>
+      <!-- radio buttons: -->
+      <label><b>Choose an option:</b>
+        <br>
+        <input class="contacts-radios" type="radio" id="add-new"
+               name="chosen-radio" value="add-new"> Add new contact
+        <br>
+        <input class="contacts-radios" type="radio" id="search-by-name"
+               name="chosen-radio" value="search-by-name"> Search for contact by name
+         <br>
+        <input class="contacts-radios" type="radio" id="see-all"
+               name="chosen-radio" value="see-all"> See all contacts
+        <br>
+      </label>
+      <br>
+      <button type="button" name="submit-button" id="submit-button">Submit</button>
+    </form>
+    <br><br>
+    <hr>
+    <!-- **************************************************************** -->
+    <!-- Add new contact: -->
+    <div id="add-new-option" class="">
+      <p><b>Add new contact:</b></p>
+      Name: <input type="text" id="add-new-name" class="" value="">
+      <br>
+      Email: <input type="text" id="add-new-email" class="" value="">
+      <button type="button" name="add-button" id="add-button">Add</button>
+      <br>
+      <hr>
+    </div>
+    <!-- Search for contact: -->
+    <div id="search-option" class="">
+      <p><b>Search for a contact:</b></p>
+      Name: <input type="text" id="search-name" class="" value="">
+      <button type="button" name="search-contact-button" id="search-contact-button">Search for contact</button>
+      <br><hr>
+    </div>
+    <!-- Append all contacts: -->
+    <div id="all-contacts-div">
+      <p><b>All contacts:</b></p>
+      <div id="contacts-list">
+        <!-- contacts go here! -->
+      </div>
+    </div>
+
+
+
+
+
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
