@@ -12,6 +12,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
+// reads in the datafiles (so we don't have to write this code over and over)
 function readData() {
   fs.readFile('./data/authors.json', function(err, data) {
     if (err) {
@@ -26,7 +27,7 @@ function readData() {
       console.log('error reading posts.json', err);
     } else {
       postsData = JSON.parse(data);
-      console.log(postsData);
+      // console.log(postsData);
     }
   });
 }
@@ -34,7 +35,7 @@ function readData() {
 // ROUTES
 app.get('/author/:id/posts', function(req, res) {
   var id = req.params.id;
-  console.log(id);
+  // console.log(id);
 
   var author = authorsData.authors.filter(function(item) {
     if (item.author_id == id) {
@@ -43,17 +44,6 @@ app.get('/author/:id/posts', function(req, res) {
       return false;
     }
   });
-
-  // function filter(array, test) {
-  //   var result = [];
-  //   for (var i = 0; i < array.length; i++) {
-  //     if (test(array[i])) {
-  //       result.push(array[i])
-  //     }
-  //   }
-  //   return result;
-  // }
-
 
   if (author.length > 1) {
     return 'WTF';
@@ -68,13 +58,38 @@ app.get('/author/:id/posts', function(req, res) {
       return false;
     }
   });
-  console.log(data);
 
   if (data) {
     res.json(JSON.stringify(data));
   } else {
     res.json({success:false});
   }
+});
+
+// EDIT a post
+app.put('/posts/:id', function(req, res) {
+  console.log('Incoming PUT request to /posts/:' + req.params.id);
+  var userEdits = req.body;
+  var post = postsData.posts.filter(function(item) {
+    if (req.params.id == item.post_id) {
+      return true;
+    } else {
+      return false;
+    }
+  })[0];
+
+  post.title = userEdits.title;
+  post.body = userEdits.body;
+
+  fs.writeFile('./data/posts.json', JSON.stringify(postsData), function(err) {
+    if (err) {
+      console.log('error writing file to posts.json', err);
+    } else {
+      console.log('data/posts.json successfully updated');
+      readData();
+      res.json({infoStatus:"post successfully updated", editedPost: post});
+    }
+  });
 });
 
 app.post('/new', function(req,res) {
