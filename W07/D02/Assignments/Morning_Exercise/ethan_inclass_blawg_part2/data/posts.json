@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "posts": [
     {
@@ -27,3 +28,6 @@
   ],
   "postCount": 4
 }
+=======
+{"posts":[{"author":1,"post_id":1,"title":"FIRST POST--EDITED","body":"This is my first post. It will be just the first of many heartbreaking works of staggering genius.\n\nfoo"},{"author":2,"post_id":2,"title":"whatever","body":"Get over yourself Ethan. Really? Heartbreaking work of staggering genius? [vomits]\n\nI'm sick of this"},{"author":1,"post_id":3,"title":"FIRST POST--EDITED","body":"This is my first post. It will be just the first of many heartbreaking works of staggering genius.\n\nfoo"},{"author":3,"post_id":4,"title":"Random musings","body":"Penguins are truly silly birds on land and remarkably graceful in the water."}],"postCount":4}
+>>>>>>> b084dd9eed05df94865a8b486120a7b1e3e5018c

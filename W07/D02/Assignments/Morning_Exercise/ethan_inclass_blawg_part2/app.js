@@ -12,6 +12,10 @@ app.use(cors());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
+<<<<<<< HEAD
+=======
+// reads in the datafiles (so we don't have to write this code over and over)
+>>>>>>> b084dd9eed05df94865a8b486120a7b1e3e5018c
 function readData() {
   fs.readFile('./data/authors.json', function(err, data) {
     if (err) {
@@ -26,7 +30,11 @@ function readData() {
       console.log('error reading posts.json', err);
     } else {
       postsData = JSON.parse(data);
+<<<<<<< HEAD
       console.log(postsData);
+=======
+      // console.log(postsData);
+>>>>>>> b084dd9eed05df94865a8b486120a7b1e3e5018c
     }
   });
 }
@@ -34,7 +42,11 @@ function readData() {
 // ROUTES
 app.get('/author/:id/posts', function(req, res) {
   var id = req.params.id;
+<<<<<<< HEAD
   console.log(id);
+=======
+  // console.log(id);
+>>>>>>> b084dd9eed05df94865a8b486120a7b1e3e5018c
 
   var author = authorsData.authors.filter(function(item) {
     if (item.author_id == id) {
@@ -44,6 +56,7 @@ app.get('/author/:id/posts', function(req, res) {
     }
   });
 
+<<<<<<< HEAD
   // function filter(array, test) {
   //   var result = [];
   //   for (var i = 0; i < array.length; i++) {
@@ -55,6 +68,8 @@ app.get('/author/:id/posts', function(req, res) {
   // }
 
 
+=======
+>>>>>>> b084dd9eed05df94865a8b486120a7b1e3e5018c
   if (author.length > 1) {
     return 'WTF';
   }
@@ -68,7 +83,10 @@ app.get('/author/:id/posts', function(req, res) {
       return false;
     }
   });
+<<<<<<< HEAD
   console.log(data);
+=======
+>>>>>>> b084dd9eed05df94865a8b486120a7b1e3e5018c
 
   if (data) {
     res.json(JSON.stringify(data));
@@ -77,6 +95,35 @@ app.get('/author/:id/posts', function(req, res) {
   }
 });
 
+<<<<<<< HEAD
+=======
+// EDIT a post
+app.put('/posts/:id', function(req, res) {
+  console.log('Incoming PUT request to /posts/:' + req.params.id);
+  var userEdits = req.body;
+  var post = postsData.posts.filter(function(item) {
+    if (req.params.id == item.post_id) {
+      return true;
+    } else {
+      return false;
+    }
+  })[0];
+
+  post.title = userEdits.title;
+  post.body = userEdits.body;
+
+  fs.writeFile('./data/posts.json', JSON.stringify(postsData), function(err) {
+    if (err) {
+      console.log('error writing file to posts.json', err);
+    } else {
+      console.log('data/posts.json successfully updated');
+      readData();
+      res.json({infoStatus:"post successfully updated", editedPost: post});
+    }
+  });
+});
+
+>>>>>>> b084dd9eed05df94865a8b486120a7b1e3e5018c
 app.post('/new', function(req,res) {
   // grab the new post info from the client: author, title, body of post
   // put them in a new post object
