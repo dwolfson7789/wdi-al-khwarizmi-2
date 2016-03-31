@@ -1,5 +1,7 @@
 // THIS IS WHAT OUR DATA STRUCTURES WILL LOOK LIKE IN MongoDB
+// WE'RE NOT ACTUALLY USING THIS FILE -- FOR REFERENCE ONLY
 
+/*
 var Recipe = {
   name: string,
   author: string //TODO make an authors collection and link it to recipes!
@@ -21,3 +23,4 @@ var Author = {
   bio: string,
   recipesAuthored: [Array of ObjectIds]
 }
+*/
