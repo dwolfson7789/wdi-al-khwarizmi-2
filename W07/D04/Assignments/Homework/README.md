@@ -57,7 +57,7 @@ We want you to build a *static* version of the silly sporting goods / electronic
 
 Here's a screenshot of the store:
 
-![store screenshot](store screenshot.png)
+![store screenshot](Store screenshot.png)
 
 Here's the data our backend API server returned to us.
 
