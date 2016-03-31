@@ -1,13 +1,11 @@
 window.onload = function () {
-    console.log("Hello World!");
-    var url = 'http://localhost:3000/';
+    console.log("homework egaged");
 
     document.getElementById("submit-button").addEventListener('click', function(event) {
         console.log("submit button clicked!");
         var authorName = $("#add-author").val();
-        console.log(authorName);
-        var babble = $("#add-babble").val();
-        console.log(babble);
+        var babble = document.querySelector('#add-babble').value;
+        var url = 'http://localhost:3000/';
         var data = {};
         data.author = authorName;
         data.babbl = babble;
@@ -18,7 +16,7 @@ window.onload = function () {
             dataType:'json'
         }).done(function(result){
             console.log(result);
-        })
+        });
     });
 
     document.getElementById('view-all-babble').addEventListener('click', function() {
@@ -28,10 +26,10 @@ window.onload = function () {
             var source = $('#template-babbles').html();
             var template = Handlebars.compile(source);
             var html = template(result);
-            console.log("happening");
+            console.log("running");
             $(".display-babbles").append(html);
         });
     });
 
 
-}; //end of window.onload
+};

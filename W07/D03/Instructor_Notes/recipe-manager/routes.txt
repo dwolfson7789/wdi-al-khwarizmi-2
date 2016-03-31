@@ -1,0 +1,16 @@
+FROM CLASS HERE OUR ARE ROUTES:
+
+VERB      PATH                  TYPE    DESCRIPTION
+get       /recipes              index   display all recipes
+get       /recipes/:name        show    display a single recipe
+post      /recipes/new          create  make a new recipe
+put       /recipes/:name        edit    edit a recipe
+delete    /recipes/:name        delete  delete a recipe
+
+get       /ingredients          index   display all ingredients
+get       /ingredients/:name    show    display a single ingredient
+post      /ingredients/new      create  make a new ingredient
+put       /ingredients/:name    edit    edit an ingredient
+delete    /ingredients/:name    delete  delete an ingredient
+
+we could have more than these! But this is the core of the app.

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Babblr</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="stylesheets/style.css">
     </head>
     <body>
         <div id="wrapper">
@@ -11,10 +11,10 @@
             <button id="view-all-babble" name="view-all-babble" type="button">SEE ALL BABBLES</button>
             <p><h1>Make a new Babble Here!</h1></p>
             <div id ="add-author-field">
-                <input type="text" id="add-author" class="" value=""placeholder="Add Author"><br>
+                <input type="text" id="add-author" class="" value=""placeholder=" Author"><br>
             </div>
             <div id ="add-babble-field">
-                <input type="textarea" maxlength="140" id="add-babble" class="" value="" placeholder="Add Babble"><br/><br/>
+                <input id="add-babble" type="textarea" maxlength="140" value="" placeholder=" Babble"><br/><br/>
             </div>
             <button id="submit-button" name="submit-button" type="button">SUBMIT BABBLES</button><br/><br/>
         </div>
@@ -32,8 +32,10 @@
             {{/each}}
         </script>
 
+        <!-- used kashals as a reference  -->
+
         <script type="text/javascript" src="scripts/main.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
     </body>
 </html>

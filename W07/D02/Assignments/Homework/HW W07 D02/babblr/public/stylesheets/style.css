@@ -1,5 +1,6 @@
 * {
   text-align: center;
+  padding: 10px;
 
 }
 
@@ -14,8 +15,15 @@ h1 {
   font-family: monospace;
 }
 
+button {
+  color: white;
+  background-color: red;
+  
+}
 
 input{
   border: 2px limegreen;
+  height: 20px;
+  width: 700px;
 
 }
