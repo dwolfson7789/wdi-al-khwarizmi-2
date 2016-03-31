@@ -1,5 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import HelloFriends from './HelloFriends';
+import ProfileComponent from './ProfileComponent';
 
-ReactDOM.render(<App name="Syed" />, document.getElementById('app'));
+ReactDOM.render(
+  <div>
+  <HelloFriends name="Syed" />
+  <ProfileComponent />
+  </div>,
+  document.getElementById('app')
+);

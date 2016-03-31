@@ -3,8 +3,8 @@ import React from 'react';
 
 const FriendsContainer = React.createClass({
   render(){
-    var name = 'Syed'
-    var friends = ['Ivan', 'Tims', 'Kaho']
+    const name = 'Syed'
+    const friends = ['Ivan', 'Tims', 'Kaho']
     return (
       <div>
         <h3>Name: {name}</h3>
@@ -32,7 +32,7 @@ const ShowList = React.createClass({
   }
 });
 
-const HelloWorld = React.createClass({
+const HelloFriends = React.createClass({
   render() {
     return (
       <div>
@@ -44,4 +44,4 @@ const HelloWorld = React.createClass({
 });
 
 // little help from my module friends
-export default HelloWorld;
+export default HelloFriends;
