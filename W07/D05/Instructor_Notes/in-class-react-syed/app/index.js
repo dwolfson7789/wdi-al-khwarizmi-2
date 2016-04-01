@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import HelloFriends from './HelloFriends';
 
 ReactDOM.render(
   <div>
-    <p>hot reloading, es2015 import, bablerc </p >
+  <HelloFriends name="Syed" />
   </div>,
   document.getElementById('app')
 )
