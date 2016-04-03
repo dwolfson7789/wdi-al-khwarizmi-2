@@ -1,5 +1,6 @@
 import React from 'react';
 import ConfirmBattle from '../components/ConfirmBattle';
+import githubHelpers from '../utils/githubHelpers';
 
 const ConfirmBattleContainer = React.createClass({
   contextTypes: {
@@ -10,17 +11,26 @@ const ConfirmBattleContainer = React.createClass({
     console.log('getInitialState');
     return {
       isLoading: true,
-      playerInfo: []
+      playersInfo: []
     }
   },
   componentWillMount: function(){
     console.log('componentWillMount');
   },
+  // we will be ajaxing here:
   componentDidMount: function (){
     //runs after ui renders to the view
     const query = this.props.location.query
-    // Fetch info from github thne update state.
-    console.log('componentDidMount');
+    // Fetch info from nyc open data thens update state.
+    githubHelpers.getPlayersInfo([query.playerOne, query.playerTwo])
+      .then(function(restaurants){
+        console.log("restaurants", restaurants); //whoo!
+        // update our state to disable loading and pass our data
+        this.setState({ // this keyword has been changed!
+          isLoading: false,
+          playersInfo: [restaurants[0][0], restaurants[1][0]] //our restaurants array
+        });
+      }.bind(this)); //this keyword from the outer context
   },
   componentWillReceiveProps : function(){
     // will fil out later
@@ -30,11 +40,21 @@ const ConfirmBattleContainer = React.createClass({
     // will fill out later
     console.log('componentWillUnmount');
   },
+  handleInitiateBattle: function(){
+    console.log("woo");
+    this.context.router.push({
+      pathname: '/results',
+      state: { // neat
+        playersInfo: this.state.playersInfo
+      }
+    })
+  },
   render: function(){
     return(
       <ConfirmBattle
         isLoading={this.state.isLoading}
-        playersinfo={this.state.playersInfo}
+        onInitiateBattle={this.handleInitiateBattle}
+        playersInfo={this.state.playersInfo}
       />
     )
   }
