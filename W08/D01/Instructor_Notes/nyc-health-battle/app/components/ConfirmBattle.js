@@ -1,6 +1,7 @@
 import React, {PropTypes} from 'react';
 import {Link} from 'react-router';
 import RestaurantDetails from './RestaurantDetails';
+import RestaurantDetailsWrapper from './RestaurantDetailsWrapper';
 
 function puke (object){
   return <pre>{JSON.stringify(object, null, ' ')}</pre>
@@ -11,8 +12,12 @@ function ConfirmBattle(props){
   return props.isLoading === true
     ? <p> loading </p>
     : <div>
-      <div> <RestaurantDetails restaurant={props.playersInfo[0]}/>  </div>
-      <div> <RestaurantDetails restaurant={props.playersInfo[1]}/> </div>
+      <RestaurantDetailsWrapper header='Restaurant One'>
+        <RestaurantDetails restaurant={props.playersInfo[0]}/>
+      </RestaurantDetailsWrapper>
+      <RestaurantDetailsWrapper header='Restaurant Two'>
+        <RestaurantDetails restaurant={props.playersInfo[1]}/>
+      </RestaurantDetailsWrapper>
       <button type='button' className='' onClick={props.onInitiateBattle}>
         initiate battle!
       </button>
