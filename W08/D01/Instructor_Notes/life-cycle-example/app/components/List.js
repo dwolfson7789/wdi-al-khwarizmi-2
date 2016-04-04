@@ -2,6 +2,7 @@ import React from 'react';
 
 function List(props){
 
+  console.log(props.searchTerm);
   const contactList = props.contacts.map((contactName) => {
     return <li key={contactName}>{contactName}</li>;
   });
