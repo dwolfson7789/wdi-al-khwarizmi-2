@@ -16,6 +16,7 @@ const PromptContainer = React.createClass({
     })
   },
   handleSubmitUser: function(e){
+    /* this whole funciton implicitly runs after it's mounted */
     e.preventDefault();
     console.log('hey');
     let username = this.state.username;
