@@ -28,7 +28,7 @@ app.get('/contact/:name', function(request, response){
   fs.readFile('./contacts', function(err, data){
     var contacts = JSON.parse(data);
     var contact = contacts.filter(function(obj){
-      if(obj["name"] == request.query.name){
+      if(obj["name"] == request.params.name){
         return true;
       } else {
         return false;
@@ -39,10 +39,10 @@ app.get('/contact/:name', function(request, response){
 });
 
 /* create a new resource */
-app.post
+//app.post
 
 /* update a specific resource */
-app.put
+//app.put
 
 /* delete a specific resource */
-app.delete
+//app.delete
