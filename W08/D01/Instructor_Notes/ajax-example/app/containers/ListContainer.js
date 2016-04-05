@@ -1,12 +1,6 @@
 import React from 'react';
 import List from '../components/List';
-<<<<<<< HEAD
-import axios from 'axios';
 import ajaxHelpers from '../utils/ajaxHelpers';
-
-=======
-import ajaxHelpers from '../utils/ajaxHelpers';
->>>>>>> react-lessons
 
 const ListContainer = React.createClass({
   getInitialState: function(){
