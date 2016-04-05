@@ -6,7 +6,11 @@ const ListComponent = React.createClass({
       <div>
         <h3 className="title-box">ListComponent</h3>
         <ul>
-          <li>This is where our list will go</li>
+          {
+            this.props.contacts.map( (contact, index) => {
+              return <li key={index}>{contact.name}, {contact.email}</li>;
+            })
+          }
         </ul>
       </div>
     )
@@ -14,9 +18,3 @@ const ListComponent = React.createClass({
 });
 
 export default ListComponent;
-
-// {
-//   this.props.contacts.map( (contact, index) => {
-//     return <li key={index}>{contact.name}, {contact.email}</li>;
-//   })
-// }
