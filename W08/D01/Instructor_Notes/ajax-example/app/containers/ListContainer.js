@@ -1,8 +1,12 @@
 import React from 'react';
 import List from '../components/List';
+<<<<<<< HEAD
 import axios from 'axios';
 import ajaxHelpers from '../utils/ajaxHelpers';
 
+=======
+import ajaxHelpers from '../utils/ajaxHelpers';
+>>>>>>> react-lessons
 
 const ListContainer = React.createClass({
   getInitialState: function(){
@@ -20,26 +24,19 @@ const ListContainer = React.createClass({
   },
   componentDidMount: function(){
     // runs after ui renders
-    axios.get('http://localhost:3000/contacts')
+    ajaxHelpers.getContacts()
+    // TODO add catch
     .then(function(response){
-      console.log("Did Mount", response);
-      console.log(this);
-    }.bind(this))
-    .catch(function(err){
-      // good practice to add to promise chains
-      console.warn('Error in ');
-    })
-
+        console.log(response.data);
+        this.setState({
+          contactList: response.data
+        });
+    }.bind(this));
   },
   render: function() {
-    const placeHolder = [
-      "syed",
-      "drake",
-      "beyonce"
-    ];
     return (
       <List
-        contacts={placeHolder}
+        contacts={this.state.contactList}
         searchTerm={this.state.searchTerm}
         onUpdateSearch={this.onUpdateSearch}
       />
