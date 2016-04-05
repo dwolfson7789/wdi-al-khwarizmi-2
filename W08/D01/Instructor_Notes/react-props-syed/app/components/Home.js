@@ -1,10 +1,11 @@
 import React from 'react';
-
+import ListContainer from '../containers/ListContainer'
 const Home = React.createClass({
   render: function(){
     return (
       <div>
-        <div className="title">{this.props.children}</div>
+        <div>{this.props.children}</div>
+        <ListContainer />
       </div>
     );
   }

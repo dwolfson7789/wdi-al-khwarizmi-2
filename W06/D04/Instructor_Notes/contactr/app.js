@@ -88,7 +88,7 @@ app.get('/findContact/:name', function(request, response){
 });
 
 /* post */
-app.post('/', function(request, response){
+app.post('/contact', function(request, response){
   //read the current contents.
   fs.readFile('./contacts.json',  function(err, data){
     // parse and push the body of our request on to our array

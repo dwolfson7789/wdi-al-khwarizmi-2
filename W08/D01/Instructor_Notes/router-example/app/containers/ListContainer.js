@@ -1,6 +1,5 @@
 import React from 'react';
 import List from '../components/List';
-import ajaxHelpers from '../utils/ajaxHelpers';
 
 const ListContainer = React.createClass({
   getInitialState: function(){
@@ -18,19 +17,18 @@ const ListContainer = React.createClass({
   },
   componentDidMount: function(){
     // runs after ui renders
-    ajaxHelpers.getContacts()
-    // TODO add catch
-    .then(function(response){
-        console.log(response.data);
-        this.setState({
-          contactList: response.data
-        });
-    }.bind(this));
+    
+
   },
   render: function() {
+    const placeHolder = [
+      "syed",
+      "drake",
+      "beyonce"
+    ];
     return (
       <List
-        contacts={this.state.contactList}
+        contacts={placeHolder}
         searchTerm={this.state.searchTerm}
         onUpdateSearch={this.onUpdateSearch}
       />

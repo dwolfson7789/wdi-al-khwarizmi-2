@@ -28,9 +28,14 @@ const ListContainer = React.createClass({
     }.bind(this));
   },
   render: function() {
+    // do some quick data marshalling
+    const contactList = this.state.contactList.map((value) =>{
+      // TODO make this real
+      return <li key={value._id}>{value._id}</li>;
+    });
     return (
       <List
-        contacts={this.state.contactList}
+        contacts={contactList}
         searchTerm={this.state.searchTerm}
         onUpdateSearch={this.onUpdateSearch}
       />
