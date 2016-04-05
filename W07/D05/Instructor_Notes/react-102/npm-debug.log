@@ -1,33 +1,35 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'run', 'start' ]
-2 info using npm@3.6.0
-3 info using node@v5.7.1
+1 verbose cli [ '/usr/local/Cellar/node/5.9.1/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'start' ]
+2 info using npm@3.7.3
+3 info using node@v5.9.1
 4 verbose run-script [ 'prestart', 'start', 'poststart' ]
 5 info lifecycle react102@1.0.0~prestart: react102@1.0.0
 6 silly lifecycle react102@1.0.0~prestart: no script for prestart, continuing
 7 info lifecycle react102@1.0.0~start: react102@1.0.0
 8 verbose lifecycle react102@1.0.0~start: unsafe-perm in lifecycle true
-9 verbose lifecycle react102@1.0.0~start: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/gibson/Projects/GA/wdi-al-Khwarizmi/W07/D04/Instructor_Notes/react102/node_modules/.bin:/Users/gibson/.rbenv/bin:/Users/gibson/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin
-10 verbose lifecycle react102@1.0.0~start: CWD: /Users/gibson/Projects/GA/wdi-al-Khwarizmi/W07/D04/Instructor_Notes/react102
+9 verbose lifecycle react102@1.0.0~start: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/ejf271/src/wdi-al-Khwarizmi/W07/D05/Instructor_Notes/react-102/node_modules/.bin:/usr/local/Cellar/node/5.9.1/bin:/Users/ejf271/.rbenv/shims:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/heroku/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/Users/ejf271/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Applications/Postgres.app/Contents/Versions/9.4/bin
+10 verbose lifecycle react102@1.0.0~start: CWD: /Users/ejf271/src/wdi-al-Khwarizmi/W07/D05/Instructor_Notes/react-102
 11 silly lifecycle react102@1.0.0~start: Args: [ '-c', 'webpack-dev-server' ]
 12 silly lifecycle react102@1.0.0~start: Returned: code: 1  signal: null
 13 info lifecycle react102@1.0.0~start: Failed to exec start script
 14 verbose stack Error: react102@1.0.0 start: `webpack-dev-server`
 14 verbose stack Exit status 1
-14 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:232:16)
+14 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:239:16)
 14 verbose stack     at emitTwo (events.js:100:13)
 14 verbose stack     at EventEmitter.emit (events.js:185:7)
 14 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
 14 verbose stack     at emitTwo (events.js:100:13)
 14 verbose stack     at ChildProcess.emit (events.js:185:7)
-14 verbose stack     at maybeClose (internal/child_process.js:827:16)
-14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+14 verbose stack     at maybeClose (internal/child_process.js:850:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:5)
 15 verbose pkgid react102@1.0.0
-16 verbose cwd /Users/gibson/Projects/GA/wdi-al-Khwarizmi/W07/D04/Instructor_Notes/react102
-17 error Darwin 15.3.0
-18 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "run" "start"
-19 error node v5.7.1
-20 error npm  v3.6.0
+16 verbose cwd /Users/ejf271/src/wdi-al-Khwarizmi/W07/D05/Instructor_Notes/react-102
+17 error Darwin 15.4.0
+18 error argv "/usr/local/Cellar/node/5.9.1/bin/node" "/usr/local/bin/npm" "start"
+19 error node v5.9.1
+20 error npm  v3.7.3
 21 error code ELIFECYCLE
 22 error react102@1.0.0 start: `webpack-dev-server`
 22 error Exit status 1
