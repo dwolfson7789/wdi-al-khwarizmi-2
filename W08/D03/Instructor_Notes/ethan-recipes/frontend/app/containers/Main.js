@@ -5,56 +5,63 @@ import List from '../components/List';
 const Main = React.createClass({
   getInitialState: function() {
     return {
-      recipeName: "",
-      recipeAuthor: "",
-      recipeDifficulty: "",
-      recipeTime: null,
-      recipeIngredients: [],
-      recipeInstructions: ""
+      recipe: {
+        recipeName: "",
+        recipeAuthor: "",
+        recipeDifficulty: "",
+        recipeTime: null,
+        recipeIngredients: [],
+        recipeInstructions: ""
+      }
     }
   },
   handleUpdateRecipe: function(e) {
-    let name  = e.target.name,
-        value = e.target.value;
+    // let name  = e.target.name,
+    //     value = e.target.value;
 
-    switch (name) {
-      case "recipeName":
-        this.setState({
-          recipeName: value
-        });
-        break;
-      case "recipeAuthor":
-        this.setState({
-          recipeAuthor: value
-        });
-        break;
-      case "recipeDifficulty":
-        this.setState({
-          recipeDifficulty: value
-        });
-        break;
-      case "recipeTime":
-        this.setState({
-          recipeTime: value
-        });
-        break;
-      case "recipeIngredients":
-        //stuff goes here!
-        break;
-      case "recipeInstructions":
-        //stuff goes here!
-        break;
-    }
+    this.setState({
+      [e.target.name] : e.target.value
+    });
+
+      // switch (name) {
+      // case "recipeName":
+      //   this.setState({
+      //     recipeName: value
+      //   });
+      //   break;
+      // case "recipeAuthor":
+      //   this.setState({
+      //     recipeAuthor: value
+      //   });
+      //   break;
+      // case "recipeDifficulty":
+      //   this.setState({
+      //     recipeDifficulty: value
+      //   });
+      //   break;
+      // case "recipeTime":
+      //   this.setState({
+      //     recipeTime: value
+      //   });
+      //   break;
+      // case "recipeIngredients":
+      //   //stuff goes here!
+      //   break;
+      // case "recipeInstructions":
+      //   //stuff goes here!
+      //   break;
+    // }
   },
   handleSubmitRecipe: function(e) {
     e.preventDefault();
-    console.log(e.target.value);
+    console.log(this.state);
   },
   render: function() {
     return (
       <div>
         <List recipes={this.props.recipes}/>
-        <Form onUpdateRecipe={this.handleUpdateRecipe}
+        <Form currentEntry={this.state.recipe}
+              onUpdateRecipe={this.handleUpdateRecipe}
               onSubmitRecipe={this.handleSubmitRecipe}/>
       </div>
     );
