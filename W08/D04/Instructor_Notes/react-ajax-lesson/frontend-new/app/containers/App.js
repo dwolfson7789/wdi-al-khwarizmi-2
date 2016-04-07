@@ -100,7 +100,6 @@ const App = React.createClass({
         <Title/>
         <FormComponent
           updateValState={this.updateValState}
-          decideAjaxCall={this.decideAjaxCall}
         />
         {this.getAppropriateFormComponent()}
         <ResultsComponent
