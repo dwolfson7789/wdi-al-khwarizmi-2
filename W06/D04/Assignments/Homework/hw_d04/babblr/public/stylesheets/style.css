@@ -1,0 +1,20 @@
+* {
+  text-align: center;
+
+}
+
+#wrapper {
+  width: 99%;
+  border: 2px dotted black;
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  font-family: monospace;
+}
+
+input{
+  border: 2px limegreen;
+  
+}

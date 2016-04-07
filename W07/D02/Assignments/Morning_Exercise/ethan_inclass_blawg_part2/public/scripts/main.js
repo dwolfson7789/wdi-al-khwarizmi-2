@@ -7,6 +7,9 @@ $(document).ready(function(){
     console.log(selection);
 
     $.get('http://localhost:3000/author/' + selection + '/posts').success(function(data) {
+<<<<<<< HEAD
+      console.log(JSON.parse(data));
+=======
       // console.log(JSON.parse(data));
       data = JSON.parse(data);
       var $contentDiv = $('.content-div');
@@ -69,6 +72,7 @@ $(document).ready(function(){
           });
         });
       });
+>>>>>>> b084dd9eed05df94865a8b486120a7b1e3e5018c
     });
   });
 

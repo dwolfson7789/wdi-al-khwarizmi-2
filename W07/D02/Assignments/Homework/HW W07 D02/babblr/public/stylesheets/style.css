@@ -1,0 +1,29 @@
+* {
+  text-align: center;
+  padding: 10px;
+
+}
+
+#wrapper {
+  width: 99%;
+  border: 2px dotted black;
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  font-family: monospace;
+}
+
+button {
+  color: white;
+  background-color: red;
+  
+}
+
+input{
+  border: 2px limegreen;
+  height: 20px;
+  width: 700px;
+
+}

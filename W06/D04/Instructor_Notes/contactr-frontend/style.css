@@ -1,3 +1,10 @@
+* {
+  text-align: center;
+}
+
+button {
+  padding: 10px;
+}
 .InputAddOn {
   display: flex;
 }

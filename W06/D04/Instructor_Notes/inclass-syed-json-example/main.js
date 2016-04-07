@@ -12,5 +12,9 @@ fs.readFile(file, function(err, data){
     console.log(colors.rainbow("object saved!"));
   });
 });
+fs.readFile(file, function(err, data){
+  var contacts = JSON.parse(data);
+  console.log(contacts);
+});
 
 /* read contacts.json and console.log the results */

@@ -5,7 +5,11 @@ function List(props) {
       <div>
         <h3>Our Recipes</h3>
         <ul>
+<<<<<<< HEAD
       
+=======
+          {
+>>>>>>> origin/master
             props.recipes.map((recipe) => {
               return <li key={recipe._id}>
                 <h4>{recipe.name}</h4>
