@@ -1,0 +1,25 @@
+]
+Directions: at noon, submit an issue with the rest of the 3 ajax calls:
+
+MAKE THESE 3 ACTIONS:
+//
+find,
+delete
+update.
+
+
+CHEAT SHEET
+
+
+Along with that, submit a cheatsheet that contains the following info: directions on how to get up and running with a new react app
+
+(list of technology you need for the backend & frontend,
+how to start your server in both, etc.)
+
+a walkthrough of the app, and definitions/rules/syntax/etc. of components, containers and stateless components.
+
+[10:26]
+We’ll see how everyone is doing 5 til noon. If you need more time we can do some more after lunch
+
+[10:27]
+Work by yourself for 30, then find a partner if you need help.
