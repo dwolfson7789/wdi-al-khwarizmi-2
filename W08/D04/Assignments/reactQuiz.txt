@@ -133,7 +133,7 @@ state starts with a default value, props are unchangable. A Component cannot cha
 
 if you want to add an external element, props are created as state are functions within the component.
 
-- *Remember:* props come from outside (from the parent component), whereas state is maintained from within the component.  
+- *Remember:* props come from outside (from the parent component), whereas state is maintained from within the component.
 
 ### Rules of components
 - Must have a render function
