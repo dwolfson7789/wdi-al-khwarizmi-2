@@ -9,6 +9,10 @@ const Home = React.createClass({
     return (
       <div>
         <h1>taco time!</h1>
+        <Link to='/listTacos'>
+          <button type='button'>show me the tacos!</button>
+        </Link>
+
       </div>
     );
   }
