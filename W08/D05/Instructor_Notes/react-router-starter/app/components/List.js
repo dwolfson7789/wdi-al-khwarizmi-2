@@ -11,7 +11,7 @@ function List(props){
           onChange={props.onUpdateSearch}
           />
         <ul>
-          {props.contacts}
+          {props.tacos}
         </ul>
       </div>
     );

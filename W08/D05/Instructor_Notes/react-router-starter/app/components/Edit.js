@@ -1,9 +1,9 @@
 import React from 'react';
-
-function Add(props){
+/* too similar to Add, this could be refactored */
+function Edit(props){
   return (
     <div className="">
-      <p>add a contact</p>
+      <p>edit a taco</p>
       <div className="">
         <form onSubmit={props.onSubmitContact}>
           <div className="">
@@ -11,20 +11,20 @@ function Add(props){
               className=""
               placeholder="enter name"
               onChange={props.onChangeName}
-              value={props.username}
+              value=""
               type="text" />
             <input
               className=""
-              placeholder="enter email"
-              onChange={props.onChangeEmail}
-              value={props.username}
+              placeholder="enter toppings"
+              onChange={props.onChangeToppings}
+              value=""
               type="text" />
           </div>
           <div className="">
             <button
               className=""
               type="submit">
-                Add
+              Edit a Taco
             </button>
           </div>
         </form>
@@ -35,4 +35,4 @@ function Add(props){
 
 /* TODO add prop types! */
 
-export default Add
+export default Edit
