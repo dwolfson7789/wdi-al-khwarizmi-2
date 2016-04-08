@@ -14,13 +14,14 @@ app.use(cors());
 app.use(bodyParser.json());
 
 
-/* connect to db first then setup all routes */
-db.connect('mongodb://localhost:27017/tacos', function(err) {
+/* go connect to db first then setup all routes */
+db.connect('mongodb://localhost:27017/tacos', (err) => {
   if (err) {
     console.log('Unable to connect to Mongo.')
     process.exit(1)
   } else {
     console.log('connected to mongo');
+    /* now start the server and setup all routes! */
 
     //root route
     app.get('/', (req, res) => {

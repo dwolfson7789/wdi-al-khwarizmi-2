@@ -3,5 +3,5 @@ require('babel-register')({
    presets: [ 'es2015' ]
 });
 
-// once bable is loaded head over to server for es6 goodness
+// once babel is loaded head over to ./server/index.js for es6 goodness
 require('./server');
