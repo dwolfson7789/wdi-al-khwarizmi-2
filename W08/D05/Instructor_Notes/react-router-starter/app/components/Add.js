@@ -11,20 +11,20 @@ function Add(props){
               className=""
               placeholder="enter name"
               onChange={props.onChangeName}
-              value={props.username}
+              value=""
               type="text" />
             <input
               className=""
-              placeholder="enter email"
-              onChange={props.onChangeEmail}
-              value={props.username}
+              placeholder="enter toppings"
+              onChange={props.onChangeToppings}
+              value=""
               type="text" />
           </div>
           <div className="">
             <button
               className=""
               type="submit">
-                Add
+                Add a Taco
             </button>
           </div>
         </form>

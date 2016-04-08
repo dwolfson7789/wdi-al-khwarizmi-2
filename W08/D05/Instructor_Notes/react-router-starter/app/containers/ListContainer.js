@@ -1,4 +1,5 @@
 import React from 'react';
+import _ from 'lodash';
 import List from '../components/List';
 import ajaxHelpers from '../utils/ajaxHelpers';
 
@@ -7,7 +8,7 @@ const ListContainer = React.createClass({
     return {
       searchTerm: '',
       isLoading: true,
-      tacoList: []
+      tacos: []
     }
   },
   onUpdateSearch: function(e){
@@ -21,21 +22,27 @@ const ListContainer = React.createClass({
     ajaxHelpers.getTacos()
     // TODO add catch
     .then(function(response){
-        console.log(response.data);
+        console.log("console.log", response.data.tacos);
         this.setState({
-          tacoList: response.data.tacos
+          tacos: response.data.tacos
         });
     }.bind(this));
   },
   render: function() {
-    // do some quick data marshalling
-    const tacoList = this.state.tacoList.map((taco) => {
-      // TODO
-      return <li key={taco}>{taco}</li>;
-    });
+    // do some quick data marshalling. this can be better.
+
+    /*  finish the list view. */
+    const tacoListElements = [];
+    for(const taco of this.state.tacos){
+      for(const key in taco){
+        tacoListElements.push(<li key={taco[key]}> {taco[key]} </li>);
+      }
+    }
+
+
     return (
       <List
-        tacos={tacoList}
+        tacos={tacoListElements}
         searchTerm={this.state.searchTerm}
         onUpdateSearch={this.onUpdateSearch}
       />

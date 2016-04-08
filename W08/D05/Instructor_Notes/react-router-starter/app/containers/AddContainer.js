@@ -3,10 +3,13 @@ import Add from '../components/Add';
 import ajaxHelpers from '../utils/ajaxHelpers';
 
 const AddContainer = React.createClass({
+  contextTypes: {
+    router: React.PropTypes.object.isRequired
+  },
   getInitialState: function(){
     return {
       name: '',
-      email: ''
+      toppings: []
     }
   },
   handleOnChangeName: function(e){
@@ -14,28 +17,25 @@ const AddContainer = React.createClass({
       name: e.target.value
     })
   },
-  handleOnChangeEmail: function(e){
-    this.setState({
-      email: e.target.value
-    })
+  handleOnChangeToppings: function(e){
+    /* hmm.. how do we handle this? */
   },
   handleSubmitContact: function(e){
     /* this whole funciton implicitly runs after it's mounted */
     e.preventDefault();
     this.setState({
       name: this.state.name,
-      email: this.state.email
+      toppings: this.state.toppings // make sure this is an array
     });
 
     const contact = {
       name: this.state.name,
-      email: this.state.email
+      toppings: this.state.toppings // make sure this is an array
     };
 
-    // TODO add catch
-    ajaxHelpers.addContact(contact)
+    ajaxHelpers.addTaco(contact)
     .then(function(response){
-      //set state?
+      //make a post request
       console.log(response);
     });
 
@@ -44,8 +44,8 @@ const AddContainer = React.createClass({
     return (
       <Add
         onChangeName={this.handleOnChangeName}
-        onChangeEmail={this.handleOnChangeEmail}
-        onSubmitContact={this.handleSubmitContact}
+        onChangeToppings={this.handleOnChangeToppings}
+        onSubmitTaco={this.handleSubmitTaco}
         />
     );
   }
