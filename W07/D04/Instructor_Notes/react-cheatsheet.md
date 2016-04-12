@@ -1,6 +1,28 @@
 # React Cheatsheet
 
-### Installation
+### Installation - Syed's way
+- Make new directory
+- Make a `backend` directory and:
+  - Touch `app.js`
+  - Touch `.gitignore` >> `node_modules`
+  - `npm init`
+  - Install as dependencies: express, body-parser, cors, mongodb, etc.
+- For the `frontend` directory, copy the `webpack bootstrap` folder
+  - Rename it `frontend`
+  - Touch `.gitignore` >> `node_modules`
+  - Run `npm install`
+  - Start your server with `npm start`
+  - Create a dir called `app`
+    - `index.html`
+    - `index.js`
+    - `mkdir` components, containers, stateless, utils 
+
+
+
+
+
+
+### Installation - Liza's way
 - Make new directory & npm init
 - Then:
 
@@ -42,4 +64,4 @@ Install as local dependencies: (--save)
 
 ### React Dev Tools
 - https://fb.me/react-devtools
-- Find the `Chrome Web Store` link at the bottom. 
+- Find the `Chrome Web Store` link at the bottom.
