@@ -11,6 +11,11 @@
 ### What to do if you have a problem
 Process for submitting an issue: see GHissue.md
 
+### Guidelines for the README
+- Provide a short overview of your app
+- Provide some technical details about the app
+- Detail the responsibilities & contributions for each person in your group. Remember, we can see commit history. 
+
 
 
 
