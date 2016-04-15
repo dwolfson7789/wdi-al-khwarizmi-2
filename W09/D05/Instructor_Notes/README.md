@@ -128,5 +128,17 @@ https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction
 ## DISABLE HOT RELOAD FIRST
 remove `react-hmre` from your `.babelrc`.
 
-Just run `npm run production` and host the files in the `dist` folder
-on GH Pages. BOOM DONE.
+### Step 1
+Just run `npm run production` and generate the folder.
+
+### Step 2
+create a static express server that serves the files in dist
+folder. please look at the index.js in the react-frontend.
+and be sure install --save express.
+
+### Step 3
+repeat the steps the back-end server. **your back-end and front-end
+need to be in separate repositories**
+
+### Step 4
+update your ajax urls to point to your back-end endpoint.
