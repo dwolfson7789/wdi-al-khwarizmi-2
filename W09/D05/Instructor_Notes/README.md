@@ -31,10 +31,10 @@ https://devcenter.heroku.com/articles/config-vars
 
 We also need provide a way for heroku to create our database. To do that you need to use a special plug-in called "MongoLab". Follow the instructions for this portion of tutorial plus the follow-up articles there: https://devcenter.heroku.com/articles/mongolab#adding-mlab-as-a-heroku-add-on
 
-Once you're setup you can use the `MONGOLAB_URI` value in your db connect to connect to your heroku mongo setup.
+Once you're setup you can use the `MONGODB_URI` value in your db connect to connect to your heroku mongo setup.
 
 ```javascript
-(process.env.MONGOLAB_URI || 'mongodb://localhost/myapp')
+(process.env.MONGODB_URI || 'mongodb://localhost/myapp')
 ```
 This expression says if that URI exists connect to or use this piece of text.
 
