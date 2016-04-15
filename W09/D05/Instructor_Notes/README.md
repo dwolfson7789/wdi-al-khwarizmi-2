@@ -40,7 +40,7 @@ This expression says if that URI exists connect to or use this piece of text.
 
 ## Heroku and Node
 
-First, we'll need a functioning git repository with our application that includes a package.json file - remember, this is used by Node’s dependency manager.  Just like a `Gemfile`, the package.json file determines the of Node.js used to run your application and includes any dependencies your application needs to run. Upon deployment, Heroku reads this file and installs the correct versions and appropriate dependencies using the  `npm install` command.
+First, we'll need a functioning git repository with our application that includes a package.json file - remember, this is used by Node’s dependency manager. Make sure your `main` points to `index.js`! or whatever your main file is.
 
 ## Set up your app for deployment
 
@@ -73,6 +73,14 @@ To set this up, in the main or root directory of your application create a new f
 ```
 web: node app.js
 ```
+
+### Deploy your app
+- `cd` into the root folder of your app
+- `heroku create`
+  - This command simultaneously creates an app on Heroku & adds a remote called `heroku` to your app (kind of like the reverse of when you git clone an existing app)
+- Add & commit
+- Push to Heroku: `git push heroku master`
+- You should also push to GH `git push origin master`
 
 # Cheat Sheet
 

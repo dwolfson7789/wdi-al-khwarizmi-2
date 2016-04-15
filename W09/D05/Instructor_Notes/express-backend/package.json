@@ -2,7 +2,7 @@
   "name": "express-router-starter",
   "version": "1.0.0",
   "description": "simple express router setup",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "start": "nodemon"
   },
