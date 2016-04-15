@@ -64,15 +64,28 @@ heroku auth:whoami
 This should display the email corresponding to the logged in account.
 If you don't have one then install and sign-up: https://toolbelt.heroku.com/
 
-#### Procfile
+#### Changing "start" script in package.json
 
-A `Procfile` is a text file in the root directory of your application - it's used to declare, to Heroku's computers, what command should be run to start your application. Since we are no longer in development, we are not going to be responsible for starting up our server. The `Procfile` will act as a sort of configuration file for Heroku.  To get started we only need one command in there, and the command denoted will declare: a single process type, web, and the command your app needs. `web` is crucial for this file - it's saying that this process type will be attached to the HTTP routing stack of Heroku and take web requests when the application goes live.
-
-To set this up, in the main or root directory of your application create a new file called `Procfile` - you do not need to add a file extension. Add the following line to the `Procfile`:
-
+We need to tell Heroku how to get your app going. Open up your package.json. There should be a "scripts" section with one or more scripts listed there, one of which should be `"start"`. It should look something like this
+```json
+"scripts": {
+  "start": "nodemon"
+}
 ```
-web: node app.js
+
+Change the name of your existing "start" script to "start-dev" so that you can still start it with `nodemon` if you want on your own machine by running `npm run start-dev`.
+
+For Heroku, in production, we want it to just run `node index.js`. So add in a new "start" script that does just that. Now your package.json will look like this:
+
+```json
+"scripts": {
+  "start-dev": "nodemon",
+  "start": "node index.js"
+}
 ```
+
+(see example in /express-backend)
+
 
 ### Deploy your app
 - `cd` into the root folder of your app
@@ -80,7 +93,7 @@ web: node app.js
   - This command simultaneously creates an app on Heroku & adds a remote called `heroku` to your app (kind of like the reverse of when you git clone an existing app)
 - Add & commit
 - Push to Heroku: `git push heroku master`
-- You should also push to GH `git push origin master`
+- You should also push to GitHub: `git push origin master`
 
 # Cheat Sheet
 
@@ -90,7 +103,7 @@ https://toolbelt.heroku.com/
 
 ### Config/Environment vars
 - **Environment Variables:** (also called env vars, config vars, etc.)
-- Because your `.env` file will never make it to Heroku (because it's listed in your bash profile), you need to tell Heroku about your env var like this:
+- Because your `.bash_profile` file will never make it to Heroku, you need to tell Heroku about your env var like this:
   - `heroku config:set LINKEDINAPIKEY='28cds9asdkenclkjai'`
 - To see a list of all your Heroku config vars, run `heroku config`
 
@@ -108,11 +121,6 @@ https://toolbelt.heroku.com/
 - Go to your heroku URL
   - `heroku open`
 
-### Define a procfile
-  - **Procfile:** a text file in the root directory of your app that explicitly declares what command should be executed to start your app
-  - Touch a `Procfile` (capital, no file extension)
-  - Inside, write only `web: node index.js`
-
 ### Database
   - Install a third-party add-on for Mongo called Mongolab  
     - `heroku addons:create mongolab:sandbox`
@@ -129,16 +137,25 @@ https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction
 remove `react-hmre` from your `.babelrc`.
 
 ### Step 1
-Just run `npm run production` and generate the folder.
+Update your ajax urls to point to your back-end endpoint! (i.e., something like `"https://vast-hamlet-78179.herokuapp.com/"`)
 
 ### Step 2
-create a static express server that serves the files in dist
-folder. please look at the index.js in the react-frontend.
-and be sure install --save express.
+Run `npm run production` and generate the `dist` folder.
 
 ### Step 3
-repeat the steps the back-end server. **your back-end and front-end
+create a static express server that serves the files in the `dist` folder. please look at the index.js in the react-frontend.
+and be sure to run `npm install --save express`.
+
+### Step 4
+repeat the steps for the back-end server. (Including changing your existing package.json "start" script to "start-dev" and making a new "start" script.)
+**your back-end and front-end
 need to be in separate repositories**
 
 ### Step 4
-update your ajax urls to point to your back-end endpoint.
+Start up your front-end and `heroku open`. Voila! Your front-end server should be displaying your app. Whenever it needs to make an ajax call, it should be hitting up the backend server for the JSON data.
+
+### Step 5
+Profit???
+
+## TROUBLESHOOTING
+The odds are this won't go perfectly the first time, or indeed ever. Deployment is hard! If you're getting errors, head over to your app in the terminal and run `heroku logs` to see the error messages. They can be overwhelming, but there IS useful info in there you can use to help debug what's going on. 
