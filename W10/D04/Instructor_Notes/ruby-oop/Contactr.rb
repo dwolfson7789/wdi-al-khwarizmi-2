@@ -77,5 +77,5 @@ puts "welcome to contactr!"
 puts "enter a choice: 1. to add, 2. delete, 3. update, 4. get all contacts, 5. to end program"
 choice = gets
 while choice.chomp != "5"
-  puts "do the things"
+  puts "do the things according to input"
 end
