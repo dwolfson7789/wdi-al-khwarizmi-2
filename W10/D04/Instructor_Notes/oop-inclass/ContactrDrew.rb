@@ -48,9 +48,7 @@ choice = gets
 contacts = contact_list.get
 # go under the menu item add
 syed = Person.new("syed salahuddin", "2011112333")
-contact_list.add(syed)
 
-<<<<<<< HEAD
 while choice.chomp != "2"
   puts " add things"
   if choice.chomp == "1"
@@ -63,8 +61,7 @@ while choice.chomp != "2"
 end
 
 
-=======
->>>>>>> 25de9308cba21e6e08ba36cc1c51f347e14fa372
+
 while choice.chomp != "5"
   puts "do the things"
   if choice.chomp == "4"
