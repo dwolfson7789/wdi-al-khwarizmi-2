@@ -77,7 +77,11 @@ end
 All the below is commented out. **Just** watch the referenced videos -- don't worry about the questions for now! The point is so that when you come into class on Thursday, the idea of classes and inheritance aren't totally unfamiliar to you.
 
 
+<<<<<<< HEAD
 <!--
+=======
+
+>>>>>>> 6eaefa9640dd9596712ffbe9e26d8965bb675dae
 ## PART 8 - Ruby Classes
 **IMPORTANT**
 Shorty refers to JavaScript constructor functions in this video. We haven't covered them in detail in class; we looked at factory functions instead. We also want to understand the difference between JS's "prototypical" method of inheritance and Ruby's "class" inheritance.
@@ -173,4 +177,8 @@ end
 1. Make a Student class that inherits from Developer. Lets set Student's `experience_level` should be automatically set to 'beginner' (despite whatever is passed in).
 1. Make a Teacher class that inherits from Developer, with its `experience_level` automatically set to "advanced".
 1. Change `learn_new_language` on the student only. It should take in a teacher as a parameter and automatically add a random language (`sample`) from that teacher's `languages` array to the student's array.
+<<<<<<< HEAD
 Now Student and Teacher, despite both being subclasses of Developer, learn languages differently: for a Teacher to learn a new language, you have to tell it what language to learn. E.g., if `liza = Teacher.new ["JS","Ruby","PHP"]` and you want liza to learn Python you would run `liza.learn_new_language "Python"` and now. But if `sumit = Student.new []` (i.e., as a new student he doesn't know any languages yet) and you want him to learn a language you'd run `sumit.learn_new_language liza` and sumit would learn one of liza's languages. -->
+=======
+Now Student and Teacher, despite both being subclasses of Developer, learn languages differently: for a Teacher to learn a new language, you have to tell it what language to learn. E.g., if `liza = Teacher.new ["JS","Ruby","PHP"]` and you want liza to learn Python you would run `liza.learn_new_language "Python"` and now. But if `sumit = Student.new []` (i.e., as a new student he doesn't know any languages yet) and you want him to learn a language you'd run `sumit.learn_new_language liza` and sumit would learn one of liza's languages. 
+>>>>>>> 6eaefa9640dd9596712ffbe9e26d8965bb675dae
