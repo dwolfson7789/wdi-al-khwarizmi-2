@@ -14,8 +14,8 @@ class App extends Component {
       <div>
         <ul className='nav-bar'>
           <li><Link to={'/'}>Home</Link></li>
-          <li><Link to={'/products'}>Recipes!</Link></li>
-          <li><Link to={'/about'}>About Us</Link></li>
+          <li><Link to={'/products'}>Products</Link></li>
+          <li><Link to={'/about'}>About</Link></li>
           <li><Link to={'/unsupported'}>Unsupported</Link></li>
         </ul>
         {this.props.children}
@@ -77,8 +77,7 @@ class Login extends Component {
   handleLogout() {
     var callbackAfterLogout = function(success) {
       if (success) {
-        // ** We need to update our successMsg
-        this.setState({successMsg: 'Successfully logged out'});
+        this.setState({successMsg: 'You have successfully logged out'});
       }
     }.bind(this);
 
@@ -88,7 +87,6 @@ class Login extends Component {
   render() {
     const isLoggedIn = auth.loggedIn();
 
-    // isLoggedIn evals to a bool
     if (isLoggedIn) {
       return (
         <div>
