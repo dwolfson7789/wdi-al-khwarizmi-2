@@ -47,6 +47,10 @@ class Character
   def improve_stat stat
     @stat[:stat] += 1
   end
+
+  # add iteam here
+  def add_item Item
+
 end
 
 class Item
